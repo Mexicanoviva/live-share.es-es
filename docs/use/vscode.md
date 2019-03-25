@@ -1,6 +1,6 @@
 ---
-title: 'Colaborar mediante Visual Studio Code: Visual Studio Live Share | Microsoft Docs'
-description: Un conjunto de procedimientos de colaboración de Visual Studio Code y Live Share.
+title: 'Colaboración mediante Visual Studio Code: Visual Studio Live Share | Microsoft Docs'
+description: Un conjunto de procedimientos de colaboración para Visual Studio Code y Live Share.
 ms.custom: ''
 ms.date: 04/27/2018
 ms.reviewer: ''
@@ -15,7 +15,7 @@ ms.workload:
 - liveshare
 ms.openlocfilehash: 9285fef38fea9bb164892775521ed2a28fe9ef1b
 ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/02/2019
 ms.locfileid: "57256324"
@@ -26,115 +26,115 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# <a name="how-to-collaborate-using-visual-studio-code"></a>Cómo: Colaborar mediante Visual Studio Code
+# <a name="how-to-collaborate-using-visual-studio-code"></a>Colaboración mediante Visual Studio Code
 
-¿Listo para empezar a colaborar con Live Share en VS Code?  Si es así, está en el punto adecuado. En este artículo, le guiaré a través de cómo usar algunas de las características específicas de la extensión de Visual Studio Live Share para Visual Studio Code.
+¿Está listo para empezar a colaborar con Live Share en VS Code?  Si es así, está en el lugar correcto. En este artículo, lo guiaremos para que aprenda a usar algunas de las características específicas de la extensión Visual Studio Live Share para Visual Studio Code.
 
-Tenga en cuenta que todas las actividades de colaboración que se describen aquí implican una sola **host de sesión de colaboración** y uno o varios **invitados**. El anfitrión es la persona que inicia la sesión de colaboración, mientras que las personas que participan en ella son invitados.
+Tenga en cuenta que todas las actividades de colaboración que se describen aquí implica un único **anfitrión de la sesión de colaboración** y uno o varios **invitados**. El anfitrión es la persona que inicia la sesión de colaboración, mientras que las personas que participan en ella son invitados.
 
-*¿Busca un resumen resumido? Consulte la [compartir](../quickstart/share.md) o [combinación](../quickstart/join.md) inicios rápidos en su lugar.*
+*¿Busca un resumen abreviado? Consulte entonces los inicios rápidos sobre cómo [compartir](../quickstart/share.md) o [participar](../quickstart/join.md).*
 
 > [!TIP]
 > ¿Sabía que puede *participar en su propia sesión de colaboración*? Esto le permite probar Live Share por su cuenta o poner en marcha una instancia de Visual Studio o VS Code y conectarse a ella de forma remota. Incluso puede usar la misma identidad en ambas instancias. ¡Compruébelo!
 
 ## <a name="installation"></a>Instalación
 
-Antes de comenzar, necesitará para asegurarse de que tiene una versión de Visual Studio Code instalado que cumpla los requisitos principales de Live del recurso compartido. Necesitará **Visual Studio Code (1.22.0 o superior)** que se ejecuta en:
+Antes de empezar, deberá asegurarse de tener instalada una versión de Visual Studio Code que cumpla los requisitos principales de Live Share. Necesitará **Visual Studio Code (1.22.0 superior)** que se ejecute en:
 
 - **Windows**: 7, 8.1 o 10
 
-- **macOS**: Sierra (10.12) y versiones posteriores únicamente.
-    - _El capitán (10.11) y versiones anteriores no son compatibles actualmente debido a [los requisitos de .NET Core 2.0](https://go.microsoft.com/fwlink/?linkid=872315)._
+- **macOS**: Sierra (10.12) y versiones superiores solamente.
+    - _El Capitan (10.11) y versiones anteriores no son compatibles actualmente debido a los [requisitos de .NET Core 2.0](https://go.microsoft.com/fwlink/?linkid=872315)._
 
-- **Linux**: Escritorio de 64 bits Ubuntu 16.04 +, estación de trabajo Fedora 27 + y CentOS 7
+- **Linux**: Ubuntu Desktop 16.04 de 64 bits o versiones posteriores, Fedora Workstation 27 o versiones posteriores, CentOS 7
 
-    - Recurso compartido en vivo requiere un número de [requisitos previos de Linux](#linux-install-steps) se le pedirá que instale.
-    - _no se admite Linux de 32 bits debido a [los requisitos de .NET Core 2.0](https://go.microsoft.com/fwlink/?linkid=872314)._
-    - ARM también actualmente no se admite.
-    - Consulte la [detalles de la instalación de Linux](../reference/linux.md) artículo para obtener más información sobre el uso de nivel inferiores y otras distribuciones.
+    - Live Share requiere varios [requisitos previos de Linux](#linux-install-steps) que quizás se le pida instalar.
+    - _Linux de 32 bits no es compatible debido a los [requisitos de .NET Core 2.0](https://go.microsoft.com/fwlink/?linkid=872314)._
+    - ARM tampoco se admite actualmente.
+    - Consulte el artículo [Detalles de la instalación de Linux](../reference/linux.md) para ver los detalles sobre cómo usar las distribuciones de nivel inferior y otras.
 
 Después, descargar e instalar la extensión de Visual Studio Live Share es muy sencillo:
 
-1. Instalar <a href="https://code.visualstudio.com/">código de Visual Studio</a>
-2. [Descargar](https://aka.ms/vsls-dl/vscode) e instalar la extensión de Visual Studio Live Share en marketplace.
-3. Vuelva a cargar Visual Studio Code
-4. Espere a que las dependencias descargar e instalar (consulte la barra de estado).<br/>
-    ![Finalizar instalación](../media/vscode-finishing-install.png)
-5. **Linux**: Si ve una notificación acerca de cómo instalar las bibliotecas que faltan:
+1. Instalación de <a href="https://code.visualstudio.com/">Visual Studio Code</a>
+2. [Descargue](https://aka.ms/vsls-dl/vscode) e instale la extensión Visual Studio Live Share desde Marketplace.
+3. Recarga de Visual Studio Code
+4. Espere que las dependencias se descarguen e instalen (consulte la barra de estado).<br/>
+    ![Finalización de la instalación](../media/vscode-finishing-install.png)
+5. **Linux**: Si ve una notificación sobre la instalación de bibliotecas que faltan:
     1. Haga clic en "Instalar" en la notificación.
     2. Escriba la contraseña de administrador (sudo) cuando se le solicite.
-    3. Reinicie VS Code cuando haya terminado.
+    3. Cuando termine, reinicie VS Code.
 
 Al descargar y usar Visual Studio Live Share, acepta los [términos de licencia](https://aka.ms/vsls-license) y la [declaración de privacidad](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). Si surge algún problema, consulte la [solución de problemas](../troubleshooting.md).
 
-[![Descargar](../media/download.png)](https://aka.ms/vsls-dl/vscode)
+[![Descarga](../media/download.png)](https://aka.ms/vsls-dl/vscode)
 
 ### <a name="linux-install-steps"></a>Pasos de instalación de Linux
 
-Linux es un entorno muy variable y con el gran número de entornos de escritorio y distribuciones puede ser complicado ponerlo en funcionamiento. Si se limita a las versiones compatibles de **escritorio Ubuntu** (16.04 +) o **Fedora Workstation** (27 o superior), **CentOS 7** y usar solo **distribuciones oficiales de VS Código**, debe buscar el proceso sencillo. Sin embargo, en caso de que usa una configuración no estándar o una distribución de nivel inferior, puede o no se puede ejecutar en algunas interrupciones. Consulte [detalles de la instalación de Linux](../reference/linux.md) para obtener más información.
+Linux es un entorno altamente variable y con el gran número de distribuciones y entornos de escritorio puede ser complicado hacerlo funcionar. Si se limita a las versiones compatibles de **Ubuntu Desktop** (16.04 o posteriores) o de **Fedora Workstation** (27 o posteriores), **CentOS 7** y solo usa **distribuciones oficiales de VS Code**, debería encontrar que el proceso es sencillo. Sin embargo, en caso de que use una configuración no estándar o una configuración de nivel inferior, es posible que se encuentre (o no) con algunas interrupciones. Consulte [Detalles de la instalación de Linux](../reference/linux.md) para obtener más información.
 
-#### <a name="install-linux-prerequisites"></a>Instalar requisitos previos de Linux
+#### <a name="install-linux-prerequisites"></a>Instalación de los requisitos previos de Linux
 
-Algunas distribuciones de Linux faltan las bibliotecas de que Live Share necesite para funcionar. De forma predeterminada, Live Share intenta detectar e instalar los requisitos previos de Linux para usted. Verá una notificación cuando Live Share encuentra un problema que puede originarse en el que faltan las bibliotecas que le pide permiso instalarlos.
+En algunas distribuciones de Linux faltan bibliotecas que Live Share necesita para funcionar. De manera predeterminada, Live Share intenta detectar e instalar los requisitos previos de Linux. Verá una notificación del sistema cuando Live Share encuentre un problema que pueda provenir de la falta de bibliotecas en la que se le pedirá permiso para instalarlas.
 
-![Faltan notificación del sistema que se muestra el mensaje que requisitos previos de Linux](../media/vscode-linux-prereq-missing.png)
+![Notificación del sistema que muestra el mensaje de que faltan algunos requisitos previos de Linux](../media/vscode-linux-prereq-missing.png)
 
-Al hacer clic en "Instalar", aparecerá una ventana de terminal donde deberá escribir la contraseña de administrador (sudo) para continuar. ¡Suponiendo que se complete correctamente, reinicie el código de Visual Studio ya debería estar listo! También puede consultar **[sugerencias según la distribución](../reference/linux.md#tips-by-distribution)** otras sugerencias y soluciones alternativas si existe alguno.
+Al hacer clic en "Instalar", aparecerá una ventana de terminal en la que tendrá que escribir la contraseña de administrador (sudo) para continuar. Si todo se completa correctamente, todo debería estar listo una vez que reinicie Visual Studio Code. También puede consultar las **[sugerencias de distribución](../reference/linux.md#tips-by-distribution)** para ver otras indicaciones y soluciones alternativas que puedan existir.
 
-Si ve un mensaje que indica la secuencia de comandos no es compatible con la distribución, consulte **[sugerencias para las distribuciones compatible con la Comunidad](../reference/linux.md#tips-for-community-supported-distros)** para la información de la Comunidad ha compartido con nosotros.
+Si ve un mensaje que indica que el script no es compatible con la distribución, consulte las **[sugerencias para las distribuciones compatibles con la comunidad](../reference/linux.md#tips-for-community-supported-distros)** para ver la información que la comunidad nos ha compartido.
 
-Si se **no prefieren tener VS Code, ejecute el comando de**, también puede para volver a ejecutar la versión más reciente de este script en cualquier momento manualmente ejecutando el siguiente comando desde una ventana de Terminal:
+Si **prefiere que VS Code no ejecute el comando por usted**, también puede optar por volver a ejecutar la versión más reciente de este script en cualquier momento de manera manual mediante la ejecución del comando siguiente desde una ventana del terminal:
 
     wget -O ~/vsls-reqs https://aka.ms/vsls-linux-prereq-script && chmod +x ~/vsls-reqs && ~/vsls-reqs
 
 #### <a name="linux-browser-integration"></a>Integración del explorador de Linux
 
-Live Visual Studio comparten normalmente **no requiere pasos de instalación adicionales** para habilitar la integración con el explorador en Linux.
+Por lo general, Visual Studio Live Share **no necesita pasos de instalación adicionales** para habilitar la integración del explorador en Linux.
 
-Poco habitual, en ciertas distribuciones **puede recibir una notificación que se requiere la contraseña de administrador (sudo)** para completar el proceso de instalación. Aparecerá una ventana de terminal que le indica dónde se instalará el iniciador del explorador. Simplemente escriba la contraseña cuando se le solicite y presione ENTRAR una vez finalizada la instalación para cerrar la ventana de terminal.
+Si bien es poco habitual, en ciertas distribuciones **es posible que reciba una notificación de que se necesita su contraseña de administración (sudo)** para completar el proceso de instalación. Aparecerá una ventana de terminal en la que se le indicará que se instalará el iniciador del explorador. Para cerrar la ventana de terminal, solo debe escribir la contraseña cuando se le solicite y presionar ENTRAR una vez que la instalación termine.
 
-Puede leer más información sobre por qué esto es necesario y que comparten Live coloca archivos  **[aquí](../reference/linux.md#linux-browser-integration)**. Tenga en cuenta incluso si no puede obtener el trabajo de integración del explorador todavía puede  **[combinar manualmente sesiones de colaboración](../use/vscode.md#join-manually)**.
+**[Aquí](../reference/linux.md#linux-browser-integration)** puede leer más sobre por qué es necesario este paso y dónde coloca los archivos Live Share. Observe que, incluso si no puede hacer funcionar la integración del explorador, de todos modos puede **[participar manualmente en las sesiones de colaboración](../use/vscode.md#join-manually)**.
 
 ## <a name="sign-in"></a>Inicio de sesión
 
-Con el fin de colaborar, necesitará iniciar sesión en Visual Studio Live Share, por lo que todo el mundo sabe quién es usted. Esto es puramente una medida de seguridad y **no** optar cualquier marketing u otras actividades de investigación. Puede iniciar sesión con una cuenta personal de Microsoft (por ejemplo, @outlook.com), respaldado por Microsoft cuenta profesional o educativa (AAD) o una cuenta de GitHub. Es fácil iniciar sesión.
+Para poder colaborar, deberá iniciar sesión en Visual Studio Live Share de manera que todos sepan quién es usted. Esto no es más que una medida de seguridad y **no** significa que se inscriba en ninguna actividad de marketing u otro tipo de investigación. Puede iniciar sesión con una cuenta personal de Microsoft (por ejemplo, @outlook.com), una cuenta profesional o educativa (AAD) con el respaldo de Microsoft, o bien una cuenta de GitHub. Es fácil iniciar sesión.
 
-**Haga clic en** en el estado "Compartir" elemento o presione la barra **Ctrl + Mayús + P / Cmd + Mayús + P** y seleccione el "recurso compartido en vivo: Comando iniciar sesión con el explorador".
+**Haga clic** en el elemento de la barra de estado "Compartir" o presione **Ctrl+Mayús+P / Cmd+Mayús+P** y seleccione el comando "Live Share: Sign In With Browser" (Live Share: iniciar sesión con el explorador).
 
-![En el botón de la firma de código de VS](../media/vscode-sign-in-button.png)
+![Botón de inicio de sesión de VS Code](../media/vscode-sign-in-button.png)
 
-Aparecerá una notificación que le pide que inicie sesión con su explorador web. Al hacer clic en "iniciar sesión en" se abrirá un explorador para que pueda usar para completar el proceso de inicio de sesión. Simplemente cierre el explorador cuando haya terminado.
+Aparecerá una notificación para pedirle que inicie sesión con el explorador web. Si hace clic en "launch sign in" (Iniciar inicio de sesión) se abrirá un explorador que puede usar para completar el proceso de inicio de sesión. Cuando termine, simplemente cierre el explorador.
 
-![Notificación del sistema que pide que inicie sesión con un explorador web](../media/vscode-sign-in-toast.png)
+![Notificación del sistema en la que solicita el inicio de sesión con un explorador web](../media/vscode-sign-in-toast.png)
 
-> **Usuarios de Linux:** Se le pedirá que escriba un código de usuario si usa una versión anterior de Live Share (v0.3.295 o por debajo). Actualizar a la versión más reciente de la extensión o haga clic en el "teniendo problemas?" vincular después del inicio de sesión para ver el código. Consulte [a continuación para obtener más información](#sign-in-using-a-user-code).
+> **Usuarios de Linux:** Se le pedirá que escriba un código de usuario si usa una versión antigua de Live Share (v0.3.295 o inferior). Actualice a la versión más reciente de la extensión o haga clic en el vínculo "¿Tiene problemas?" después de iniciar sesión para ver el código. Para información más detallada, [consulte a continuación](#sign-in-using-a-user-code).
 
-Si el código de Visual Studio no se recoge el inicio de sesión después de completar el proceso de inicio de sesión en el explorador, vea [inicie sesión con un código de usuario](#sign-in-using-a-user-code). En caso contrario, consulte [solución de problemas](../troubleshooting.md#sign-in) para obtener más sugerencias.
+Si Visual Studio Code no acepta su inicio de sesión una vez que completa el proceso en el explorador, consulte [Inicio de sesión con un código de usuario](#sign-in-using-a-user-code). En caso contrario, revise la [solución de problemas](../troubleshooting.md#sign-in) para ver más sugerencias.
 
-### <a name="sign-in-using-a-user-code"></a>Inicie sesión con un código de usuario
+### <a name="sign-in-using-a-user-code"></a>Inicio de sesión con un código de usuario
 
-Si está experimentando problemas con el código de VS no recoger un inicio de sesión completado, puede escribir un código de"usuario" en su lugar.
+Si tiene problemas para que VS Code acepte un inicio de sesión completado, puede escribir un "código de usuario" en su lugar.
 
-1. Presione **Ctrl + Mayús + P / Cmd + Mayús + P** y ejecute el "recurso compartido en vivo: Comando iniciar sesión con el código de usuario".
+1. Presione **Ctrl+Mayús+P / Cmd+Mayús+P** y ejecute el comando "Live Share: Sign in with user code" (Live Share: iniciar sesión con código de usuario).
 
-2. Un explorador debe aparecer para que use para completar el proceso de inicio de sesión.
+2. Debería aparecer un explorador donde completar el proceso de inicio de sesión.
 
     > [!NOTE]
-    > Si no aparece automáticamente un explorador, abra [esta ubicación](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/login) en un explorador e inicie sesión.
+    > Si no aparece automáticamente, abra [esta ubicación](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/login) en un explorador e inicie sesión.
 
-3. ¿Cuando haya terminado, haga clic en "teniendo problemas? Haga clic aquí para obtener instrucciones de código de usuario"para ver el código de usuario.
+3. Una vez que termine, haga clic en "Having trouble? Click here for user code directions" (¿Problemas? Haga clic aquí para instrucciones sobre el código de usuario) para ver el código de usuario.
 
-    ![Imagen del código de usuario en el explorador](../media/vscode-user-code-browser.png)
+    ![Imagen del código de usuario en un explorador](../media/vscode-user-code-browser.png)
 
 4. Copie el código de usuario.
 
-5. Por último, pegue el código de usuario en el campo de entrada que aparecía cuando ejecutó el comando y presione ENTRAR para completar el proceso de inicio de sesión.
+5. Por último, péguelo en el campo de entrada que apareció cuando ejecutó el comando y presione ENTRAR para completar el proceso de inicio de sesión.
 
     ![Imagen del campo de entrada de código de usuario](../media/vscode-user-code.png)
 
-## <a name="using-the-live-share-viewlet"></a>Utilizando el viewlet Live Share
+## <a name="using-the-live-share-viewlet"></a>Uso del viewlet de Live Share
 
-Después de instalar Visual Studio Live Share, se agregará una pestaña personalizada a la barra de actividad de VS Code. En esta pestaña, puede tener acceso a todas las funciones de Live Share para colaborar. Además, al compartir o participar en una sesión de colaboración, una vista también aparecerá en la pestaña de explorador para tener acceso a todas estas funciones.
+Después de instalar Visual Studio Live Share, se agregará una pestaña personalizada a la barra de actividades de VS Code. En esta pestaña, podrá acceder a todas las funciones de Live Share para colaborar. Además, cuando se une a una sesión de colaboración o la comparte, también aparecerá una vista en la pestaña Explorador para que acceda a todas esas funciones.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -146,409 +146,409 @@ Después de instalar Visual Studio Live Share, se agregará una pestaña persona
 </tr>
 </table>
 
-Con estas vistas, puede ver la ubicación de un participante en el código compartido, haga clic en un participante de seguirlos, céntrese participantes, tener acceso a servidores compartidos y los terminales y mucho más.
+Con estas vistas, puede ver la ubicación de un participante en el código compartido, hacer clic en un participante para seguirlo, atraer la atención de los participantes, acceder a terminales y servidores compartidos, etc.
 
-## <a name="using-the-scoped-command-menu"></a>Mediante el menú de comandos con ámbito
+## <a name="using-the-scoped-command-menu"></a>Uso del menú de comandos con ámbito
 
-Además, todas las funciones de Visual Studio Live Share están disponibles desde el código de Visual Studio "Paleta de comandos" que se puede tener acceso presionando Ctrl + Mayús + P / Cmd + Mayús + P o F1. Puede encontrar una lista completa de comandos escribiendo "live share".
+Además, todas las funciones de Visual Studio Live Share están disponibles desde la "paleta de comandos" de Visual Studio Code a la que se puede acceder con Ctrl+Mayús+P o Cmd+Mayús+P o F1. Para encontrar una lista completa de los comandos, escriba "live share".
 
-Puesto que esta lista puede ser muy larga, le resultará más fácil aprovechar las ventajas de un menú de comandos con ámbito disponible en la barra de estado. Al hacer clic en el inicio de sesión / icono de estado de sesión en la barra de estado inmediatamente, aparecerá una lista contextualizada de comandos que están disponibles para su uso.
+Como esta lista puede ser larga, quizás le resulte más fácil usar un menú de comandos con ámbito que está disponible en la barra de estado. Si hace clic en el icono de inicio de sesión/estado de sesión de la barra de estado se abrirá una lista contextualizada de los comandos disponibles para su uso.
 
-![Icono de estado de sesión de código de VS](../media/vscode-share-state.png)
+![Icono de estado de sesión de VS Code](../media/vscode-share-state.png)
 
-## <a name="share-a-project"></a>Compartir un proyecto
+## <a name="share-a-project"></a>Uso compartido de un proyecto
 
-Después de descargar e instalar Visual Studio Live Share, siga estos pasos para iniciar una sesión de colaboración e invitar a un compañero de trabajo para trabajar con usted.
+Después de descargar e instalar Visual Studio Live Share, siga estos pasos para iniciar una sesión de colaboración e invitar a un compañero de trabajo a trabajar con usted.
 
-1. **Inicia sesión**
+1. **Iniciar sesión**
 
-    Después de instalar la extensión Live Share, volver a cargar y esperando las dependencias finalizar la instalación, desea iniciar sesión para que otros colaboradores sepa quién es usted. Consulte [inicie sesión en](#sign-in) para obtener más detalles.
+    Después de instalar la extensión Live Share, recargar y esperar a que se terminen de instalar las dependencias, querrá iniciar sesión para que otros colaboradores sepan quién es. Consulte [Inicio de sesión](#sign-in) para más detalles.
 
 2. **Abrir una carpeta**
 
-    Para abrir una carpeta, proyecto o solución que le gustaría compartir con sus invitados, use el flujo de trabajo normal.
+    Use el flujo de trabajo normal para abrir una carpeta, un proyecto o una solución que quisiera compartir con los invitados.
 
-3. **[Opcional] Actualizar archivos ocultos o excluidos**
+3. **[Opcional] Actualizar los archivos ocultos o excluidos**
 
-    De forma predeterminada, Live Share **oculta** los archivos o carpetas que se hace referencia en los archivos .gitignore en las carpetas compartidas de los invitados. **Ocultar** un archivo evita que aparezca en el árbol de archivos de invitado. **Excluir** un archivo aplica una regla más estricta que impidan que Live Share abrirlo para el invitado en situaciones como ir a una definición o si el paso en el archivo mientras depura o se "sigue". Si desea ocultar o excluir archivos diferentes, una **. vsls.json** archivo se puede agregar al proyecto con esta configuración. Consulte [controlar el acceso de archivo y visibilidad](../reference/security.md#controlling-file-access-and-visibility) para obtener más información.
+    De manera predeterminada, Live Share **oculta** a los invitados los archivos o carpetas a los que se hace referencia en los archivos .gitignore de las carpetas compartidas. **Ocultar** un archivo evita que aparezca en el árbol de archivos del invitado. **Excluir** un archivo aplica una regla más estricta que impedirá que Live Share lo abra para el invitado en situaciones como ir a una definición o cuando el archivo se depura paso a paso por instrucciones mientras depura o se "sigue". Si quiere ocultar o excluir otros archivos, puede agregar un archivo **.vsls.json** al proyecto con esta configuración. Consulte [Control de la visibilidad y el acceso de archivos](../reference/security.md#controlling-file-access-and-visibility) para más información.
 
 4. **Iniciar una sesión de colaboración**
 
-    Ahora, simplemente **haga clic en** el estado de "Compartir" elemento o presione la barra **Ctrl + Mayús + P / Cmd + Mayús + P** y seleccione "recurso compartido en vivo: Iniciar una sesión de colaboración (recurso compartido) ".
+    Ahora, simplemente **haga clic** en el elemento de la barra de estado "Compartir" o presione **Ctrl+Mayús+P / Cmd+Mayús+P** y seleccione "Live Share: Start a collaboration session (Share)" (Live Share: iniciar una sesión de colaboración [Compartir]).
 
     ![Botón Compartir](../media/vscode-share-button.png)
 
     > [!NOTE]
-    > Se le pedirá el software de firewall de escritorio para que el agente de compartir en directo abrir un puerto de la primera vez que se comparte. Aceptar esto es totalmente opcional pero permite que un seguro "modo directo" para mejorar el rendimiento cuando es la persona que trabaja en la misma red que sea. Consulte [cambiar el modo de conexión](../reference/connectivity.md#changing-the-connection-mode) para obtener más información.
+    > La primera vez que comparta, es posible que el software de firewall de escritorio le pida que permita que el agente de Live Share abra un puerto. Aceptar esto es totalmente opcional, pero habilita un "modo directo" seguro para mejorar el rendimiento cuando la persona con la que trabaja se encuentra en la misma red que usted. Consulte [Cambiar el modo de conexión](../reference/connectivity.md#changing-the-connection-mode) para más detalles.
 
-    Un vínculo de la invitación se copiará automáticamente en el Portapapeles. Cuando se abre en un explorador, este vínculo permite a otros a unirse a una nueva sesión de colaboración que comparte el contenido de estas carpetas con ellos.
+    Un vínculo a la invitación se copiará automáticamente en el Portapapeles. Cuando se abre en un explorador, este vínculo permite que otros usuarios se unan a una sesión de colaboración donde se les comparte contenido de estas carpetas.
 
-    También verá la transición de elemento de barra de estado "Compartir" para representar el estado de sesión. Consulte [estado de sesión](#session-states) información siguiente para este aspecto.
+    También verá la transición del elemento de la barra de estado "Compartir" para representar el estado de sesión. Consulte la información sobre el [estado de sesión](#session-states) que aparece a continuación para saber cuál es el aspecto.
 
-    Tenga en cuenta que si necesita obtener el vínculo de invitación a intentarlo después de haber iniciado el uso compartido, acceder a ella nuevamente haciendo clic en el icono de barra de estado de estado de sesión y seleccione "Invitar a otros usuarios (Copiar vínculo)".
+    Tenga en cuenta que si necesita obtener nuevamente el vínculo de la invitación una vez que haya empezado a compartir los recursos, puede acceder a él otra vez si hace clic en el icono de estado de sesión de la barra de estado y selecciona "Invite Others (Copy Link)" (Invitar a otros [copiar vínculo]).
 
 5. **[Opcional] Habilitar el modo de solo lectura**
 
-    Una vez que inicie una sesión de colaboración, puede establecer la sesión sea de solo lectura para evitar que los invitados realiza modificaciones en el código que se comparte.
+    Una vez iniciada la sesión de colaboración, puede establecerla para que sea de solo lectura a fin de evitar que los invitados realicen cambios en el código que se comparte.
 
-    Después de compartir, obtendrá una notificación de que el vínculo de la invitación se ha copiado en el Portapapeles. A continuación, puede seleccionar la opción para que la sesión de solo lectura.
+    Después de compartir, recibirá una notificación en la que se indica que el vínculo de invitación se ha copiado en el Portapapeles. Después, puede seleccionar la opción para hacer que la sesión sea de solo lectura.
 
-    ![Modo de solo lectura del código de VS](../media/vscode-read-only-toast.png)
+    ![Modo de solo lectura de VS](../media/vscode-read-only-toast.png)
 
-6. **Enviar a alguien el vínculo**
+6. **Enviar el vínculo a alguien**
 
-    Envíe el vínculo por correo electrónico, Slack, Skype, etc. a los que desea invitar. Tenga en cuenta que, dado el nivel de acceso a Live compartir sesiones pueden proporcionar a los invitados, **solo se debe compartir con usuarios de confianza** y piense detenidamente las implicaciones de lo que va a compartir.
+    Envíe el vínculo por correo electrónico, Slack, Skype, etc., a los usuarios que quiera invitar. Tenga en cuenta que, dado el nivel de acceso que las sesiones de Live Share pueden proporcionar a los invitados, **solo se debe compartir con usuarios de confianza**, y piense detenidamente en las implicaciones de lo que va a compartir.
 
-    > **Sugerencia de seguridad:** ¿Desea comprender las implicaciones de seguridad de algunas de las características de Live del recurso compartido? Consulte la [seguridad](../reference/security.md) artículo.
+    > **Sugerencia de seguridad:** ¿Quiere conocer las implicaciones de seguridad de algunas de las características de Live Share? Consulte el artículo sobre [seguridad](../reference/security.md).
 
-    Si el invitado le invitó tiene preguntas, el "[inicio rápido: Únase a la primera sesión](../quickstart/join.md)"artículo proporciona información adicional sobre entre en funcionamiento como invitado.
+    Si el invitado al que invitó tiene preguntas, en el artículo "[Quickstart: Join your first session](../quickstart/join.md)" (Inicio rápido: Participación en una primera sesión) se proporciona información adicional sobre cómo prepararlo todo para participar como invitado.
 
-7. **[Opcional] Aprobar el invitado**
+7. **[Opcional] Aprobar al invitado**
 
-    De forma predeterminada, los invitados se unirán automáticamente a la sesión de colaboración y se le notificará cuando haya terminado de trabajar con usted. Aunque esta notificación le proporciona la opción de quitarlos de la sesión, también puede optar en su lugar, requieren una "aprobación" explícita para todo aquel que unir.
+    De manera predeterminada, los invitados participarán automáticamente en la sesión de colaboración y se le notificará cuando estén listos para trabajar con usted. Si bien esta notificación le da la opción de quitarlos de la sesión, también puede optar por requerir una "aprobación" explícita para todo aquel que se una.
 
-    Para habilitar esta característica, simplemente agregue lo siguiente al settings.json:
+    Para habilitar esta característica, simplemente agregue lo siguiente a settings.json:
 
          "liveshare.guestApprovalRequired": true
 
-    Una vez activada esta opción, le solicitará una notificación que aprobar al invitado para que pueden unirse.
+    Una vez que active esta configuración, recibirá una notificación que le pedirá aprobar al invitado antes de que pueda participar.
 
-    ![Solicitud de aprobación de combinación de Visual Studio Code](../media/vscode-join-approval.png)
+    ![Solicitud de aprobación de participación en Visual Studio Code](../media/vscode-join-approval.png)
 
-    Consulte [invitaciones y acceso de combinación](../reference/security.md#invitations-and-join-access) para obtener más detalles sobre las consideraciones de seguridad de invitación.
+    Consulte [Invitations and join access](../reference/security.md#invitations-and-join-access) (Invitaciones y acceso de participación) para más detalles sobre las consideraciones de seguridad en la invitación.
 
-¡¡Eso es todo!!
+¡Y listo!
 
-### <a name="stop-the-collaboration-session"></a>Detener la sesión de colaboración
+### <a name="stop-the-collaboration-session"></a>Detención de la sesión de colaboración
 
-Como un host, puede dejar de compartir completamente y finalizar la sesión de colaboración en cualquier momento, abra la vista de Live Share en el explorador o en la pestaña personalizada de Live Share y seleccione el icono "Detener la sesión de colaboración".
+Como anfitrión, puede dejar de compartir completamente y finalizar la sesión de colaboración en cualquier momento si abre la vista de Live Share en el Explorador o en la pestaña personalizada Live Share y selecciona el icono "Stop collaboration session" (Detener sesión de colaboración).
 
-![Detener la sesión de colaboración](../media/vscode-end-collaboration-viewlet.png)
+![Detener sesión de colaboración](../media/vscode-end-collaboration-viewlet.png)
 
-Todos los invitados le notificará que la sesión ha finalizado.  Una vez que ha finalizado la sesión, los invitados ya no podrán acceder al contenido y los archivos temporales se limpian automáticamente.
+Todos los invitados recibirán una notificación de que finalizó la sesión.  Una vez finalizada la sesión, los invitados ya no podrán acceder al contenido y los archivos temporales se borrarán automáticamente.
 
-¿Tiene problemas con el uso compartido? Desproteger [solución de problemas](../troubleshooting.md#share-and-join).
+¿Tiene problemas para compartir recursos? Revise la [solución de problemas](../troubleshooting.md#share-and-join).
 
-## <a name="join-a-collaboration-session"></a>Participar en una sesión de colaboración
+## <a name="join-a-collaboration-session"></a>Participación en una sesión de colaboración
 
-Después de descargar e instalar Visual Studio Live Share, los invitados sólo necesitan realizar un par de pasos para participar en una sesión de colaboración de alojamiento. Hay dos maneras de combinar: [a través del explorador](#join-via-the-browser) y [manualmente](#join-manually).
+Después de descargar e instalar Visual Studio Live Share, los invitados solo deben realizar un par de pasos para participar en una sesión de colaboración hospedada. Hay dos maneras de participar: [a través del explorador](#join-via-the-browser) y [manualmente](#join-manually).
 
-> **Sugerencia de seguridad:** Como invitado participar en una sesión de colaboración, es importante comprender que los hosts pueden limitar su acceso a determinados archivos o las características. ¿Desea comprender las implicaciones de seguridad de algunas de las características y la configuración de Live Share? Consulte la [seguridad](../reference/security.md) artículo.
+> **Sugerencia de seguridad:** Como invitado que participa en una sesión de colaboración, es importante comprender que los anfitriones pueden limitar el acceso a determinados archivos o características. ¿Quiere conocer las implicaciones de seguridad de algunas de las características y configuraciones de Live Share? Consulte el artículo sobre [seguridad](../reference/security.md).
 
-### <a name="join-via-the-browser"></a>Unirse a través del explorador
+### <a name="join-via-the-browser"></a>Participar a través del explorador
 
-Para participar en una sesión de colaboración más sencillo es simplemente abrir el vínculo de invitación en un explorador web. Aquí es lo que puede esperar al seguir este flujo.
+La manera más sencilla de participar en una sesión de colaboración es abrir el vínculo de la invitación en un explorador web. Esto es lo que puede esperar si sigue este flujo.
 
-1. **Inicia sesión**
+1. **Inicie sesión**
 
-    Después de instalar la extensión Live Share, volver a cargar y esperando las dependencias finalizar la instalación, desea iniciar sesión para que otros colaboradores sepa quién es usted. Consulte [inicie sesión en](#sign-in) para obtener más detalles.
+    Después de instalar la extensión Live Share, recargar y esperar a que se terminen de instalar las dependencias, querrá iniciar sesión para que otros colaboradores sepan quién es. Consulte [Inicio de sesión](#sign-in) para más detalles.
 
-2. **Haga clic en el vínculo de la invitación y abrir la invitación en el explorador**
+2. **Haga clic en el vínculo de la invitación o abra la invitación en el explorador**
 
     Ahora, basta con abrir (o volver a abrir) el vínculo de invitación en un explorador.
 
-    > **Nota**: Si aún no ha instalado la extensión Live Share, se mostrarán con vínculos a marketplace de extensión. Instalar la extensión y reinicie la herramienta y vuelva a intentar.
+    > **Nota**: Si aún no ha instalado la extensión Live Share, se le mostrarán vínculos al Marketplace de la extensión. Instale la extensión, reinicie la herramienta e inténtelo de nuevo.
 
-    Debería recibir una notificación que desea que el explorador iniciar una herramienta de Live Share habilitado. Si se permite que inicie la herramienta seleccionada, se conectará a la sesión de colaboración, una vez que se inicia.
+    Debería recibir una notificación en la que se indica que el explorador quiere iniciar una herramienta habilitada para Live Share. Si permite que inicie la herramienta seleccionada, se conectará a la sesión de colaboración una vez que se inicie.
 
-    ![Únase a la página](../media/join-page.png)
+    ![Página para participar](../media/join-page.png)
 
-    Si el host está sin conexión, se le notificará en este momento en su lugar. A continuación, puede ponerse en contacto con el host y pídale que vuelva a compartir.
+    Si el anfitrión está sin conexión, se le notificará en este momento. Después, puede ponerse en contacto con el anfitrión y pedirle que vuelva a compartir.
 
     > [!NOTE]
-    > Asegúrese de haber **inicia la herramienta de al menos una vez** después de instalar la extensión de Visual Studio Live Share y permite la instalación finalice antes de apertura/volver-opening la página de invitación. ¿Sigue teniendo problemas? Consulte [combinar manualmente](#join-manually).
+    > Asegúrese de haber **iniciado la herramienta al menos una vez** después de instalar la extensión Visual Studio Live Share y permitido que la instalación se realice completamente antes de abrir o volver a abrir la página de invitación. ¿Sigue teniendo problemas? Consulte [Participar manualmente](#join-manually).
 
-3. **Collaborate**
+3. **Colabore**
 
-    Ya está. En unos instantes se conectará y empezar a colaborar.
+    Ya está. En unos instantes se conectará y podrá empezar a colaborar.
 
-    Verá la transición del botón "Compartir" para transmitir un "estado de sesión". Consulte [estado de sesión](#session-states) información siguiente para este aspecto.
+    Verá la transición del botón "Compartir" a convertirse en un "Estado de sesión". Consulte la información sobre el [estado de sesión](#session-states) que aparece a continuación para saber cuál es el aspecto.
 
-    A continuación, automáticamente pasará al archivo es que el host se está editando una vez completada la combinación.
+    Luego pasará automáticamente al archivo que actualmente está editando el anfitrión una vez que se una por completo.
 
-### <a name="join-manually"></a>Combinar manualmente
+### <a name="join-manually"></a>Participar manualmente
 
-Puede combinar manualmente sin usar un explorador web que puede ser útil en situaciones donde ya se está ejecutando la herramienta que desea usar, que desea usar otra herramienta que suela hacerlo, o si tiene problemas con la obtención de invitar a vínculos a trabajar por algún motivo. El proceso es sencillo:
+También puede participar manualmente sin usar un explorador web, lo que puede ser útil cuando la herramienta que quiere usar ya está en ejecución, si quiere una herramienta distinta a la que usa con frecuencia o si, por alguna razón, tiene problemas para que los vínculos de invitación funcionen. El proceso es sencillo:
 
-1. **Inicia sesión**
+1. **Inicie sesión**
 
-    Después de instalar la extensión Live Share, volver a cargar y esperando las dependencias finalizar la instalación, desea iniciar sesión para que otros colaboradores sepa quién es usted. Consulte [inicie sesión en](#sign-in) para obtener más detalles.
+    Después de instalar la extensión Live Share, recargar y esperar a que se terminen de instalar las dependencias, querrá iniciar sesión para que otros colaboradores sepan quién es. Consulte [Inicio de sesión](#sign-in) para más detalles.
 
-2. **Use el comando de combinación**
+2. **Use el comando para participar**
 
-    Abra la pestaña personalizada de Live Share en la barra de actividad de VS Code y seleccione la "combinación sesión de colaboración..." icono o entrada.
+    Abra la pestaña personalizada Live Share en la barra de actividades de VS Code y seleccione la entrada o el icono "Join collaboration session…" (Participar en la sesión de colaboración).
 
-    ![Icono viewlet de combinación](../media/vscode-join-viewlet.png)
+    ![Icono para participar del viewlet](../media/vscode-join-viewlet.png)
 
 3. **Pegue el vínculo de invitación**
 
-    Pegue la dirección URL de invitación se envió y presione ENTRAR para confirmar.
+    Pegue la dirección URL de la invitación que le enviamos y presione ENTRAR para confirmar.
 
-4. **¡Colaborar!**
+4. **¡Colabore!**
 
-    Ya está. Debe estar conectado a la sesión de colaboración momentáneamente.
+    Ya está. Debería estar conectado momentáneamente a la sesión de colaboración.
 
-    Verá la transición del botón "Compartir" para transmitir un "estado de sesión". Consulte [estado de sesión](#session-states) información siguiente para este aspecto.
+    Verá la transición del botón "Compartir" a convertirse en un "Estado de sesión". Consulte la información sobre el [estado de sesión](#session-states) que aparece a continuación para saber cuál es el aspecto.
 
-    A continuación, automáticamente pasará al archivo es que el host se está editando una vez completada la combinación.
+    Luego pasará automáticamente al archivo que actualmente está editando el anfitrión una vez que se una por completo.
 
-### <a name="leave-the-collaboration-session"></a>Deje la sesión de colaboración
+### <a name="leave-the-collaboration-session"></a>Salida de la sesión de colaboración
 
-Como invitado, puede dejar la sesión de colaboración sin tener que finalizar para que otros usuarios simplemente cierre la ventana de VS Code. Si prefiere mantener abierta la ventana, puede abrir la vista del explorador de recursos compartidos en vivo o la pestaña personalizada de Live Share y seleccione el icono "Dejar la sesión de colaboración".
+Como invitado, puede salir de la sesión de colaboración sin finalizarla para los demás invitados. Para ello, simplemente cierre la ventana de VS Code. Si prefiere mantener abierta la ventana, puede abrir la vista Explorador de Live Share o la pestaña personalizada Live Share y seleccionar el icono "Leave collaboration session" (Salir de la sesión de colaboración).
 
-![Icono de la sesión de hojas](../media/vscode-leave-session-viewlet.png)
+![Icono para salir de la sesión](../media/vscode-leave-session-viewlet.png)
 
-Los archivos temporales se limpian automáticamente por lo que no es necesario realizar ninguna otra acción.
+Los archivos temporales se eliminar automáticamente, por lo que no es necesario hacer nada más.
 
-¿Tiene problemas con la combinación? Desproteger [solución de problemas](../troubleshooting.md#share-and-join).
+¿Tiene problemas para participar en la sesión? Revise la [solución de problemas](../troubleshooting.md#share-and-join).
 
 ## <a name="co-editing"></a>Edición conjunta
 
-Una vez que un invitado ha unido a una sesión de colaboración, todos los colaboradores podrán inmediatamente ver las modificaciones y las selecciones en tiempo real entre sí. Todo lo que necesita hacer es seleccionar un archivo desde el Explorador de archivos y empiece a editar. Hosts e invitados ver ediciones incluirlas y puede contribuir a sí mismos lo que iterar fácil y rápidamente clavo hacia abajo tanto soluciones.
+Una vez que un invitado se une a una sesión de colaboración, todos los colaboradores podrán, de manera inmediata, ver las ediciones y selecciones de los demás en tiempo real. Solo tiene que tomar un archivo del explorador de archivos y empezar a editarlo. Tanto los anfitriones como los invitados verán cuando esté haciendo las ediciones y podrán contribuir, con lo que será más sencillo iterar y llegar a las soluciones.
 
 > [!NOTE]
-> Unirse a una sesión de colaboración de solo lectura impide que los invitados se pueden realizar modificaciones a los archivos. Un host puede [habilitar el modo de solo lectura cuando comparten](#share-a-project). Como un invitado, puede indicar si se ha unido a una sesión de solo lectura examinando su [estado de sesión](#session-states).
+> Participar en una sesión de colaboración de solo lectura impide que los invitados puedan editar los archivos. Un anfitrión puede [habilitar el modo de solo lectura cuando comparten la sesión](#share-a-project). Para saber si está participando en una sesión de solo lectura, un invitado debe mirar el [estado de sesión](#session-states).
 
-![Pantalla que muestra edición conjunta](../media/vscode-coedit.png)
+![Captura de pantalla de una edición conjunta](../media/vscode-coedit.png)
 
 > [!NOTE]
-> Comparte la edición tiene limitaciones para determinados idiomas. Consulte la [información sobre compatibilidad con la plataforma](../reference/platform-support.md) para ver el estado de las características por lenguaje.
+> La edición conjunta tiene limitaciones en ciertos lenguajes. Consulte la [información sobre compatibilidad con la plataforma](../reference/platform-support.md) para ver el estado de las características por lenguaje.
 
-Más allá de los cursores y las modificaciones, las opciones seleccionadas también son visibles para todos los participantes en ese mismo archivo. Esto facilita la resalte donde podrían existir o transmitir ideas problemas.
+Más allá de los cursores y las ediciones, las selecciones que hace también son visibles para todos quienes participan en el mismo archivo. Esto facilita resaltar dónde puede haber problemas o transmitir ideas.
 
-![Pantalla que muestra resaltado](../media/vscode-highlight.png)
+![Captura de pantalla que muestra elementos resaltados](../media/vscode-highlight.png)
 
-Mejor aún, usted y otros participantes pueden navegar a cualquier archivo en el proyecto compartido. Puede modificar conjuntamente o por separado, lo que significa que puede cambiar sin problemas entre la investigación, realizar pequeños ajustes y editarlo en colaboración completa.
+Mejor aún: usted y otros participantes pueden ir a cualquier archivo en el proyecto compartido. Puede editar en conjunto o de manera independiente, lo que significa que puede cambiar sin problemas entre la investigación, hacer pequeños ajustes y la edición totalmente colaborativa.
 
-Las ediciones resultantes se almacenan en la máquina del host en Guardar por lo que no es necesario sincronizar, inserte o enviar archivos alrededor de una vez que haya terminado edición. Las modificaciones son "simplemente there".
+Las ediciones resultantes se conservan en la máquina del anfitrión al guardar la sesión, por lo que no es necesario sincronizar, enviar cambios ni enviar archivos una vez que termine de editar. Las ediciones simplemente "están ahí".
 
-> **Sugerencia de seguridad:** Dado que todos los participantes pueden independientemente navegar y editar archivos, como un host, es posible que desee restringir los archivos que los invitados pueden tener acceso a su proyecto a través de un. archivo vsls.json. Como invitado, también es importante tener en cuenta que no vea determinados archivos como resultado de esta configuración. Consulte [controlar el acceso de archivo y visibilidad](../reference/security.md#controlling-file-access-and-visibility) para obtener más información.
+> **Sugerencia de seguridad:** Como todos los participantes pueden navegar y editar archivos de manera independiente, como anfitrión, es posible que quiera restringir los archivos a los que pueden acceder los invitados en el proyecto a través de un archivo .vsls.json. Como invitado, también es importante tener en cuenta que es posible que no vea determinados archivos como resultado de esta configuración. Consulte [Control de la visibilidad y el acceso de archivos](../reference/security.md#controlling-file-access-and-visibility) para más información.
 
-### <a name="changing-participant-flag-behaviors"></a>Cambiar los comportamientos de la marca de participante
+### <a name="changing-participant-flag-behaviors"></a>Cambio de los comportamientos de las marcas de los participantes
 
-De forma predeterminada, Visual Studio Live Share muestra automáticamente una "marca" junto al cursor de un participante al mantener el mouse, o cuando edita, resalte o mover el cursor. En algunos casos, es posible que prefiera cambiar este comportamiento.
+De manera predeterminada, Visual Studio Live Share muestra automáticamente una "marca" junto al cursor de un participante si mantiene el puntero sobre él, o cuando edite, resalte o mueva el cursor. En algunos casos, quizás prefiera cambiar este comportamiento.
 
-Simplemente **editar settings.json** (archivo > Opciones > configuración), agregue una de las líneas siguientes y, a continuación, reinicie VS Code:
+Simplemente debe **editar settings.json** (Archivo > Preferencias > Configuración), agregar una de las líneas siguientes y, luego, reiniciar VS Code:
 
 | Parámetro | Comportamiento |
 |---------|----------|
-| ``"liveshare.nameTagVisibility":"Never"`` | La marca solo está visible cuando mantenga el mouse sobre el cursor. |
-| ``"liveshare.nameTagVisibility":"Activity"`` | Este es el valor predeterminado. La marca está visible al mantener el mouse o si edita el participante, se resaltan o se mueve el cursor. |
-| ``"liveshare.nameTagVisibility":"Always"`` | La marca está siempre visible. |
+| ``"liveshare.nameTagVisibility":"Never"`` | La marca solo es visible cuando mantiene el puntero sobre el cursor. |
+| ``"liveshare.nameTagVisibility":"Activity"`` | Este es el valor predeterminado. La marca es visible cuando mantiene el puntero sobre el cursor o si el participante edita, resalta o mueve el cursor. |
+| ``"liveshare.nameTagVisibility":"Always"`` | La marca siempre está visible. |
 
-## <a name="following"></a>Siguiente
+## <a name="following"></a>Seguimiento
 
-En ocasiones necesitará explicar un problema o diseño que abarque varios archivos o ubicaciones en el código. En estas situaciones, puede ser útil seguir temporalmente un compañero de trabajo cuando se mueven a lo largo del proyecto. Por este motivo, cuando se une a una sesión de colaboración automáticamente "seguirá" el host. Al seguir un usuario, el editor permanecerá sincronizado con su posición de desplazamiento y de archivo abierto actualmente.
-
-> [!NOTE]
-> De forma predeterminada, los recursos compartidos de Live Share abren archivos externos a la carpeta compartida también. Si desea deshabilitar esta característica, actualice `liveshare.shareExternalFiles` Live Share a `false` en settings.json.
-
-Para empezar a seguir un participante (como un host o invitado), haga clic en su nombre en la lista de los participantes en la vista del explorador de recursos compartidos en vivo o la pestaña personalizada. Rellene el círculo situado junto a su nombre para indicar que está siguiendo ellos.
-
-![VS Code siga desde viewlet](../media/vscode-follow-multiple-viewlet.png)
-
-Como alternativa, puede hacer clic en el icono de anclaje en la esquina superior derecha del grupo de editor o presione **Ctrl + Alt + F / Cmd + Alt + F**.
-
-![Pin de código de VS](../media/vscode-pin.png)
+En ocasiones necesitará explicar un problema o diseño que abarque varios archivos o ubicaciones en el código. En estos casos, puede ser útil seguir temporalmente a un compañero de trabajo mientras se mueve por el proyecto. Es por esto que, cuando se una a una sesión de colaboración, "seguirá" automáticamente al anfitrión. Cuando siga a alguien, el editor se mantendrá sincronizado con el archivo abierto actualmente de ese usuario y su posición de desplazamiento.
 
 > [!NOTE]
-> Si se encuentra más de una persona en la sesión de colaboración, le pedirá que seleccione al participante que desea seguir.
+> De manera predeterminada, Live Share también comparte los archivos abiertos externos a la carpeta compartida. Si quiere deshabilitar esta característica, actualice Live Share `liveshare.shareExternalFiles` a `false` en settings.json.
+
+Para empezar a seguir a un participante (ya sea un anfitrión o un invitado), haga clic en su nombre en la lista de participantes en la pestaña personalizada o la vista Explorador de Live Share. El círculo junto a su nombre se rellenará para indicar que lo está siguiendo.
+
+![Opción de seguir en el viewlet de VS Code](../media/vscode-follow-multiple-viewlet.png)
+
+De manera alternativa, puede hacer clic en el icono de anclaje que se encuentra en la esquina superior derecha del grupo de editores o presione **Ctrl+Alt+F / Cmd+Alt+F**.
+
+![Anclaje de VS Code](../media/vscode-pin.png)
+
+> [!NOTE]
+> Si hay más de una persona en la sesión de colaboración, tendrá que seleccionar al participante al que quiere seguir.
 >
->![Captura de pantalla con una lista de colaboradores](../media/vscode-list-collaborators.png)
+>![Captura de pantalla de la lista de colaboradores](../media/vscode-list-collaborators.png)
 
-Puesto que la siguiente está asociado a un grupo de editor, puede usar la vista dividida (o diseño de cuadrícula) para que tenga un grupo que está siguiendo a un participante y un grupo que no es. Esto le permite seguir pasivamente alguien mientras también trabaja en un elemento por separado. Con un editor grupo seleccionado, puede seleccionar un participante en la lista de los participantes que ese grupo seguirlos.
+Como el seguimiento está asociado a un grupo de editores, puede usar la vista dividida (o diseño de cuadrícula) para tener un grupo que siga a un participante y un grupo que no lo haga. Esto le permite seguir de manera pasiva a alguien mientras trabaja también en otra cosa. Con un grupo de editores seleccionado, puede seleccionar a un participante en la lista de participantes para hacer que ese grupo lo siga.
 
-![Pin de código de VS en vista dividida](../media/vscode-follow-split.png)
+![Anclaje de VS Code en la vista dividida](../media/vscode-follow-split.png)
 
-Para facilitar la "modo de seguimiento" y empiece a editar en su propio, también detendrá automáticamente los siguientes si se produce alguno de estos:
+Para facilitar salir del "modo de seguimiento" y empezar a editar por su cuenta, dejará automáticamente de seguir participantes si ocurre alguna de estas situaciones:
 
-1. Empiece a editar el archivo activo
-1. Abrir un archivo diferente
-1. Cierre el archivo activo
+1. Empieza a editar el archivo actualmente activo
+1. Abre un archivo distinto
+1. Cierra el archivo actualmente activo
 
-Además, puede detener explícitamente después de que alguien haciendo clic en el icono de anclaje nuevo o presionar **Ctrl + Alt + F / Cmd + Alt + F**.
+Además, puede dejar de seguir a alguien de manera explícita si hace clic en el icono de anclaje o presiona **Ctrl+Alt+F / Cmd+Alt+F**.
 
 ## <a name="listing-participants"></a>Lista de participantes
 
-Una forma rápida de ver quién está en la sesión de colaboración es mirar la lista de participantes en la vista del explorador de recursos compartidos en vivo o la pestaña personalizada. Las vistas mostrará a todos los participantes en la sesión.
+Una forma rápida de ver a quienes están en la sesión de colaboración es mirar la lista de participantes en la pestaña personalizada o la vista Explorador de Live Share. Las vistas mostrarán todos los participantes de la sesión.
 
-![Icono de la barra de estado de usuario de captura de pantalla que muestra](../media/vscode-explorer-view.png)
+![Captura de pantalla que muestra el icono de la barra de estado del usuario](../media/vscode-explorer-view.png)
 
-Al hacer clic en cualquier participante en esta lista seguirá a éstos en el grupo editor activo.
+Si hace clic en cualquiera de los participantes de esta lista, lo seguirá en el grupo de editores activo.
 
-Como alternativa, puede presionar **Ctrl + Mayús + P / Cmd + Mayús + P** y seleccione el "recurso compartido en vivo: Comando de la lista de participantes"o **haga clic en** en el elemento de la barra de estado que muestra el número de participantes en la sesión.
+Como alternativa, puede presionar **Ctrl+Mayús+P / Cmd+Mayús+P** y seleccionar el comando "Live Share: List Participants" (Live Share: mostrar participantes) o **hacer clic** en el elemento de la barra de estado que muestra el número de participantes en la sesión.
 
-![Icono de la barra de estado de usuario de captura de pantalla que muestra](../media/vscode-user-status.png)
+![Captura de pantalla que muestra el icono de la barra de estado del usuario](../media/vscode-user-status.png)
 
-A continuación, aparecerá una lista de todos los participantes en la sesión. A diferencia de hacer clic en el icono de anclaje, esta lista aparece incluso si hay solo una persona en la sesión con usted para que pueda ver rápidamente siempre que alguien se encuentra. Para fines de comodidad, al igual que el icono de anclaje, a continuación, puede elegir uno de los participantes en la lista mantengan con ellos. Si desea salir en su lugar, presione ESC.
+De ese modo, aparecerá una lista de todos los participantes de la sesión. A diferencia de lo que ocurre cuando se hace clic en el icono de anclaje, esta lista aparece incluso si hay solo una persona más en la sesión junto con usted, por lo que siempre podrá ver rápidamente dónde se ubica alguien más. Para su comodidad, del mismo modo que con el icono de anclaje, puede elegir uno de los participantes de la lista para seguirlo. Si prefiere salir, presione Escape.
 
-## <a name="focusing"></a>Centrado
+## <a name="focusing"></a>Atracción de la atención de los participantes
 
-En ocasiones puede que desee todos los usuarios en una sesión de colaboración para llegar y eche un vistazo a algo que está haciendo. Live Share le permite hacer que todo el mundo "Centrar" su atención en una notificación que facilita la tarea para que puedan disponer de vuelta.
+En algunas ocasiones puede que quiera que todos quienes participan en una sesión de colaboración vean lo que está haciendo. Live Share le pide solicitar que todo el mundo "centre" su atención en usted con una notificación que les facilita la tarea de seguirle.
 
-Abra la pestaña personalizada de Live Share en la barra de actividad de VS Code o la vista del explorador de recursos compartidos de Live y seleccione el icono "Centrarse participantes".
+Abra la pestaña personalizada Live Share en la barra de actividades de VS Code o la vista Explorador de Live Share y seleccione el icono "Atraer la atención de los participantes".
 
-![Icono de enfoque viewlet](../media/vscode-focus-viewlet.png)
+![Icono para atraer la atención de los participantes del viewlet](../media/vscode-focus-viewlet.png)
 
-Una vez que ejecute el comando, todos los usuarios de la sesión de colaboración, a continuación, recibirá una notificación que ha solicitado su atención.
+Una vez que ejecute el comando, todos los participantes de la sesión de colaboración recibirán una notificación de que solicita su atención.
 
-![Notificación del sistema de foco](../media/vscode-focus-toast.png)
+![Notificación del sistema sobre atraer la atención de los participantes](../media/vscode-focus-toast.png)
 
-Puede, a continuación, haga clic en "Seguir" directamente desde la notificación cuando haya terminado poner su enfoque en el.
+De ese modo, ellos pueden simplemente hacer clic en "Seguir" directo en la notificación cuando estén listos para centrar su atención en usted.
 
 ## <a name="co-debugging"></a>Depuración conjunta
 
-Característica de depuración de Visual Studio Live Share colaboración es una manera eficaz y única para depurar un problema. Más allá de lo que permite una experiencia de colaboración solucionar problemas, también y otros participantes en la sesión de la capacidad para investigar los problemas que pueden ser específica del entorno proporcionando una sesión de depuración compartida en la máquina del host.
+La característica de depuración colaborativa de Visual Studio Live Share es una manera única y eficaz de depurar un problema. Más allá de permitir una experiencia de colaboración para solucionar problemas, también le brinda a usted y a otros participantes de la sesión la capacidad de investigar los problemas que puedan ser específicos del entorno al proporcionar una sesión de depuración compartida en la máquina del anfitrión.
 
-> **Sugerencia de seguridad:** Dado que todos los participantes pueden independientemente navegar y editar archivos, como un host, es posible que desee restringir los archivos que los invitados pueden tener acceso a su proyecto a través de un. archivo vsls.json. También debe tener en cuenta que el acceso de consola/REPL significa que los participantes pueden ejecutar comandos en el equipo de forma que solo debe depurar conjuntamente con los que confíe. Como invitado, también es importante tener en cuenta que no es posible que pueda seguir el depurador avanza hasta algunos archivos restringidos de archivos como resultado de esta configuración. Consulte [controlar el acceso de archivo y visibilidad](../reference/security.md#controlling-file-access-and-visibility) para obtener más información.
+> **Sugerencia de seguridad:** Como todos los participantes pueden navegar y editar archivos de manera independiente, como anfitrión, es posible que quiera restringir los archivos a los que pueden acceder los invitados en el proyecto a través de un archivo .vsls.json. También debe tener en cuenta que el acceso a la consola/REPL significa que los participantes pueden ejecutar comandos en su máquina, por lo que solo debe depurar en conjunto con personas de confianza. Como invitado, también es importante tener en cuenta que es posible que no pueda seguir al depurador, porque entra en ciertos archivos restringidos como resultado de esta configuración. Consulte [Control de la visibilidad y el acceso de archivos](../reference/security.md#controlling-file-access-and-visibility) para más información.
 
-Usando simple.
+Usarlo es simple.
 
-1. Asegúrese de que el host y todos los invitados tengan instalada la extensión de depuración adecuada. (Técnicamente esto no siempre es necesario, pero suele ser una buena idea).
+1. Asegúrese de que tanto el anfitrión como todos los invitados tengan instalada la extensión de depuración correspondiente. (No siempre es técnicamente necesaria, pero es una buena idea hacerlo).
 
-2. Como el host, si aún no está configurado para el proyecto, debe [configurar launch.json](https://code.visualstudio.com/Docs/editor/debugging#_launch-configurations) para depurar la aplicación desde VS Code como lo haría normalmente. No se requiere ninguna configuración especial.
+2. Como anfitrión, si todavía no está configurado para el proyecto, debe [configurar launch.json](https://code.visualstudio.com/Docs/editor/debugging#_launch-configurations) para depurar la aplicación desde VS Code como lo haría normalmente. No se requiere ninguna configuración especial.
 
-3. A continuación, el host puede iniciar la depuración con el botón de la pestaña depurar de forma habitual.
+3. A continuación, el anfitrión puede empezar a depurar con el botón de la pestaña de depuración, tal como lo haría normalmente.
 
     ![Botón de depuración de VS Code](../media/vscode-debug-button.png)
 
     > [!TIP]
-    > También puede participar en sesiones de VS Code y viceversa de depuración de Visual Studio! Consulte la [instrucciones en Visual Studio](vs.md#co-debugging) en depuración conjuntamente para obtener más información.
+    > También puede participar en las sesiones de depuración de Visual Studio desde VS Code y viceversa. Consulte las [instrucciones de Visual Studio](vs.md#co-debugging) para más información sobre la depuración conjunta.
 
-Una vez que el depurador se adjunta en el lado del host, se adjuntan también automáticamente todos los invitados. Aunque hay una "sesión de depuración" que se ejecuta en la máquina del host, todos los participantes están conectados a él y tienen su propia vista.
+Una vez que el depurador se asocia en el lado del anfitrión, también se ajustan automáticamente todos los invitados. Mientras hay una "sesión" de depuración ejecutándose en la máquina del anfitrión, todos los participantes se conectan a ella y tienen su propia vista.
 
-![Adjuntadas el depurador de VS Code](../media/vscode-debugger.png)
+![Depurador de VS Code asociado](../media/vscode-debugger.png)
 
-Cualquier persona puede avanzar por el proceso de depuración que permite cambiar sin problemas entre colaboradores sin tener que negociar el control.
+Cualquier persona puede desplazarse por el proceso de depuración, lo que permite cambiar sin problemas entre los colaboradores sin tener que negociar el control.
 
 > [!NOTE]
 > Consulte la [información sobre compatibilidad con la plataforma](../reference/platform-support.md) para ver el estado de las características de depuración por lenguaje o plataforma.
 
-Cada colaborador puede investigar distintas variables, saltar a distintos archivos de la pila de llamadas, inspeccionar variables e incluso agregar o quitar puntos de interrupción. Características de edición conjunta, a continuación, permitir que cada participante oradores realizar un seguimiento en los demás se encuentran para proporcionar la capacidad única de cambiar sin problemas al mismo tiempo investigando distintos aspectos del problema y depuración en colaboración.
+Cada colaborador puede investigar distintas variables, saltar a distintos archivos en la pila de llamadas, inspeccionar las variables e incluso agregar o quitar puntos de interrupción. Luego, las características de edición conjunta permiten que cada orador participante haga un seguimiento de dónde se encuentran ubicados los demás para brindar la capacidad única de cambiar sin complicaciones entre los distintos aspectos del problema que se investigan en simultáneo y la depuración colaborativa.
 
 > [!NOTE]
-> Mientras está en una sesión de colaboración de solo lectura, un invitado no pueda recorrer el proceso de depuración. Pueden, sin embargo, todavía agregar o quitar puntos de interrupción e inspeccionar variables.
+> Mientras esté en una sesión de colaboración de solo lectura, un invitado no podrá desplazarse por el proceso de depuración. Sin embargo, sí puede agregar o quitar puntos de interrupción e inspeccionar variables.
 
-![Animación de depuración simultáneas](../media/co-debug.gif)
+![Animación de la depuración simultánea](../media/co-debug.gif)
 
-### <a name="change-when-vs-code-joins-debugging-sessions"></a>Al cambiar las combinaciones de las sesiones de depuración de VS Code
+### <a name="change-when-vs-code-joins-debugging-sessions"></a>Cambio cuando VS Code se une a las sesiones de depuración
 
-De forma predeterminada, como invitado, deberá se adjunta automáticamente a cuando se comparten por el host de sesiones de depuración. Sin embargo, en algunos casos, se puede encontrar este comportamiento perjudiciales. Afortunadamente, puede cambiarlo como sigue:
+De manera predeterminada, como invitado, se lo asociará automáticamente a las sesiones de depuración cuando el anfitrión las comparta. Sin embargo, en algunos casos, puede considerar que este comportamiento es problemático. Afortunadamente, puede cambiarlo de la siguiente manera:
 
-Simplemente **editar settings.json** (archivo > Opciones > configuración), agregue una de las líneas siguientes y, a continuación, reinicie VS Code:
+Simplemente debe **editar settings.json** (Archivo > Preferencias > Configuración), agregar una de las líneas siguientes y, luego, reiniciar VS Code:
 
 | Parámetro | Comportamiento |
 |---------|----------|
-|``"liveshare.joinDebugSessionOption":"Automatic"`` | El valor predeterminado. Como invitado, deberá unirse automáticamente a cualquier sesión de depuración compartido se inicia el host. |
-| ``"liveshare.joinDebugSessionOption":"Prompt"`` | Como invitado, se le preguntará si desea participar en una sesión de depuración compartida cuando se inicie el host. |
-| ``"liveshare.joinDebugSessionOption":"Manual"`` | Como invitado, necesita combinar manualmente las sesiones de depuración. Consulte [separar y volver a adjuntar](#detaching-and-reattaching). |
+|``"liveshare.joinDebugSessionOption":"Automatic"`` | El valor predeterminado. Como invitado, participará automáticamente en cualquier sesión de depuración que inicie el anfitrión. |
+| ``"liveshare.joinDebugSessionOption":"Prompt"`` | Como invitado, se le preguntará si quiere participar en una sesión de depuración compartida cuando la inicie el anfitrión. |
+| ``"liveshare.joinDebugSessionOption":"Manual"`` | Como invitado, deberá participar manualmente en cualquier sesión de depuración. Consulte [Desasociación y nueva asociación](#detaching-and-reattaching). |
 
-### <a name="detaching-and-reattaching"></a>Separar y volver a adjuntar
+### <a name="detaching-and-reattaching"></a>Desasociación y nueva asociación
 
-Un invitado, puede desear detener temporalmente la depuración. Afortunadamente, basta con hacer clic en el icono "Detener" en la barra de herramientas de depuración para desasociar al depurador sin que afecte a otros invitados o el host.
+Es posible que un invitado quiera detener temporalmente la depuración. Afortunadamente, puede simplemente hacer clic en el icono "Detener" de la barra de herramientas de depuración para desasociar el depurador sin afectar al anfitrión ni a otros invitados.
 
-![Botón de detención de depurador de código de VS](../media/vscode-debug-stop.png)
+![Botón de detención del depurador de VS](../media/vscode-debug-stop.png)
 
-Si ha actualizado la configuración por lo que ya no la asociación automática o si simplemente desea volver a adjuntar más adelante, puede hacerlo presionando **Ctrl + Mayús + P / Cmd + Mayús + P** o **al hacer clic en** en el elemento de barra de estado de estado de sesión y al seleccionar "Conectar a unos depuración sesión compartida".
+Si actualizó la configuración y ya no se asocia de manera automática o si simplemente quiere volver a asociarse más adelante, puede presionar **Ctrl+Mayús+P / Cmd+Mayús+P** o **hacer clic** en el elemento de estado de la barra de estado y seleccionar "Attach to a Shared Debugging Session"(Asociar a una sesión de depuración compartida).
 
-![VS Code adjuntar depurador](../media/vscode-reattach.png)
+![Asociar depurador de VS Code](../media/vscode-reattach.png)
 
 ### <a name="sharing-the-running-application-in-a-browser"></a>Uso compartido de la aplicación en ejecución en un explorador
 
-Código de Visual Studio no tiene el concepto de un conocido "puerto de aplicación web", como Visual Studio para tipos de proyecto, como ASP.NET. Sin embargo, si va a unir a una sesión de colaboración de un host de Visual Studio, es posible que automáticamente aparece el explorador predeterminado al iniciar, es decir, a continuación, automáticamente se conecta a las aplicaciones en ejecución del host la depuración. Consulte [características de Visual Studio](vs.md#automatic-web-app-sharing) para obtener más detalles.
+Visual Studio Code no tiene el concepto de un "puerto de aplicación web" conocido como Visual Studio para tipos de proyecto como ASP.NET. Sin embargo, si va a participar en una sesión de colaboración desde un anfitrión de Visual Studio, puede ver automáticamente que el explorador predeterminado aparece cuando se inicia la depuración y que luego se conecta automáticamente a las aplicaciones en ejecución del anfitrión. Consulte [Características de Visual Studio](vs.md#automatic-web-app-sharing) para más detalles.
 
-Como un host, puede conseguir algo similar al compartir manualmente la aplicación u otros extremos, como los servicios RESTful mediante la característica de "Servidor Local de recursos compartidos". Los invitados de Visual Studio y VS Code, a continuación, pueden abrir un explorador en el mismo puerto localhost para ver la aplicación en ejecución.  Consulte [compartir un servidor](#share-a-server) para obtener más detalles.
+Como anfitrión, puede lograr algo similar si comparte manualmente la aplicación u otros puntos de conexión, como los servicios RESTful, a través de la característica "Share Local Server" (Compartir servidor local). Los invitados de Visual Studio y VS Code entonces pueden abrir un explorador en el mismo puerto localhost para ver la aplicación en ejecución.  Consulte [Uso compartido de un servidor](#share-a-server) para más detalles.
 
-## <a name="share-a-server"></a>Compartir un servidor
+## <a name="share-a-server"></a>Uso compartido de un servidor
 
-De vez en cuando, como un host de sesión de colaboración, es posible que desee compartir una aplicación web u otros localmente que ejecutan servidores o servicios con los invitados. Esto puede variar desde otros puntos de conexión RESTful a las bases de datos y otros servidores. Compartir Live de Visual Studio le permite especificar un número de puerto local, opcionalmente, asignarle un nombre y, después, compartirlo con todos los invitados.
+De vez en cuando, como anfitrión de la sesión de colaboración, puede darse el caso de que quiera compartir una aplicación web u otro servicio o servidor en ejecución local con los invitados. Esto puede ir desde otros puntos de conexión de RESTful a bases de datos y otros servidores. Visual Studio Live Share le permite especificar un número de puerto local, darle un nombre si así lo quiere y compartirlo con todos los invitados.
 
-Los invitados, a continuación, podrá tener acceso al servidor que ha compartido en ese puerto desde su propio equipo local en el mismo puerto exacto. Por ejemplo, si comparte un servidor web **que se ejecuta en el puerto 3000**, el invitado puede tener acceso a ese mismo servidor web en ejecución en sus **propia máquina** en http://localhost:3000! Esto se logra a través de un túnel SSH o SSL seguro entre el host y los invitados y autenticado a través del servicio, por lo que puede estar seguro de que sólo los de la sesión de colaboración tienen acceso.
+A continuación, los usuarios podrán acceder al servidor que compartió en ese puerto desde su propia máquina local exactamente en el mismo puerto. Por ejemplo, si compartió un servidor web **en ejecución en el puerto 3000**, el invitado puede acceder a ese mismo servidor web en ejecución en su **propia máquina** en http://localhost:3000. Esto se logra a través de un túnel SSH o SSL entre el anfitrión y los invitados y se autentica a través del servicio, por lo que puede estar seguro de que solo quienes participen de la sesión de colaboración tienen acceso.
 
-> **Sugerencia de seguridad:** Como un host, debe ser muy selectivo con los puertos que comparte con los invitados y ajustarse a los puertos aplicación (en lugar de compartir un puerto del sistema). Para los invitados, los puertos compartidos se comportarán exactamente como lo harían si se estaba ejecutando el servicio de servidor en su propio equipo. Esto es muy útil, pero si se comparte un puerto incorrecto también puede ser arriesgado.
+> **Sugerencia de seguridad:** Como anfitrión, debe ser muy selectivo con los puertos que comparte con los invitados y limitarse a los puertos de aplicación (en lugar de compartir un puerto de sistema). En el caso de los invitados, los puertos compartidos se comportarán exactamente igual que si el servidor o servicio se estuviese ejecutando en su propia máquina. Esto es muy útil, pero podría ser también arriesgado si es que se comparte el puerto incorrecto.
 
-Por motivos de seguridad, solo los servidores que se ejecutan en los puertos que especifique están disponibles para otros invitados. Afortunadamente, resulta fácil agregar uno de ellos como la sesión de colaboración **host**. Esta es la manera de hacerlo:
+Por motivos de seguridad, solo los servidores que se ejecutan en los puertos que especifica estarán disponibles a los demás invitados. Afortunadamente, es fácil agregar uno como el **anfitrión** de la sesión de colaboración. Esta es la manera de hacerlo:
 
-1. Abra la pestaña personalizada de Live Share en la barra de actividad de VS Code o la vista del explorador de recursos compartidos de Live y seleccione "recurso compartido servidor..." entrada o haga clic en el icono.
+1. Abra la pestaña personalizada Live Share en la barra de actividades de VS Code o la vista Explorador de Live Share y seleccione la entrada "Share server…" (Compartir servidor) o haga clic en el icono.
 
-    ![Servidor local de recurso compartido de código de VS](../media/vscode-share-local-server-viewlet.png)<br />
+    ![Compartir servidor local de VS Code](../media/vscode-share-local-server-viewlet.png)<br />
 
-1. Escriba el número de puerto que se ejecuta en el servidor y, opcionalmente, un nombre.
+1. Escriba el número de puerto en el que se ejecuta el servidor y, si quiere, un nombre.
 
-    ![Captura de pantalla de símbolo del sistema del número de puerto](../media/vscode-enter-port.png)<br />
+    ![Captura de pantalla de la solicitud del número de puerto](../media/vscode-enter-port.png)<br />
 
-Ya está. El servidor en el puerto que especificó se asignarán al host local de cada invitado en el mismo puerto (a menos que ese puerto ya estaba ocupado).
+Ya está. El servidor en el puerto que especificó ahora se asignará al localhost de cada invitado en el mismo puerto (a menos que ya esté ocupado).
 
-Si el puerto ya está en uso en el equipo de invitado, automáticamente se selecciona uno diferente. Afortunadamente, como un invitado, puede ver una lista de puertos compartidos actualmente (por nombre si se especifica) en la vista de explorador Live de recurso compartido o una pestaña personalizada en la barra de actividades de VS Code y buscar en la lista de servidores compartidos. Al seleccionar una entrada, abre ese servidor en el explorador. También puede haga clic y seleccione la opción para copiar el vínculo en el servidor en el Portapapeles.
+Si el puerto ya está en uso en la máquina del invitado, se seleccionará otro automáticamente. Por fortuna, como invitado puede ver una lista de los puertos actualmente compartidos (por nombre si se especificó) en la pestaña personalizada o la vista Explorador de Live Share en la barra de actividades de VS Code y ver debajo de la lista de servidores compartidos. Si se selecciona una entrada, ese servidor se abre en el explorador. También puede hacer clic con el botón derecho y seleccionar la opción para copiar el vínculo al servidor en el Portapapeles.
 
-![Servidor local de acceso de código de VS](../media/vscode-access-shared-server-viewlet.png)<br />
+![Servidor local de acceso de VS Code](../media/vscode-access-shared-server-viewlet.png)<br />
 
-Tenga en cuenta que *invitados no* controlar qué puertos en la máquina del host se comparten por motivos de seguridad.
+Tenga en cuenta que *los invitados no pueden* controlar qué puertos de la máquina del anfitrión se comparten por motivos de seguridad.
 
-Para **detener** uso compartido de un servidor local como el host, mantenga el mouse sobre la entrada del servidor en la lista de servidores compartidos en la vista del explorador de recursos compartidos en vivo o la pestaña personalizada y haga clic en el icono de "Servidor de dejar de compartir".
+Para **dejar** de compartir un servidor local como el anfitrión, mantenga el puntero sobre la entrada del servidor en la lista de los servidores compartidos en la pestaña personalizada o la vista Explorador de Live Share y haga clic en el icono "Unshare server" (Dejar de compartir el servidor).
 
-![Frente a código Detener uso compartido de servidor](../media/vscode-stop-sharing-server-viewlet.png)<br />
+![Dejar de compartir el servidor en VS Code](../media/vscode-stop-sharing-server-viewlet.png)<br />
 
-## <a name="share-a-terminal"></a>Compartir un terminal
+## <a name="share-a-terminal"></a>Uso compartido de un terminal
 
-El desarrollo moderno hace un uso frecuente de una amplia gama de herramientas de línea de comandos. Afortunadamente, compartir Live le permite, como un host, para "compartir opcionalmente un terminal" con los invitados. El terminal compartido puede ser de solo lectura o de colaboración totalmente por lo que usted y los invitados pueden ejecutar comandos y ver los resultados. Puede dar visibilidad de los invitados a la salida de terminal o bien permitirles obtener prácticas y ejecución de pruebas, compilaciones o problemas de específicas del entorno incluso de evaluación de errores que se producen sólo en el equipo.
+El desarrollo moderno hace un uso frecuente de una amplia gama de herramientas de línea de comandos. Afortunadamente, como anfitrión, Live Share le permite, de forma opcional, "compartir un terminal" con los invitados. El terminal compartido puede ser de solo lectura o totalmente colaborativo, para que tanto usted como los invitados puedan ejecutar comandos y ver los resultados. Puede dar a los invitados visibilidad sobre la salida del terminal o permitirles obtener experiencias prácticas y ejecutar pruebas, compilaciones o incluso evaluar la prioridades de los problemas específicos del entorno que solo aparecen en su máquina.
 
-Sin embargo, los elementos terminales son **no** comparten de forma predeterminada ya que proporcionan los invitados acceso de solo lectura al menos a la salida de comandos que ejecute (si no la capacidad de ejecutar comandos ellos mismos). Este modo, puede ejecutar comandos en terminales locales sin riesgo libremente y sólo compartir cuando en realidad debe hacerlo. Además, solo los hosts pueden iniciar terminales compartidos para evitar que los invitados de iniciarse una y hacer algo que no espera ni viendo.
+Sin embargo, los terminales **no** se comparten de manera predeterminada, porque dan a los invitados al menos acceso de solo lectura a la salida de los comandos que usted ejecuta (si es que no la capacidad de ejecutar los comandos mismos). De este modo, puede ejecutar libremente los comandos en los terminales locales sin riesgo y solo compartirlos cuando de verdad tenga que hacerlo. Además, solo los anfitriones pueden iniciar los terminales compartidos para impedir que los invitados inicien uno y hagan algo inesperado o sin supervisión.
 
-Como un host, puede compartir un terminal, abre la pestaña personalizada de Live compartir en la barra de actividad de VS Code o la vista del explorador de compartir en vivo y seleccione "recurso compartido de servidor..." entrada o al hacer clic en el icono.
+Como anfitrión, para compartir un terminal puede abrir la pestaña personalizada Live Share en la barra de actividades de VS Code o la vista Explorador de Live Share y seleccionar la entrada "Share server…" (Compartir servidor) o hacer clic en el icono.
 
-![Recurso compartido de terminal de VS Code](../media/vscode-share-terminal-viewlet.png)<br />
+![Uso compartido del terminal en VS Code](../media/vscode-share-terminal-viewlet.png)<br />
 
-En este momento, puede seleccionar sólo lectura o lectura/escritura terminal en el menú. Si el terminal es lectura/escritura, todo el mundo puede escribir en el terminal incluido el host, lo que facilita la intervenir si un invitado está haciendo algo que no le gusta. Sin embargo, para estar seguros, debería **únicamente conceda acceso de lectura/escritura a los invitados cuando se sabe que necesitan realmente** y sígala terminales de solo lectura para escenarios donde desea que el invitado para ver la salida de los comandos que ejecute.
+En este momento, puede seleccionar un terminal de solo lectura o de lectura y escritura en el menú. Si el terminal es de lectura/escritura, todos los participantes pueden escribir en el terminal, incluido el anfitrión, lo que permite intervenir fácilmente si un invitado hace algo que no le gusta. Sin embargo, para estar seguros, debería **darle acceso de lectura/escritura a los invitados solo cuando sabe que realmente lo necesitan**  y limitarse a los terminales de solo lectura en escenarios donde quiere que un invitado solo vea la salida de los comandos que ejecuta.
 
 > [!NOTE]
-> Si la sesión de colaboración está en modo de solo lectura, los terminales de sólo lectura pueden compartirse por el host.
+> Si la sesión de colaboración está en modo de solo lectura, el anfitrión solo puede compartir los terminales de solo lectura.
 
-![Solo lectura o lectura/escritura selección](../media/vscode-share-terminal-ro-rw.png)<br />
+![Selección de solo lectura o de lectura/escritura](../media/vscode-share-terminal-ro-rw.png)<br />
 
-Una vez que haya seleccionado el tipo de terminal compartida que desee iniciar, aparecerá un nuevo terminal compartido en la ficha de terminales de VS Code.
+Una vez que haya seleccionado el tipo de terminal compartido que quiere iniciar, aparecerá un terminal compartido nuevo en la pestaña de terminales de VS Code.
 
-![Ejecución de terminal compartida](../media/vscode-share-terminal-up.png)<br />
+![Terminal compartido en ejecución](../media/vscode-share-terminal-up.png)<br />
 
-Si se comparten varios terminales, o el foco está en una ficha diferente, puede llevar el foco a un terminal específico mediante la selección de la entrada en la lista de los terminales compartido.
+Si se comparten varios terminales o si su atención está en otra pestaña, puede atraer la atención a un terminal específico si selecciona la entrada en la lista de terminales compartidos.
 
-![Terminal compartida llevar el foco](../media/vscode-shared-terminal-focus.png)<br />
+![Centrar la atención en un terminal compartido](../media/vscode-shared-terminal-focus.png)<br />
 
-Para finalizar la sesión de terminal, simplemente escriba exit, cierre la ventana del terminal o haga clic en el icono "Terminal de dejar de compartir" en la vista del explorador de recursos compartidos en vivo o pestaña personalizada y todos los usuarios se desconectarán.
+Para finalizar la sesión del terminal, solo debe escribir exit (salir), cerrar la ventana del terminal o hacer clic en el icono "Unshare terminal" (Dejar de compartir el terminal) en la pestaña personalizada o la vista Explorador de Live Share y se desconectará a cada uno de los participantes.
 
 ## <a name="session-states"></a>Estados de sesión
 
-Una vez que se iniciaron o unido a la sesión de colaboración y dispone de acceso al contenido compartido, los elementos de barra de estado de Visual Studio Live Share actualizan su aspecto para reflejar el estado de la sesión de colaboración activos.
+Una vez que inicie una sesión de colaboración o que se una a ella y tenga acceso al contenido compartido, los elementos de la barra de estado de Visual Studio Live Share actualizarán su apariencia para reflejar el estado de la sesión de colaboración activa.
 
-Estos son los Estados que normalmente solo verá:
+Estos son los estados que verá habitualmente:
 
 | Estado | Barra de estado | Descripción |
 |-------|--------------------|-------------|
-| inactivo | ![Estado del código de VS: inactivo](../media/vscode-status-share.png) | No hay ninguna sesión de colaboración active y nada se comparte. |
-| Host: Uso compartido en curso | ![Estado del código de VS: compartir en curso](../media/vscode-status-sharing.png)| Se está iniciando una sesión de colaboración y uso compartido de contenido comenzará en breve. |
-| Host: Uso compartido de recursos | ![Estado del código de VS: uso compartido de activos ](../media/vscode-status-active.png)| Se activa una sesión de colaboración y contenido se comparte. |
-| Host: Uso compartido de solo lectura | ![Estado del código de VS: uso compartido de solo lectura](../media/vscode-status-sharing-read-only.png)| Uso compartido de una sesión de colaboración de solo lectura. |
-| Invitado: Unirse a la sesión | ![Estado del código de VS: unirse a](../media/vscode-status-joining.png)| Unirse a una sesión de colaboración existente. |
-| Invitado: Unirse | ![Estado del código de VS: unido](../media/vscode-status-active.png) | Unido y conectado a una sesión de colaboración active y recepción de contenido compartido. |
-| Invitado: Unido a solo lectura | ![Estado del código de VS: Unido de solo lectura](../media/vscode-status-joined-read-only.png) | Unido y conectado a una sesión de colaboración activa de solo lectura. |
+| Inactivo | ![Estado de VS Code: inactivo](../media/vscode-status-share.png) | No hay ninguna sesión de colaboración activa y no se comparte nada. |
+| Anfitrión: Uso compartido en curso | ![Estado de VS Code: uso compartido en curso](../media/vscode-status-sharing.png)| Se inicia una sesión de colaboración y pronto se empezará a compartir contenido. |
+| Anfitrión: Uso compartido de recursos | ![Estado de VS Code: uso compartido activo ](../media/vscode-status-active.png)| Hay una sesión de colaboración activa y se comparte contenido. |
+| Anfitrión: Uso compartido de solo lectura | ![Estado de VS Code: uso compartido de solo lectura](../media/vscode-status-sharing-read-only.png)| Se comparte una sesión de colaboración de solo lectura. |
+| Invitado: Participación en la sesión | ![Estado de VS Code: participación](../media/vscode-status-joining.png)| Participación en una sesión de colaboración existente. |
+| Invitado: participando | ![Estado de VS Code: participando](../media/vscode-status-active.png) | Se conectó y está participando en una sesión de colaboración activa y recibe contenido compartido. |
+| Invitado: Participando en solo lectura | ![Estado de VS Code: participando en solo lectura](../media/vscode-status-joined-read-only.png) | Se conectó y está participando en una sesión de colaboración de solo lectura activa. |
 
-## <a name="guest-limitations"></a>Limitaciones de invitado
+## <a name="guest-limitations"></a>Limitaciones de los invitados
 
-Aunque actualmente hay algunos puntos débiles invitados experimentará al usar las características que se ha descrito anteriormente, los hosts de sesión de colaboración conservan toda la funcionalidad de su herramienta preferida. Para obtener más información, vea las secciones siguientes:
+Si bien actualmente los invitados pueden encontrarse con algunas limitaciones al usar las características ya descritas, los anfitriones de la sesión de colaboración conservan toda la funcionalidad de su herramienta preferida. Para obtener más información, vea las secciones siguientes:
 
 - [Compatibilidad con lenguajes y plataformas](../reference/platform-support.md)
 - [Compatibilidad con extensiones](../reference/extensions.md)
-- [Todos los errores principales, las solicitudes de características y limitaciones](https://aka.ms/vsls-issues)
-- [Todas las solicitudes de características y limitaciones](https://aka.ms/vsls-feature-requests)
+- [Todos los errores importantes, limitaciones y solicitudes de características](https://aka.ms/vsls-issues)
+- [Todas las limitaciones y solicitudes de características](https://aka.ms/vsls-feature-requests)
 - [Solución de problemas](../troubleshooting.md)
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 Consulte estos artículos adicionales para obtener más información.
 
-- [Inicio rápido: Comparta su primer proyecto](../quickstart/share.md)
-- [Inicio rápido: Únase a la primera sesión](../quickstart/share.md)
-- [Cómo: Colaborar mediante Visual Studio](vs.md)
+- [Inicio rápido: Uso compartido de un primer proyecto](../quickstart/share.md)
+- [Inicio rápido: Participación en una primera sesión](../quickstart/share.md)
+- [Colaboración mediante Visual Studio](vs.md)
 - [Requisitos de conectividad de Live Share](../reference/connectivity.md)
 - [Características de seguridad de Live Share](../reference/security.md)
 - [Detalles de la instalación de Linux](../reference/linux.md)

@@ -1,6 +1,6 @@
 ---
-title: 'Únase a Inicio rápido: Visual Studio Live Share | Microsoft Docs'
-description: Un tutorial resumido acerca de cómo combinar la primera sesión de colaboración de Visual Studio Live Share.
+title: 'Inicio rápido de participación: Visual Studio Live Share | Microsoft Docs'
+description: Un tutorial resumido sobre cómo unirse a la primera sesión de colaboración de Visual Studio Live Share.
 ms.custom: ''
 ms.date: 03/22/2018
 ms.reviewer: ''
@@ -15,7 +15,7 @@ ms.workload:
 - liveshare
 ms.openlocfilehash: d4280484aaa3fd4ac204588bf4aefc4e3ac51871
 ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/02/2019
 ms.locfileid: "57256376"
@@ -26,22 +26,22 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# <a name="quickstart-join-your-first-collaboration-session"></a>Inicio rápido: Únase a la primera sesión de colaboración
+# <a name="quickstart-join-your-first-collaboration-session"></a>Inicio rápido: Unirse a la primera sesión de colaboración
 
 > **Nota: Visual Studio Live Share está actualmente en versión preliminar. Las características y la experiencia de usuario no son finales.**
 
-Le damos la bienvenida a Visual Studio Live Share. Live Share le permite editar y depurar en colaboración con otros usuarios en tiempo real, independientemente del lenguaje de programación que use o los tipos de aplicaciones que compile. Permite al instante y segura para unirse a proyecto actual de un compañero de equipo y, a continuación, según sea necesario, escriba en la depuración de las sesiones, ver y editar las instancias de terminales, vea aplicaciones web de host local, las llamadas de voz de combinación y mucho más!
+Le damos la bienvenida a Visual Studio Live Share. Live Share le permite editar y depurar en colaboración con otros usuarios en tiempo real, independientemente del lenguaje de programación que use o los tipos de aplicaciones que compile. Permite unirse al instante y de forma segura al proyecto actual de un compañero de equipo y, después, según sea necesario, entrar en sesiones de depuración, ver y modificar instancias del terminal, ver aplicaciones web de host local, participar en llamadas de voz y mucho más.
 
-¿A punto para comenzar? Colaboración en equipo debería ser tan rápido y natural, que resulta difícil para no hacerlo! Por este motivo, Visual Studio Live Share simplifica la introducción, para que puede empezar a compartir su trabajo y las ideas sin problemas.
+¿A punto para comenzar? La colaboración en equipo debería ser tan rápida y natural que resulta difícil no hacerlo. Por este motivo, Visual Studio Live Share simplifica los primeros pasos, para que pueda empezar a compartir sus ideas y su trabajo sin problemas.
 
 > [!TIP]
 > ¿Sabía que puede *participar en su propia sesión de colaboración*? Esto le permite probar Live Share por su cuenta o poner en marcha una instancia de Visual Studio o VS Code y conectarse a ella de forma remota. Incluso puede usar la misma identidad en ambas instancias. ¡Compruébelo!
 
 Siga estos pasos para participar en una sesión de colaboración.
 
-## <a name="1-install-the-extension"></a>1. Instalar la extensión
+## <a name="1-install-the-extension"></a>1. Instalación de la extensión
 
-La extensión de la instalación es sencilla. Siga estos pasos:
+La instalación de la extensión es sencilla. Tan solo tiene que seguir estos pasos:
 
 <table style="width: 100%; border:none;">
 <tr>
@@ -78,32 +78,32 @@ La extensión de la instalación es sencilla. Siga estos pasos:
 
 Al descargar y usar Visual Studio Live Share, acepta los [términos de licencia](https://aka.ms/vsls-license) y la [declaración de privacidad](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). Si surge algún problema, consulte la [solución de problemas](../troubleshooting.md).
 
-## <a name="2-optional-join-as-a-read-only-guest-in-vs-code"></a>2. [combinación de opcional] como invitado de solo lectura en VS Code
+## <a name="2-optional-join-as-a-read-only-guest-in-vs-code"></a>2. [Opcional] Participación como invitado de solo lectura en VS Code
 
-En VS Code, después de instalar la extensión Live Share, reiniciando y esperando las dependencias para finalizar la instalación, puede dar el salto y participar en una sesión de colaboración como invitado de solo lectura.
+En VS Code, después de instalar la extensión Live Share, reiniciar y esperar a que se terminen de instalar las dependencias, puede participar en una sesión de colaboración como invitado de solo lectura.
 
 > [!NOTE]
-> Si desea realizar modificaciones en el código que se va a unir, deberá [inicie sesión en](../quickstart/join.md#3-Sign-in).
+> Si quiere realizar modificaciones en el código al que se va a unir, tendrá que [iniciar sesión](../quickstart/join.md#3-Sign-in).
 
-Abre (o volver a abre) el vínculo de invitación en un explorador y recibirá una notificación que desea que el explorador iniciar VS Code. Deje que se inicie y empezará a conectarse a la sesión de colaboración.
+Abra (o vuelva a abrir) el vínculo de invitación en un explorador, y recibirá una notificación en la que se indica que el explorador quiere iniciar VS Code. Deje que se inicie y empezará a conectarse a la sesión de colaboración.
 
-Cuando se inicia VS Code, obtendrá una notificación del sistema para iniciar sesión. Seleccione "Continuar como invitado de solo lectura" unirse a la sesión.
+Cuando se inicie VS Code, recibirá una notificación en la que se le solicita que inicie sesión. Haga clic en "Continuar como invitado de solo lectura" para unirse a la sesión.
 
-![Unir como sesión como una notificación del sistema de invitado de solo lectura](../media/vscode-read-only-guest.png)
+![Notificación del sistema para unirse a la sesión como invitado de solo lectura](../media/vscode-read-only-guest.png)
 
-Se le pedirá que escriba un nombre para mostrar para ayudar a los participantes a identificar al usuario en la sesión.
+Se le pedirá que escriba un nombre para mostrar para ayudar a los participantes a identificarle en la sesión.
 
 ![Nombre de invitado de solo lectura](../media/vscode-read-only-guest-name.png)
 
-Después, les unirán en la sesión como de solo lectura. Podrá ver y navegar por el código, depuración conjunta y los servidores compartida la vista y terminales (es de solo lectura).
+Después, se unirá a la sesión como invitado de solo lectura. Podrá ver y navegar por el código, depurarlo de forma conjunta y ver los servidores y terminales compartidos (solo lectura).
 
 > [!NOTE]
-> Si desea obtener acceso de lectura/escritura para el código de más adelante, puede iniciar sesión. Haga clic en su nombre para mostrar en el estado, barra y seleccione la opción "iniciar sesión".
-![Inicio de sesión de solo lectura invitado](../media/vscode-read-only-guest-signin.png) se iniciará el explorador, y se puede iniciar sesión con una cuenta de Microsoft o GitHub.
+> Si más adelante quiere obtener acceso de lectura o escritura al código, puede iniciar sesión. Haga clic en el nombre para mostrar en la barra de estado y seleccione la opción "Iniciar sesión".
+![Inicio de sesión de invitado de solo lectura ](../media/vscode-read-only-guest-signin.png) Esto iniciará el explorador, y podrá elegir una cuenta de Microsoft o GitHub con la que iniciar sesión.
 
 ## <a name="3-sign-in"></a>3. Inicio de sesión
 
-Después de instalar la extensión Live Share, reiniciando y esperando las dependencias finalizar la instalación (VS Code), desea iniciar sesión para que otros participantes sepa quién es usted. Si omite este paso, se le pide que inicie una sesión durante el proceso de unión, o puede unirse a la sesión como un invitado de solo lectura. Haga clic en el elemento de barra de estado "compartir" (VS Code) o "inicio de sesión" botón (VS) para empezar a trabajar.
+Después de instalar la extensión Live Share, reiniciar y esperar a que se terminen de instalar las dependencias (VS Code), le recomendamos que inicie sesión para que otros participantes sepan quién es. Si omite este paso, se le pedirá que inicie sesión durante el proceso de unión, o puede unirse a la sesión como un invitado de solo lectura. Haga clic en el elemento "compartir" de la barra de estado (VS Code) o el botón "iniciar sesión" (VS) para empezar.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -116,45 +116,45 @@ Después de instalar la extensión Live Share, reiniciando y esperando las depen
 </tr>
 </table>
 
-En **VS Code**, se iniciará el explorador mientras aparecerá una notificación que le pide que inicie sesión en el inicio. Completar el inicio de sesión en proceso en el explorador, a continuación, simplemente cierre el explorador cuando haya terminado.
+En **VS Code**, se iniciará el explorador mientras aparece una notificación en la que se le pide que inicie sesión. Complete el proceso de inicio de sesión en el explorador, y después ciérrelo cuando haya terminado.
 
-![Notificación del sistema que pide que inicie sesión con un explorador web](../media/vscode-sign-in-toast.png)
+![Notificación del sistema en la que solicita el inicio de sesión con un explorador web](../media/vscode-sign-in-toast.png)
 
-> **Usuarios de Linux:** Se le pedirá que escriba un código de usuario si usa una versión anterior de Live Share (v0.3.295 o por debajo). Actualizar a la versión más reciente de la extensión o haga clic en el "teniendo problemas?" vincular después del inicio de sesión para ver el código. Consulte [aquí para obtener detalles](../use/vscode.md#sign-in-using-a-user-code).
+> **Usuarios de Linux:** Se le pedirá que escriba un código de usuario si usa una versión antigua de Live Share (versión 0.3.295 o inferior). Actualice a la versión más reciente de la extensión o haga clic en el vínculo "¿Tiene problemas?" después de iniciar sesión para ver el código. Vea [esto para obtener más detalles](../use/vscode.md#sign-in-using-a-user-code).
 
-En **Visual Studio**, Live Share usa automáticamente la [cuenta de personalización](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio). Como resultado, simplemente puede iniciar sesión como lo haría normalmente. Sin embargo, si prefiere usar un inicio de sesión diferente en que la cuenta de personalización de Visual Studio, vaya a **herramientas &gt; opciones &gt; Live Share &gt; cuenta de usuario** y seleccione credenciales diferentes.
+En **Visual Studio**, Live Share usa la [cuenta de personalización](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) de forma automática. Como resultado, solo tiene que iniciar sesión como lo haría normalmente. Pero si prefiere usar un inicio de sesión diferente al de la cuenta de personalización de Visual Studio, vaya a **Herramientas &gt; Opciones &gt; Live Share &gt; Cuenta de usuario** y seleccione otras credenciales.
 
-Consulte [solución de problemas](../troubleshooting.md#sign-in) si se sigue produciendo problemas.
+Vea [Solución de problemas](../troubleshooting.md#sign-in) si se sigue teniendo problemas.
 
-## <a name="4-openre-open-the-invite-link-in-a-browser"></a>4. Abrir/volver-open vínculo de la invitación de un explorador
+## <a name="4-openre-open-the-invite-link-in-a-browser"></a>4. Apertura o reapertura del vínculo de invitación en un explorador
 
 Ahora, basta con abrir (o volver a abrir) el vínculo de invitación en un explorador.
 
-> **Nota**: Si aún no ha instalado la extensión Live Share, se mostrarán con vínculos a marketplace de extensión. Instalar la extensión y reinicie la herramienta y vuelva a intentar.
+> **Nota**: Si aún no ha instalado la extensión Live Share, se le mostrarán vínculos al Marketplace de la extensión. Instale la extensión, reinicie la herramienta e inténtelo de nuevo.
 
-Debería recibir una notificación que desea que el explorador iniciar una herramienta de Live Share habilitado. Si se permite que inicie la herramienta seleccionada, se conectará a la sesión de colaboración, una vez que se inicia.
+Debería recibir una notificación en la que se indica que el explorador quiere iniciar una herramienta habilitada para Live Share. Si permite que inicie la herramienta seleccionada, se conectará a la sesión de colaboración una vez que se inicie.
 
-![Únase a la página](../media/join-page.png)
+![Página para participar](../media/join-page.png)
 
-Si el host está sin conexión, se le notificará en este momento en su lugar. A continuación, puede ponerse en contacto con el host y pídale que vuelva a compartir.
+Si el host está sin conexión, se le notificará en este momento. Después, puede ponerse en contacto con el host y pedirle que vuelva a compartir.
 
-> **Sugerencia de solución de problemas:** Al usar VS Code, asegúrese de haber **inicia la herramienta de al menos una vez** después de instalar la extensión y esperaron las dependencias finalizar la instalación (consulte la barra de estado) antes de abrir/volver-opening la página de invitación. ¿Sigue teniendo problemas? Consulte [combinar manualmente](../reference/manual-join.md) para obtener más información.
+> **Sugerencia de solución de problemas:** Cuando use VS Code, asegúrese de que ha **iniciado la herramienta al menos una vez** después de instalar la extensión y que ha esperado a que las dependencias terminen de instalarse (mire la barra de estado) antes de abrir o volver a abrir la página de la invitación. ¿Sigue teniendo problemas? Vea [Participar en una sesión manualmente](../reference/manual-join.md) para obtener más información.
 
-## <a name="5-collaborate"></a>5. ¡Colaborar!
+## <a name="5-collaborate"></a>5. Colaboración
 
-Ya está. En unos instantes, se conectará a la sesión de colaboración de su colega. De forma predeterminada, el host de aceptación automática las personas que unirse, pero si el host está configurado para [requieren la aprobación de invitado](../reference/security.md#requiring-guest-approval) se ve la barra de estado / unir mención del cuadro de diálogo que está esperando Live Share en el host para aprobar su solicitud para unirse.
+Ya está. En unos instantes, se conectará a la sesión de colaboración de su colega. De forma predeterminada, el host acepta automáticamente a los usuarios que se unen, pero si el host está configurado para [requerir la aprobación del invitado](../reference/security.md#requiring-guest-approval), verá que en la barra de estado o el cuadro de diálogo se menciona que Live Share está esperando a que el host apruebe su solicitud para unirse.
 
-> **Sugerencia de seguridad:** Como invitado participar en una sesión de colaboración, es importante comprender que los hosts pueden limitar su acceso a determinados archivos o las características. ¿Desea comprender las implicaciones de seguridad de algunas de las características y la configuración de Live Share? Consulte la [seguridad](../reference/security.md) artículo.
+> **Sugerencia de seguridad:** Como invitado que participa en una sesión de colaboración, es importante comprender que los hosts pueden limitar el acceso a determinados archivos o características. ¿Quiere conocer las implicaciones de seguridad de algunas de las características y configuraciones de Live Share? Consulte el artículo sobre [seguridad](../reference/security.md).
 
-Estos son algunos aspectos que debe probar:
+Estas son algunas operaciones que puede probar:
 
-1. Moverse por el proyecto de forma independiente y realizar algunas modificaciones
-2. Consulte trabajo intellisense para JavaScript, TypeScript, o C# código
-3. Editar algo junto con el host
-4. Siga el host y para desplazarse por con ellos, ya que navegan y realizar modificaciones en archivos diferentes
-5. Iniciar una sesión de depuración conjuntamente con el host
-6. Solicite al host que comparten un servidor para que pueda buscar algo como una aplicación web que se ejecutan en su equipo
-7. Solicite al host que comparten un terminal y ejecutar algunos comandos
+1. Desplácese por el proyecto de forma independiente y realice algunas modificaciones.
+2. Compruebe el funcionamiento de IntelliSense para código de JavaScript, TypeScript o C#.
+3. Modifique algo junto con el host.
+4. Siga al host y desplácese con él mientras navega y realiza cambios en diferentes archivos.
+5. Inicie una sesión de depuración conjunta con el host.
+6. Pídale al host que comparta un servidor para que pueda extraer del repositorio algo como una aplicación web que se ejecute en el equipo.
+7. Pídale al host que comparta un terminal y ejecute algún comando.
 
 ¿Tiene algún problema? Consulte la [solución de problemas](../troubleshooting.md) o [envíe sus comentarios](../support.md).
 
@@ -162,9 +162,9 @@ Estos son algunos aspectos que debe probar:
 
 Consulte estos artículos adicionales para obtener más información.
 
-- [Inicio rápido: Comparta su primer proyecto](share.md)
-- [Cómo: Colaborar mediante Visual Studio Code](../use/vscode.md)
-- [Cómo: Colaborar mediante Visual Studio](../use/vs.md)
+- [Inicio rápido: Uso compartido de un primer proyecto](share.md)
+- [Procedimientos para colaborar mediante Visual Studio Code](../use/vscode.md)
+- [Procedimientos para colaborar mediante Visual Studio](../use/vs.md)
 
 Referencia
 
