@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 12/17/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: reference
 author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 0bc97691ca7733f694190e86140b930e68657ade
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: 754a740118ef9e6de2463fb3bb0537af350409aa
+ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57256319"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58640203"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -223,7 +221,7 @@ Más información: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md
 
 Al depurar conjuntamente, puede ser muy útil obtener acceso a diferentes partes de la aplicación ofrecidas por el anfitrión para la sesión de depuración. Puede acceder a la aplicación en un explorador, obtener acceso a una base de datos local o alcanza un punto de conexión REST desde sus herramientas. Live Share le permite "recurso compartido de un servidor" que se asigna un puerto local en la máquina del host en el mismo puerto exacto en la máquina del invitado. Como invitado, entonces puede interactuar con la aplicación exactamente como si se ejecutara localmente en su máquina (p. ej. el host e invitado pueden ambas tener acceso a una aplicación web que se ejecutan en http://localhost:3000).
 
-Sin embargo, como un host, debe **sea muy selectivo con los puertos que comparte** con los invitados y recurso compartido de solo aplicación puertos en su lugar los puertos del sistema. Para los invitados, los puertos compartidos se comportarán exactamente como lo harían si se estaba ejecutando el servicio de servidor en su propio equipo. Esto es muy útil, pero si se comparte un puerto incorrecto también puede ser arriesgado. Por este motivo, Live Share no realizar ninguna suposición sobre qué se debe o no debe compartirse sin un valor de configuración y el host que realiza una acción.
+Sin embargo, como un host, debe **sea muy selectivo con los puertos que comparte** con los invitados y recurso compartido de solo aplicación puertos en su lugar los puertos del sistema. En el caso de los invitados, los puertos compartidos se comportarán exactamente igual que si el servidor o servicio se estuviese ejecutando en su propia máquina. Esto es muy útil, pero podría ser también arriesgado si es que se comparte el puerto incorrecto. Por este motivo, Live Share no realizar ninguna suposición sobre qué se debe o no debe compartirse sin un valor de configuración y el host que realiza una acción.
 
 En Visual Studio, el **puerto de la aplicación de web** especificados en los proyectos de ASP.NET es **compartido automáticamente durante la depuración solo** para facilitar el acceso de invitado a la aplicación web cuando se ejecuta. Sin embargo, puede desactivar esta automatización estableciendo Herramientas > Opciones > Live Share > "Recurso compartido de web app de depuración" en "False" Si lo prefiere.
 
@@ -237,9 +235,9 @@ Puede aprender más acerca de cómo configurar la característica aquí: [![VS C
 
 ## <a name="sharing-a-terminal"></a>Uso compartido de una ventana de terminal
 
-El desarrollo moderno hace un uso frecuente de una amplia gama de herramientas de línea de comandos. Afortunadamente, como anfitrión, Live Share le permite, de forma opcional, "compartir un terminal" con los invitados. El terminal compartido puede ser de solo lectura o de colaboración totalmente por lo que usted y los invitados pueden ejecutar comandos y ver los resultados. Como el host, podrá permitir que otros colaboradores a uno solo verá la salida o para usar cualquier número de línea de comandos, herramientas para ejecutar pruebas, compilaciones, o incluso evaluar problemas específicos del entorno.
+El desarrollo moderno hace un uso frecuente de una amplia gama de herramientas de línea de comandos. Afortunadamente, como anfitrión, Live Share le permite, de forma opcional, "compartir un terminal" con los invitados. El terminal compartido puede ser de solo lectura o totalmente colaborativo, para que tanto usted como los invitados puedan ejecutar comandos y ver los resultados. Como el host, podrá permitir que otros colaboradores a uno solo verá la salida o para usar cualquier número de línea de comandos, herramientas para ejecutar pruebas, compilaciones, o incluso evaluar problemas específicos del entorno.
 
-Solo los hosts pueden empezar a terminales compartidos para evitar que los invitados de iniciarse una y hacer algo que no espera ni viendo. Cuando se inicia un terminal compartido como un host, puede especificar si debe ser de solo lectura o lectura/escritura. Si el terminal es lectura/escritura, todo el mundo puede escribir en el terminal incluido el host, lo que facilita la intervenir si un invitado está haciendo algo que no le gusta. Sin embargo, para estar seguros, debería **únicamente conceda acceso de lectura/escritura a los invitados cuando se sabe que necesitan realmente** y sígala terminales de solo lectura para escenarios donde desea que el invitado para ver la salida de los comandos que ejecute.
+Solo los hosts pueden empezar a terminales compartidos para evitar que los invitados de iniciarse una y hacer algo que no espera ni viendo. Cuando se inicia un terminal compartido como un host, puede especificar si debe ser de solo lectura o lectura/escritura. Si el terminal es de lectura/escritura, todos los participantes pueden escribir en el terminal, incluido el anfitrión, lo que permite intervenir fácilmente si un invitado hace algo que no le gusta. Sin embargo, para estar seguros, debería **darle acceso de lectura/escritura a los invitados solo cuando sabe que realmente lo necesitan**  y limitarse a los terminales de solo lectura en escenarios donde quiere que un invitado solo vea la salida de los comandos que ejecuta.
 
 En Visual Studio, los terminales no se comparten de forma predeterminada. En VS Code, se comparten automáticamente terminales **de sólo lectura** de forma predeterminada. Sin embargo, puede deshabilitar agregando la siguiente settings.json:
 
@@ -266,8 +264,8 @@ Esto solo tendría que realizarse una vez para cualquier persona que use Live Sh
 
 ## <a name="see-also"></a>Vea también
 
-* [Cómo: Colaborar mediante Visual Studio Code](../use/vscode.md)
-* [Cómo: Colaborar mediante Visual Studio](../use/vs.md)
+* [Colaboración colaborar mediante Visual Studio Code](../use/vscode.md)
+* [Procedimientos para mediante Visual Studio](../use/vs.md)
 * [Requisitos de conectividad de Live Share](connectivity.md)
 
 ¿Tiene algún problema? Consulte la [solución de problemas](../troubleshooting.md) o [envíe sus comentarios](../support.md).

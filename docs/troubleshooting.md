@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 03/22/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: troubleshooting
 author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 8d20ec73d9cadfefced65c04b1ef18f6e844167d
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: 5fc611714d148a9ba1d5a6848e0399af753d1a37
+ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57256280"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58640216"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -28,7 +26,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="troubleshooting-visual-studio-live-share"></a>Solución de problemas de Visual Studio Live Share
 
-Este artículo trata las sugerencias para solucionar problemas, soluciones y respuestas para preguntas y problemas comunes. También puede echar un vistazo a la [preguntas más frecuentes sobre](faq.md).
+Este artículo trata las sugerencias para solucionar problemas, soluciones y respuestas para preguntas y problemas comunes. También puede echar un vistazo a la [preguntas más frecuentes sobre](faq.md). 
 
 ## <a name="installation--tool-requirements"></a>Instalación y la herramienta de requisitos
 
@@ -66,8 +64,8 @@ Los siguientes son sugerencias para solucionar problemas para los problemas de i
 |------|----------------|------------|
 | Todas | <strong>Recurso compartido/combinación:</strong> Recibe un error sobre la imposibilidad de conectarse o tiempo de espera. | Consulte [solucionar problemas de conectividad](#connectivity). |
 | VS Code | <strong>Combinación:</strong> Estaba <strong>no solicitadas / capaces de lanzar VS Code</strong> después de abrir la página de combinación en un explorador. |  Sugerencias: <ul><li>Asegúrese de haber <i>iniciado al menos una vez el código de VS y esperado durante la instalación se complete en la barra de estado.</i></li><li>Si esto no funciona, intente ejecutar el "recurso compartido en vivo: Comando de instalación de iniciador".</li><li>**Los usuarios de Linux**: Si se le pide que escriba la contraseña de administrador (sudo) cuando se ejecuta el comando anterior, hágalo.</li><li>Por último, consulte [combinar manualmente](reference/manual-join.md) como solución alternativa.</li></ul> Si se produce este problema, nos gustaría ver lo que podría estar ocurriendo, lo póngase [registra un error](https://aka.ms/vsls-new-issue). |
-| VS | <strong>Combinación:</strong> Estaba <strong>no solicitadas / capaz de iniciar VS</strong>  después de abrir la página de combinación en un explorador. |  Consulte [combinar manualmente](reference/manual-join.md).<br /><br /> Nos encantaría ver los registros, por lo tanto, [registra un error](https://aka.ms/vsls-problem) mediante Visual Studio "informe de un problema..." característica. |
-| Todas | <strong>Combinación:</strong> Sería preferible <strong>pegue el vínculo de unión directamente en Visual Studio o VS Code</strong> en lugar de hacer clic en el vínculo web. | Consulte [combinar manualmente](reference/manual-join.md). |
+| VS | <strong>Combinación:</strong> Estaba <strong>no solicitadas / capaz de iniciar VS</strong>  después de abrir la página de combinación en un explorador. |  Consulte [Participar manualmente](reference/manual-join.md).<br /><br /> Nos encantaría ver los registros, por lo tanto, [registra un error](https://aka.ms/vsls-problem) mediante Visual Studio "informe de un problema..." característica. |
+| Todas | <strong>Combinación:</strong> Sería preferible <strong>pegue el vínculo de unión directamente en Visual Studio o VS Code</strong> en lugar de hacer clic en el vínculo web. | Consulte [Participar manualmente](reference/manual-join.md). |
 | Todas | <strong>Combinación:</strong> Vea un mensaje que dice, "**el propietario del área de trabajo parece estar sin conexión**," al unirse a través del explorador. | Posibles soluciones:<br /><ul><li>Pruebe [combinar manualmente](reference/manual-join.md). Hemos visto problemas entre regiones (p. ej., Asia y oeste de EE. UU.) combinaciones debido a problemas de servicio que no afectan a las combinaciones manuales.</li><li>Recurso compartido en vivo puede ser no se puede enrutar directamente al host cuando se ejecuta en modo de conexión de "auto". Pruebe [modo retransmisión](reference/connectivity.md).</li></ul>Consulte [solucionar problemas de conectividad](#connectivity) para obtener más posibilidades |
 | VS Code | <strong>Combinación:</strong> Se unió a través del explorador <strong>antes de iniciar sesión</strong>, no se pide que inicie sesión</strong>y la combinación nunca se ha completado. |  Se trata de un [problema conocido](https://github.com/MicrosoftDocs/live-share/issues/167). Haga clic en el inicio de sesión en el elemento de la barra de estado para iniciar sesión y, a continuación, unir de nuevo. |
 
@@ -102,8 +100,8 @@ Temas procedimentales
 
 Referencia
 
-- [Todos los errores principales, las solicitudes de características y limitaciones](https://aka.ms/vsls-issues)
-- [Todas las solicitudes de características y limitaciones](https://aka.ms/vsls-feature-requests)
+- [Todos los errores importantes, limitaciones y solicitudes de características](https://aka.ms/vsls-issues)
+- [Todas las limitaciones y solicitudes de características](https://aka.ms/vsls-feature-requests)
 - [Requisitos de conectividad de Live Share](reference/connectivity.md)
 - [Detalles de la instalación de Linux](reference/linux.md)
 - [Compatibilidad con lenguajes y plataformas](reference/platform-support.md)

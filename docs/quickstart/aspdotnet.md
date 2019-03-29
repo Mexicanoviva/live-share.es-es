@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 03/22/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: quickstart
 author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 91d3b976cdea126152bf64bc201fbed90d92166c
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: b0944c43d6dcad7d51af629937803adf4a3055a3
+ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57256396"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58640060"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -34,9 +32,9 @@ STUB
 
 Consulte estos artículos adicionales para obtener más información.
 
-- [Inicio rápido: Únase a la primera sesión de colaboración](join.md)
-- [Cómo: Colaborar mediante Visual Studio Code](../use/vscode.md)
-- [Cómo: Colaborar mediante Visual Studio](../use/vs.md)
+- [Inicio rápido: Unirse a la primera sesión de colaboración](join.md)
+- [Procedimientos para colaborar mediante Visual Studio Code](../use/vscode.md)
+- [Procedimientos para colaborar mediante Visual Studio](../use/vs.md)
 
 Referencia
 
