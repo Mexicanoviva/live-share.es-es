@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: a97ca693a0a60125c5376e444c9fba1ee7442d67
-ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
+ms.openlocfilehash: 1b68dc90f4bac5e21c04c555ab2d8fc7f59aad55
+ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58640164"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58853604"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -27,15 +27,16 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 # <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ## <a name="what-is-live-share"></a>¿Qué es Live Share?
-Recurso compartido en directo permite a los desarrolladores compartan un código base y su contexto para obtener una colaboración instantánea bidireccionales, directamente desde sus herramientas existentes (Visual Studio 2017 o Visual Studio Code). Con Live Share, su compañero de equipo puede leer, navegar, editar y depurar el proyecto que ha compartido con ellos, tanto de forma transparente y segura.
+Live Share le permite editar y depurar en colaboración con otros usuarios en tiempo real, independientemente del lenguaje de programación que use o los tipos de aplicaciones que compile. Permite al instante (y segura) comparta su proyecto actual y, luego, según sea necesario, comparta las sesiones de depuración, terminales instancias, las aplicaciones web de host local y mucho más! Los desarrolladores que se unen a las sesiones de reciben toda su contexto del editor de su entorno (por ejemplo, servicios de lenguaje, depuración), lo que garantiza que puedan empezar a productiva colaborar inmediatamente, sin necesidad de clonar los repositorios o instale los SDK.
 
 ## <a name="what-are-the-tooling-requirements-for-using-live-share"></a>¿Cuáles son los requisitos de las herramientas para usar Live Share?
 El [capacidades básicas de](#what-are-the-core-capabilities-of-live-share) de Live Share son totalmente compatibles con las siguientes herramientas:
 
-* [Visual Studio 2017 (versión 15.6 y versiones posteriores)](https://visualstudio.microsoft.com/vs/)
+* [Visual Studio 2019](https://visualstudio.microsoft.com/vs/)
+* [Visual Studio 2017 (versión 15.6 y versiones posteriores)](https://visualstudio.microsoft.com/vs/older-downloads/)
 * [Visual Studio Code](https://code.visualstudio.com/)
 
-Durante la versión preliminar, Live Share se puede iterar rápidamente para responder a los comentarios de usuario, que pueden obligarnos a aprovechar las características de Visual Studio y Visual Studio Code que sólo esté disponible en sus versiones de vista previa/insider respectivos. Le indicará qué características requieren las versiones más recientes de VS o VS Code en la documentación. Por ejemplo, soporte técnico de deshacer y rehacer local requiere Visual Studio 2017 15.7 +.
+Nos iterar rápidamente para responder a los comentarios de usuario. Esto nos obliga a aprovechar las características de Visual Studio y Visual Studio Code que sólo esté disponible en sus versiones de vista previa/insider respectivos. Le indicará qué características requieren las versiones más recientes de VS o VS Code en la documentación. Por ejemplo, soporte técnico de deshacer y rehacer local requiere Visual Studio 2017 15.7 +.
 
 ## <a name="what-are-the-core-capabilities-of-live-share"></a>¿Cuáles son las capacidades básicas de Live Share?
 Recurso compartido en directo le permite compartir su código base con los miembros del equipo a través de una conexión segura. Con Live Share, puede editar en colaboración de varios archivos en un área de trabajo y más importante de depurar la aplicación con sus compañeros de equipo. Durante la edición conjunta de las modificaciones se ven inmediatamente por sus compañeros de equipo. Durante la depuración conjunta comparten la misma sesión de depuración de la aplicación. Esto significa y sus compañeros de equipo pueden controlar la ejecución del programa con los puntos de interrupción y pasos, pero independiente puede inspeccionar las variables, las inspecciones, variables locales y REPL (por ejemplo, la ventana Inmediato de Visual Studio).
@@ -52,7 +53,7 @@ Requisito único del recurso compartido en vivo es que la persona que comparte y
 Recurso compartido en vivo no transfiere todas las entradas de teclado y mouse. Solo se comunica los datos necesarios para cada actividad de colaboración a las máquinas de sus compañeros de equipo. Por ejemplo, cuando se comparte el área de trabajo, se comparte la estructura de carpetas. Cuando se edita conjuntamente un archivo, se comparte el contenido de ese archivo. Cuando se depura en colaboración, se comparten las acciones de depuración (por ejemplo, paso a paso) y estado (por ejemplo, la pila de llamadas y variables locales).
 
 ## <a name="when-will-live-share-be-released"></a>¿Cuándo se lanzará Live Share?
-¡Recurso compartido en vivo está disponible ahora en versión preliminar pública! Tenemos previsto trabajar muy de cerca a los desarrolladores probar los bits de la versión preliminar, con el fin de recopilar comentarios y asegurarse de que podemos ofrecer la mejor experiencia posible, antes de abrir el servicio de manera más amplia.
+Recurso compartido en vivo ya está disponible con carácter general. También puede [Introducción a Live Share](https://aka.ms/vsls-start) hoy mismo.
 
 ## <a name="how-much-will-it-cost"></a>¿Cuánto costará?
 Estamos comprometidos con un nivel gratis sustancial de Visual Studio Live Share para los desarrolladores pueden usar de forma continuada. Se evaluará la introducción de los niveles de pago con características avanzadas como podamos comprender mejor las necesidades de la Comunidad.
@@ -82,21 +83,25 @@ Aunque esto puede ser deseable para muchos escenarios, los desarrolladores a men
 
 Recurso compartido en vivo va un paso más allá y le permite compartir una sesión de depuración.  Esto resulta especialmente útil en dar de alta otros para ayudarle a localizar problemas que se producen sólo en el equipo sin modificar su flujo de trabajo de desarrollo o la necesidad de modificar el diseño de la aplicación.
 
-## <a name="which-languages-and-platforms-will-be-supported-in-the-preview"></a>¿Qué lenguajes y plataformas se admitirán en la versión preliminar?
-Sin embargo, nuestro objetivo es admitir la amplia variedad de lenguajes y plataformas, para asegurarse de que podemos permiten una colaboración enriquecedora, independientemente del tipo de aplicación que se desarrolla. Consulte la [idioma y la compatibilidad con la plataforma](reference/platform-support.md) para obtener información sobre lo que funciona hoy en día. Esto es sólo el comienzo, y esperamos mejorar esta imagen para mover hacia delante según los comentarios.
+## <a name="which-languages-and-platforms-will-be-supported"></a>¿Se admitirán qué lenguajes y plataformas?
+Nuestro objetivo es admitir la amplia variedad de lenguajes y plataformas, para asegurarse de que podemos permiten una colaboración enriquecedora, independientemente del tipo de aplicación que se desarrolla. Consulte la [idioma y la compatibilidad con la plataforma](reference/platform-support.md) para obtener información sobre lo que funciona hoy en día.
 
 ## <a name="how-many-developers-can-join-a-collaboration-session"></a>¿Cuántos desarrolladores pueden unirse a una sesión de colaboración?
-Actualmente se admiten cinco invitados simultáneos, el desarrollador que está compartiendo ("hospedaje"), además de su proyecto. Por lo tanto, una sesión de colaboración puede tener un total de seis desarrolladores en él en un momento dado. Dicho esto, se trata de un área de comentarios, estamos buscando por lo que si tiene un caso de uso que requiere un límite superior, por favor, [háganoslo saber](https://github.com/MicrosoftDocs/live-share/issues/229)!
+Actualmente admitimos 30 invitados simultáneos, el desarrollador que está compartiendo ("hospedaje"), además de su proyecto. De forma predeterminada, se habilitan a hasta 5 invitados en una sesión. 
+
+Para habilitar el límite de aumento de invitado: 
+- **Código de VS:** Agregue "liveshare.increasedGuestLimit":"true" a settings.json.
+- **VS:** Conjunto de herramientas > Opciones > Live Share > mayor límite de invitado en "True"
 
 ## <a name="what-is-the-roadmap"></a>¿Qué es el mapa de ruta?
 Puede ver el conjunto de problemas conocidos y los elementos de mapa de ruta [aquí](https://aka.ms/vsls-issues). Si desea ver solo las solicitudes de la característica en lugar de todos los problemas, consulte [aquí](https://aka.ms/vsls-feature-requests). Le animamos a enviar su voto a los elementos existentes, solicitar nuevas características y los informes de errores de registro para ayudarnos a forma la dirección del producto más adelante.
 
 ## <a name="see-also"></a>Vea también
 
-- [Compatibilidad con lenguajes y plataformas](platform-support.md)
-- [Requisitos de conectividad de Live Share](reference/connectivity.md)
+- [Compatibilidad de lenguaje y plataforma](platform-support.md)
+- [Requisitos de conectividad para Live Share](reference/connectivity.md)
 - [Características de seguridad de Live Share](reference/security.md)
-- [Todos los errores importantes, limitaciones y solicitudes de características](https://aka.ms/vsls-issues)
-- [Todas las limitaciones y solicitudes de características](https://aka.ms/vsls-feature-requests)
+- [Todos los errores principales, las solicitudes de características y limitaciones](https://aka.ms/vsls-issues)
+- [Todas las solicitudes de características y limitaciones](https://aka.ms/vsls-feature-requests)
 
 ¿Tiene algún problema? Consulte la [solución de problemas](troubleshooting.md) o [envíe sus comentarios](support.md).
