@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 03/22/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: quickstart
 author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: d4280484aaa3fd4ac204588bf4aefc4e3ac51871
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: c5c86b158facfe1fe8fa7f5ae14a9511c55e0877
+ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57256376"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58853552"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -27,8 +25,6 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 -->
 
 # <a name="quickstart-join-your-first-collaboration-session"></a>Inicio rápido: Unirse a la primera sesión de colaboración
-
-> **Nota: Visual Studio Live Share está actualmente en versión preliminar. Las características y la experiencia de usuario no son finales.**
 
 Le damos la bienvenida a Visual Studio Live Share. Live Share le permite editar y depurar en colaboración con otros usuarios en tiempo real, independientemente del lenguaje de programación que use o los tipos de aplicaciones que compile. Permite unirse al instante y de forma segura al proyecto actual de un compañero de equipo y, después, según sea necesario, entrar en sesiones de depuración, ver y modificar instancias del terminal, ver aplicaciones web de host local, participar en llamadas de voz y mucho más.
 
@@ -56,22 +52,22 @@ La instalación de la extensión es sencilla. Tan solo tiene que seguir estos pa
     </td>
 </tr>
 <tr style="border:none;">
-    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide.svg" width="128px" alt="Visual Studio logo" /></td>
-    <td style="border:none;">
-        <strong>Visual Studio 2017, versión 15.6 o posterior</strong><br />
-        1. Instale la versión más reciente de <a href="https://visualstudio.microsoft.com/vs/">Visual Studio 2017</a> (15.6 y versiones posteriores) en Windows (7, 8.1 o 10).<br/>
-        2. Instale una <a href="../reference/platform-support.md">carga de trabajo compatible</a> (por ejemplo, ASP.NET, .NET Core, C++ o Node.js).<br />
-        3. Descargue e instale la extensión de Visual Studio Live Share desde Marketplace. <br />
-        <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="../media/download.png" alt="Download button"></a><br />
+    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide-2019.svg" width="128px" alt="Visual Studio 2019 logo" /></td>
+    <td  style="border:none;">
+        <strong>Visual Studio 2019 </strong><br />
+        1. Instale <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a>.<br/>
+        2. Instale una <a href="../reference/platform-support.md">carga de trabajo compatible</a>. (por ejemplo, ASP.NET, .NET Core, C++ o Node.js).<br />
+        3. Visual Studio Live Share se instala de forma predeterminada con esas cargas de trabajo. <br />
     </td>
 </tr>
 <tr style="border:none;">
-    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide-preview.svg" width="128px" alt="Visual Studio Preview logo" /></td>
+    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide-2017.svg" width="128px" alt="Visual Studio 2017 logo" /></td>
     <td  style="border:none;">
-        <strong>Visual Studio 2019 </strong><br />
-        1. Instale la versión preliminar de <a href="https://aka.ms/vs-preview">Visual Studio 2019</a>.<br/>
-        2. Instale una <a href="../reference/platform-support.md">carga de trabajo compatible</a> (por ejemplo, ASP.NET, .NET Core, C++ o Node.js).<br />
-        3. Visual Studio Live Share se instala de forma predeterminada con esas cargas de trabajo. <br />
+        <strong>Visual Studio 2017, versión 15.6 o posterior</strong><br />
+        1. Instale la versión más reciente de <a href="https://visualstudio.microsoft.com/vs/older-downloads/">Visual Studio 2017</a> (15.6 y versiones posteriores) en Windows (7, 8.1 o 10).<br/>
+        2. Instale una <a href="../reference/platform-support.md">carga de trabajo compatible</a>. (por ejemplo, ASP.NET, .NET Core, C++ o Node.js).<br />
+        3. Descargue e instale la extensión de Visual Studio Live Share desde Marketplace. <br />
+        <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="../media/download.png" alt="Download button" ></a><br />
     </td>
 </tr>
 </table>
@@ -83,7 +79,7 @@ Al descargar y usar Visual Studio Live Share, acepta los [términos de licencia]
 En VS Code, después de instalar la extensión Live Share, reiniciar y esperar a que se terminen de instalar las dependencias, puede participar en una sesión de colaboración como invitado de solo lectura.
 
 > [!NOTE]
-> Si quiere realizar modificaciones en el código al que se va a unir, tendrá que [iniciar sesión](../quickstart/join.md#3-Sign-in).
+> Si quiere realizar modificaciones en el código al que se va a unir, tendrá que iniciar sesión.
 
 Abra (o vuelva a abrir) el vínculo de invitación en un explorador, y recibirá una notificación en la que se indica que el explorador quiere iniciar VS Code. Deje que se inicie y empezará a conectarse a la sesión de colaboración.
 
@@ -99,11 +95,11 @@ Después, se unirá a la sesión como invitado de solo lectura. Podrá ver y nav
 
 > [!NOTE]
 > Si más adelante quiere obtener acceso de lectura o escritura al código, puede iniciar sesión. Haga clic en el nombre para mostrar en la barra de estado y seleccione la opción "Iniciar sesión".
-![Inicio de sesión de invitado de solo lectura ](../media/vscode-read-only-guest-signin.png) Esto iniciará el explorador, y podrá elegir una cuenta de Microsoft o GitHub con la que iniciar sesión.
+![Inicio de sesión de invitado de solo lectura](../media/vscode-read-only-guest-signin.png) Esto iniciará el explorador, y podrá elegir una cuenta de Microsoft o GitHub con la que iniciar sesión.
 
 ## <a name="3-sign-in"></a>3. Inicio de sesión
 
-Después de instalar la extensión Live Share, reiniciar y esperar a que se terminen de instalar las dependencias (VS Code), le recomendamos que inicie sesión para que otros participantes sepan quién es. Si omite este paso, se le pedirá que inicie sesión durante el proceso de unión, o puede unirse a la sesión como un invitado de solo lectura. Haga clic en el elemento "compartir" de la barra de estado (VS Code) o el botón "iniciar sesión" (VS) para empezar.
+Después de instalar la extensión Live Share, reiniciar y esperar a que se terminen de instalar las dependencias (VS Code), le recomendamos que inicie sesión para que otros participantes sepan quién es. Si omite este paso, se le pedirá que inicie sesión durante el proceso de unión, o puede unirse a la sesión como un invitado de solo lectura. Haga clic en el elemento "Live Share" de la barra de estado (VS Code) o en el botón "Iniciar sesión" (VS) para empezar.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -163,8 +159,8 @@ Estas son algunas operaciones que puede probar:
 Consulte estos artículos adicionales para obtener más información.
 
 - [Inicio rápido: Uso compartido de un primer proyecto](share.md)
-- [Procedimientos para colaborar mediante Visual Studio Code](../use/vscode.md)
-- [Procedimientos para colaborar mediante Visual Studio](../use/vs.md)
+- [Colaboración mediante Visual Studio Code](../use/vscode.md)
+- [Colaboración mediante Visual Studio](../use/vs.md)
 
 Referencia
 

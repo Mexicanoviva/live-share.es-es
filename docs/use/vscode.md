@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 04/27/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: conceptual
 author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 9285fef38fea9bb164892775521ed2a28fe9ef1b
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: ed96ba572a58b8d3bfda7b634f1052a1b4e73051
+ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57256324"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58853643"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -67,7 +65,7 @@ Después, descargar e instalar la extensión de Visual Studio Live Share es muy 
 
 Al descargar y usar Visual Studio Live Share, acepta los [términos de licencia](https://aka.ms/vsls-license) y la [declaración de privacidad](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). Si surge algún problema, consulte la [solución de problemas](../troubleshooting.md).
 
-[![Descarga](../media/download.png)](https://aka.ms/vsls-dl/vscode)
+[![Descargar](../media/download.png)](https://aka.ms/vsls-dl/vscode)
 
 ### <a name="linux-install-steps"></a>Pasos de instalación de Linux
 
@@ -99,7 +97,7 @@ Si bien es poco habitual, en ciertas distribuciones **es posible que reciba una 
 
 Para poder colaborar, deberá iniciar sesión en Visual Studio Live Share de manera que todos sepan quién es usted. Esto no es más que una medida de seguridad y **no** significa que se inscriba en ninguna actividad de marketing u otro tipo de investigación. Puede iniciar sesión con una cuenta personal de Microsoft (por ejemplo, @outlook.com), una cuenta profesional o educativa (AAD) con el respaldo de Microsoft, o bien una cuenta de GitHub. Es fácil iniciar sesión.
 
-**Haga clic** en el elemento de la barra de estado "Compartir" o presione **Ctrl+Mayús+P / Cmd+Mayús+P** y seleccione el comando "Live Share: Sign In With Browser" (Live Share: iniciar sesión con el explorador).
+**Haga clic** en el elemento de la barra de estado "Live Share" o presione **Ctrl+Mayús+P / Cmd+Mayús+P** y seleccione el comando "Live Share: Sign In With Browser" (Live Share: iniciar sesión con el explorador).
 
 ![Botón de inicio de sesión de VS Code](../media/vscode-sign-in-button.png)
 
@@ -107,7 +105,7 @@ Aparecerá una notificación para pedirle que inicie sesión con el explorador w
 
 ![Notificación del sistema en la que solicita el inicio de sesión con un explorador web](../media/vscode-sign-in-toast.png)
 
-> **Usuarios de Linux:** Se le pedirá que escriba un código de usuario si usa una versión antigua de Live Share (v0.3.295 o inferior). Actualice a la versión más reciente de la extensión o haga clic en el vínculo "¿Tiene problemas?" después de iniciar sesión para ver el código. Para información más detallada, [consulte a continuación](#sign-in-using-a-user-code).
+> **Usuarios de Linux:** Se le pedirá que escriba un código de usuario si usa una versión antigua de Live Share (versión 0.3.295 o inferior). Actualice a la versión más reciente de la extensión o haga clic en el vínculo "¿Tiene problemas?" después de iniciar sesión para ver el código. Para información más detallada, [consulte a continuación](#sign-in-using-a-user-code).
 
 Si Visual Studio Code no acepta su inicio de sesión una vez que completa el proceso en el explorador, consulte [Inicio de sesión con un código de usuario](#sign-in-using-a-user-code). En caso contrario, revise la [solución de problemas](../troubleshooting.md#sign-in) para ver más sugerencias.
 
@@ -160,7 +158,7 @@ Como esta lista puede ser larga, quizás le resulte más fácil usar un menú de
 
 Después de descargar e instalar Visual Studio Live Share, siga estos pasos para iniciar una sesión de colaboración e invitar a un compañero de trabajo a trabajar con usted.
 
-1. **Iniciar sesión**
+1. **Inicio de sesión**
 
     Después de instalar la extensión Live Share, recargar y esperar a que se terminen de instalar las dependencias, querrá iniciar sesión para que otros colaboradores sepan quién es. Consulte [Inicio de sesión](#sign-in) para más detalles.
 
@@ -170,20 +168,20 @@ Después de descargar e instalar Visual Studio Live Share, siga estos pasos para
 
 3. **[Opcional] Actualizar los archivos ocultos o excluidos**
 
-    De manera predeterminada, Live Share **oculta** a los invitados los archivos o carpetas a los que se hace referencia en los archivos .gitignore de las carpetas compartidas. **Ocultar** un archivo evita que aparezca en el árbol de archivos del invitado. **Excluir** un archivo aplica una regla más estricta que impedirá que Live Share lo abra para el invitado en situaciones como ir a una definición o cuando el archivo se depura paso a paso por instrucciones mientras depura o se "sigue". Si quiere ocultar o excluir otros archivos, puede agregar un archivo **.vsls.json** al proyecto con esta configuración. Consulte [Control de la visibilidad y el acceso de archivos](../reference/security.md#controlling-file-access-and-visibility) para más información.
+    De forma predeterminada, Live Share **oculta** a los invitados los archivos o carpetas a los que se hace referencia en los archivos .gitignore de las carpetas compartidas. **Ocultar** un archivo evita que aparezca en el árbol de archivos del invitado. **Excluir** un archivo aplica una regla más estricta que impedirá que Live Share lo abra para el invitado en situaciones como ir a una definición o cuando el archivo se depura paso a paso por instrucciones mientras depura o se "sigue". Si quiere ocultar o excluir otros archivos, puede agregar un archivo **.vsls.json** al proyecto con esta configuración. Consulte [Control de la visibilidad y el acceso de archivos](../reference/security.md#controlling-file-access-and-visibility) para más información.
 
-4. **Iniciar una sesión de colaboración**
+4. **Inicio de una sesión de colaboración**
 
-    Ahora, simplemente **haga clic** en el elemento de la barra de estado "Compartir" o presione **Ctrl+Mayús+P / Cmd+Mayús+P** y seleccione "Live Share: Start a collaboration session (Share)" (Live Share: iniciar una sesión de colaboración [Compartir]).
+    Ahora, simplemente **haga clic** en el elemento de la barra de estado "Live Share" o presione **Ctrl+Mayús+P / Cmd+Mayús+P** y seleccione "Live Share: Start a collaboration session (Share)" (Live Share: iniciar una sesión de colaboración [Compartir]).
 
     ![Botón Compartir](../media/vscode-share-button.png)
 
     > [!NOTE]
-    > La primera vez que comparta, es posible que el software de firewall de escritorio le pida que permita que el agente de Live Share abra un puerto. Aceptar esto es totalmente opcional, pero habilita un "modo directo" seguro para mejorar el rendimiento cuando la persona con la que trabaja se encuentra en la misma red que usted. Consulte [Cambiar el modo de conexión](../reference/connectivity.md#changing-the-connection-mode) para más detalles.
+    > La primera vez que comparta, es posible que el software de firewall de escritorio le pida que permita que el agente de Live Share abra un puerto. Aceptar esto es totalmente opcional, pero habilita un "modo directo" seguro para mejorar el rendimiento cuando la persona con la que trabaja se encuentra en la misma red que usted. Consulte [Cambiar el modo de conexión](../reference/connectivity.md#changing-the-connection-mode) para más detalles.
 
     Un vínculo a la invitación se copiará automáticamente en el Portapapeles. Cuando se abre en un explorador, este vínculo permite que otros usuarios se unan a una sesión de colaboración donde se les comparte contenido de estas carpetas.
 
-    También verá la transición del elemento de la barra de estado "Compartir" para representar el estado de sesión. Consulte la información sobre el [estado de sesión](#session-states) que aparece a continuación para saber cuál es el aspecto.
+    También verá la transición del elemento de la barra de estado "Live Share" para representar el estado de sesión. Consulte la información sobre el [estado de sesión](#session-states) que aparece a continuación para saber cuál es el aspecto.
 
     Tenga en cuenta que si necesita obtener nuevamente el vínculo de la invitación una vez que haya empezado a compartir los recursos, puede acceder a él otra vez si hace clic en el icono de estado de sesión de la barra de estado y selecciona "Invite Others (Copy Link)" (Invitar a otros [copiar vínculo]).
 
@@ -199,7 +197,7 @@ Después de descargar e instalar Visual Studio Live Share, siga estos pasos para
 
     Envíe el vínculo por correo electrónico, Slack, Skype, etc., a los usuarios que quiera invitar. Tenga en cuenta que, dado el nivel de acceso que las sesiones de Live Share pueden proporcionar a los invitados, **solo se debe compartir con usuarios de confianza**, y piense detenidamente en las implicaciones de lo que va a compartir.
 
-    > **Sugerencia de seguridad:** ¿Quiere conocer las implicaciones de seguridad de algunas de las características de Live Share? Consulte el artículo sobre [seguridad](../reference/security.md).
+    > **Sugerencia de seguridad:** ¿Quiere conocer las implicaciones de seguridad de algunas de las características de Live Share? Consulte el artículo sobre [seguridad](../reference/security.md).
 
     Si el invitado al que invitó tiene preguntas, en el artículo "[Quickstart: Join your first session](../quickstart/join.md)" (Inicio rápido: Participación en una primera sesión) se proporciona información adicional sobre cómo prepararlo todo para participar como invitado.
 
@@ -233,13 +231,13 @@ Todos los invitados recibirán una notificación de que finalizó la sesión.  U
 
 Después de descargar e instalar Visual Studio Live Share, los invitados solo deben realizar un par de pasos para participar en una sesión de colaboración hospedada. Hay dos maneras de participar: [a través del explorador](#join-via-the-browser) y [manualmente](#join-manually).
 
-> **Sugerencia de seguridad:** Como invitado que participa en una sesión de colaboración, es importante comprender que los anfitriones pueden limitar el acceso a determinados archivos o características. ¿Quiere conocer las implicaciones de seguridad de algunas de las características y configuraciones de Live Share? Consulte el artículo sobre [seguridad](../reference/security.md).
+> **Sugerencia de seguridad:** Como invitado que participa en una sesión de colaboración, es importante comprender que los hosts pueden limitar el acceso a determinados archivos o características. ¿Quiere conocer las implicaciones de seguridad de algunas de las características y configuraciones de Live Share? Consulte el artículo sobre [seguridad](../reference/security.md).
 
 ### <a name="join-via-the-browser"></a>Participar a través del explorador
 
 La manera más sencilla de participar en una sesión de colaboración es abrir el vínculo de la invitación en un explorador web. Esto es lo que puede esperar si sigue este flujo.
 
-1. **Inicie sesión**
+1. **Inicio de sesión**
 
     Después de instalar la extensión Live Share, recargar y esperar a que se terminen de instalar las dependencias, querrá iniciar sesión para que otros colaboradores sepan quién es. Consulte [Inicio de sesión](#sign-in) para más detalles.
 
@@ -247,22 +245,22 @@ La manera más sencilla de participar en una sesión de colaboración es abrir e
 
     Ahora, basta con abrir (o volver a abrir) el vínculo de invitación en un explorador.
 
-    > **Nota**: Si aún no ha instalado la extensión Live Share, se le mostrarán vínculos al Marketplace de la extensión. Instale la extensión, reinicie la herramienta e inténtelo de nuevo.
+    > **Nota**: Si aún no ha instalado la extensión Live Share, se le mostrarán vínculos al Marketplace de la extensión. Instale la extensión, reinicie la herramienta e inténtelo de nuevo.
 
     Debería recibir una notificación en la que se indica que el explorador quiere iniciar una herramienta habilitada para Live Share. Si permite que inicie la herramienta seleccionada, se conectará a la sesión de colaboración una vez que se inicie.
 
     ![Página para participar](../media/join-page.png)
 
-    Si el anfitrión está sin conexión, se le notificará en este momento. Después, puede ponerse en contacto con el anfitrión y pedirle que vuelva a compartir.
+    Si el host está sin conexión, se le notificará en este momento. Después, puede ponerse en contacto con el anfitrión y pedirle que vuelva a compartir.
 
     > [!NOTE]
     > Asegúrese de haber **iniciado la herramienta al menos una vez** después de instalar la extensión Visual Studio Live Share y permitido que la instalación se realice completamente antes de abrir o volver a abrir la página de invitación. ¿Sigue teniendo problemas? Consulte [Participar manualmente](#join-manually).
 
-3. **Colabore**
+3. **Colaborar**
 
     Ya está. En unos instantes se conectará y podrá empezar a colaborar.
 
-    Verá la transición del botón "Compartir" a convertirse en un "Estado de sesión". Consulte la información sobre el [estado de sesión](#session-states) que aparece a continuación para saber cuál es el aspecto.
+    Verá la transición del botón "Live Share" a convertirse en un "Estado de sesión". Consulte la información sobre el [estado de sesión](#session-states) que aparece a continuación para saber cuál es el aspecto.
 
     Luego pasará automáticamente al archivo que actualmente está editando el anfitrión una vez que se una por completo.
 
@@ -270,7 +268,7 @@ La manera más sencilla de participar en una sesión de colaboración es abrir e
 
 También puede participar manualmente sin usar un explorador web, lo que puede ser útil cuando la herramienta que quiere usar ya está en ejecución, si quiere una herramienta distinta a la que usa con frecuencia o si, por alguna razón, tiene problemas para que los vínculos de invitación funcionen. El proceso es sencillo:
 
-1. **Inicie sesión**
+1. **Inicio de sesión**
 
     Después de instalar la extensión Live Share, recargar y esperar a que se terminen de instalar las dependencias, querrá iniciar sesión para que otros colaboradores sepan quién es. Consulte [Inicio de sesión](#sign-in) para más detalles.
 
@@ -284,11 +282,11 @@ También puede participar manualmente sin usar un explorador web, lo que puede s
 
     Pegue la dirección URL de la invitación que le enviamos y presione ENTRAR para confirmar.
 
-4. **¡Colabore!**
+4. **Colaboración**
 
     Ya está. Debería estar conectado momentáneamente a la sesión de colaboración.
 
-    Verá la transición del botón "Compartir" a convertirse en un "Estado de sesión". Consulte la información sobre el [estado de sesión](#session-states) que aparece a continuación para saber cuál es el aspecto.
+    Verá la transición del botón "Live Share" a convertirse en un "Estado de sesión". Consulte la información sobre el [estado de sesión](#session-states) que aparece a continuación para saber cuál es el aspecto.
 
     Luego pasará automáticamente al archivo que actualmente está editando el anfitrión una vez que se una por completo.
 
@@ -528,7 +526,7 @@ Estos son los estados que verá habitualmente:
 | Anfitrión: Uso compartido en curso | ![Estado de VS Code: uso compartido en curso](../media/vscode-status-sharing.png)| Se inicia una sesión de colaboración y pronto se empezará a compartir contenido. |
 | Anfitrión: Uso compartido de recursos | ![Estado de VS Code: uso compartido activo ](../media/vscode-status-active.png)| Hay una sesión de colaboración activa y se comparte contenido. |
 | Anfitrión: Uso compartido de solo lectura | ![Estado de VS Code: uso compartido de solo lectura](../media/vscode-status-sharing-read-only.png)| Se comparte una sesión de colaboración de solo lectura. |
-| Invitado: Participación en la sesión | ![Estado de VS Code: participación](../media/vscode-status-joining.png)| Participación en una sesión de colaboración existente. |
+| Invitado: Participación en la sesión | ![Estado de VS: participación](../media/vscode-status-joining.png)| Participación en una sesión de colaboración existente. |
 | Invitado: participando | ![Estado de VS Code: participando](../media/vscode-status-active.png) | Se conectó y está participando en una sesión de colaboración activa y recibe contenido compartido. |
 | Invitado: Participando en solo lectura | ![Estado de VS Code: participando en solo lectura](../media/vscode-status-joined-read-only.png) | Se conectó y está participando en una sesión de colaboración de solo lectura activa. |
 
