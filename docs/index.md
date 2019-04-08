@@ -1,7 +1,7 @@
 ---
 title: 'Información general: Visual Studio Live Share | Microsoft Docs'
 description: Información general sobre Visual Studio Live Share y sus funcionalidades.
-ms.custom: null
+ms.custom: ''
 ms.date: 04/26/2018
 ms.reviewer: ''
 ms.suite: ''
@@ -10,9 +10,14 @@ author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
-  - liveshare
+- liveshare
+ms.openlocfilehash: 5f67086e9040a477e082cbd3ef27a1789c6406c5
+ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58853591"
 ---
-
 <!--
 Copyright © Microsoft Corporation
 All rights reserved.
@@ -20,8 +25,6 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 -->
 
 # <a name="what-is-visual-studio-live-share"></a>¿Qué es Visual Studio Live Share?
-
-> **Nota: Visual Studio Live Share está actualmente en versión preliminar. Las características y la experiencia de usuario no son finales.**
 
 Le damos la bienvenida a Visual Studio Live Share. Live Share le permite editar y depurar en colaboración con otros usuarios en tiempo real, independientemente del lenguaje de programación que use o los tipos de aplicaciones que compile. Asimismo, permite compartir al instante y de forma segura su proyecto actual y, después, según sea necesario, compartir las sesiones de depuración, las instancias del terminal, las aplicaciones web de host local, las llamadas de voz y mucho más.
 
@@ -37,8 +40,8 @@ A diferencia de la programación en pareja tradicional, Visual Studio Live Share
 Antes de comenzar, deberá asegurarse de tener instalada una versión de Visual Studio o Visual Studio Code que cumpla los requisitos principales de Live Share.
 
 - **Visual Studio Code versión 1.22.0 o una versión posterior** - Windows 7, 8.1 o 10, macOS *(Sierra 10.12 y versiones posteriores únicamente)*, Linux de 64 bits *(se recomienda Ubuntu Desktop 16.04 de 64 bits y Fedora 27 o versiones posteriores - [ver detalles](use/vscode.md#installation))*.
-- **Visual Studio 2017 15.6 o una versión posterior** (cualquier edición) - Windows 7, 8.1 o 10.
 - **Visual Studio 2019** (cualquier edición) - Windows 7, 8.1 o 10.
+- **Visual Studio 2017 15.6 o una versión posterior** (cualquier edición) - Windows 7, 8.1 o 10.
 
 Después, descargar e instalar la extensión de Visual Studio Live Share es muy sencillo:
 
@@ -55,22 +58,22 @@ Después, descargar e instalar la extensión de Visual Studio Live Share es muy 
     </td>
 </tr>
 <tr style="border:none;">
-    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="media/vs-ide.svg" width="128px" alt="Visual Studio logo" /></td>
+    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="media/vs-ide-2019.svg" width="128px" alt="Visual Studio 2019 logo" /></td>
     <td  style="border:none;">
-        <strong>Visual Studio 2017, versión 15.6 o posterior</strong><br />
-        1. Instale la versión más reciente de <a href="https://visualstudio.microsoft.com/vs/">Visual Studio 2017</a> (15.6 y versiones posteriores) en Windows (7, 8.1 o 10).<br/>
-        2. Instale una <a href="reference/platform-support.md">carga de trabajo compatible</a> (por ejemplo, ASP.NET, .NET Core, C++ o Node.js).<br />
-        3. Descargue e instale la extensión de Visual Studio Live Share desde Marketplace. <br />
-        <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="media/download.png" alt="Download button" ></a><br />
+        <strong>Visual Studio 2019 </strong><br />
+        1. Instale <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a>.<br/>
+        2. Instale una <a href="reference/platform-support.md">carga de trabajo compatible</a>. (por ejemplo, ASP.NET, .NET Core, C++ o Node.js).<br />
+        3. Visual Studio Live Share se instala de forma predeterminada con esas cargas de trabajo. <br />
     </td>
 </tr>
 <tr style="border:none;">
-    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="media/vs-ide-preview.svg" width="128px" alt="Visual Studio Preview logo" /></td>
+    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="media/vs-ide-2017.svg" width="128px" alt="Visual Studio 2017 logo" /></td>
     <td  style="border:none;">
-        <strong>Visual Studio 2019 </strong><br />
-        1. Instale la versión preliminar de <a href="https://aka.ms/vs-preview">Visual Studio 2019</a>.<br/>
-        2. Instale una <a href="reference/platform-support.md">carga de trabajo compatible</a> (por ejemplo, ASP.NET, .NET Core, C++ o Node.js).<br />
-        3. Visual Studio Live Share se instala de forma predeterminada con esas cargas de trabajo. <br />
+        <strong>Visual Studio 2017, versión 15.6 o posterior</strong><br />
+        1. Instale la versión más reciente de <a href="https://visualstudio.microsoft.com/vs/older-downloads/">Visual Studio 2017</a> (15.6 y versiones posteriores) en Windows (7, 8.1 o 10).<br/>
+        2. Instale una <a href="reference/platform-support.md">carga de trabajo compatible</a>. (por ejemplo, ASP.NET, .NET Core, C++ o Node.js).<br />
+        3. Descargue e instale la extensión de Visual Studio Live Share desde Marketplace. <br />
+        <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="media/download.png" alt="Download button" ></a><br />
     </td>
 </tr>
 </table>
@@ -160,8 +163,8 @@ Guías de inicio rápido
 
 Temas procedimentales
 
-- [Colaboración mediante Visual Studio Code](use/vscode.md)
-- [Colaboración mediante Visual Studio](use/vs.md)
+- [mediante Visual Studio Code](use/vscode.md)
+- [mediante Visual Studio](use/vs.md)
 
 Referencia
 
