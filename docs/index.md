@@ -15,7 +15,7 @@ ms.openlocfilehash: 5f67086e9040a477e082cbd3ef27a1789c6406c5
 ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58853591"
 ---
 <!--
@@ -62,7 +62,7 @@ Después, descargar e instalar la extensión de Visual Studio Live Share es muy 
     <td  style="border:none;">
         <strong>Visual Studio 2019 </strong><br />
         1. Instale <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a>.<br/>
-        2. Instale una <a href="reference/platform-support.md">carga de trabajo compatible</a>. (por ejemplo, ASP.NET, .NET Core, C++ o Node.js).<br />
+        2. Instale una <a href="reference/platform-support.md">carga de trabajo compatible</a> (por ejemplo, ASP.NET, .NET Core, C++ o Node.js).<br />
         3. Visual Studio Live Share se instala de forma predeterminada con esas cargas de trabajo. <br />
     </td>
 </tr>
@@ -71,7 +71,7 @@ Después, descargar e instalar la extensión de Visual Studio Live Share es muy 
     <td  style="border:none;">
         <strong>Visual Studio 2017, versión 15.6 o posterior</strong><br />
         1. Instale la versión más reciente de <a href="https://visualstudio.microsoft.com/vs/older-downloads/">Visual Studio 2017</a> (15.6 y versiones posteriores) en Windows (7, 8.1 o 10).<br/>
-        2. Instale una <a href="reference/platform-support.md">carga de trabajo compatible</a>. (por ejemplo, ASP.NET, .NET Core, C++ o Node.js).<br />
+        2. Instale una <a href="reference/platform-support.md">carga de trabajo compatible</a> (por ejemplo, ASP.NET, .NET Core, C++ o Node.js).<br />
         3. Descargue e instale la extensión de Visual Studio Live Share desde Marketplace. <br />
         <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="media/download.png" alt="Download button" ></a><br />
     </td>
@@ -163,8 +163,8 @@ Guías de inicio rápido
 
 Temas procedimentales
 
-- [mediante Visual Studio Code](use/vscode.md)
-- [mediante Visual Studio](use/vs.md)
+- [Colaboración mediante Visual Studio Code](use/vscode.md)
+- [Colaboración mediante Visual Studio](use/vs.md)
 
 Referencia
 

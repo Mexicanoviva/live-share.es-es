@@ -6,7 +6,7 @@
 ## [Participación en una primera sesión](quickstart/join.md)
 # Guías de ayuda y procedimientos: VS Code
 ## [Información general](use/vscode.md)
-## [Instalar](use/vscode.md#installation)
+## [Instalación](use/vscode.md#installation)
 ## [Inicio de sesión](use/vscode.md#sign-in)
 ## [Uso compartido de un proyecto](use/vscode.md#share-a-project)
 ## [Participación en una sesión](use/vscode.md#join-a-collaboration-session)
@@ -17,7 +17,7 @@
 ## [Uso compartido de un terminal](use/vscode.md#share-a-terminal)
 # Guías de ayuda y procedimientos: Programa para la mejora
 ## [Información general](use/vs.md)
-## [Instalar](use/vs.md#installation)
+## [Instalación](use/vs.md#installation)
 ## [Inicio de sesión](use/vs.md#sign-in)
 ## [Uso compartido de un proyecto](use/vs.md#share-a-project)
 ## [Participación en una sesión](use/vs.md#join-a-collaboration-session)
