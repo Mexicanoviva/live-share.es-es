@@ -15,7 +15,7 @@ ms.openlocfilehash: ed96ba572a58b8d3bfda7b634f1052a1b4e73051
 ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58853643"
 ---
 <!--
@@ -65,7 +65,7 @@ Después, descargar e instalar la extensión de Visual Studio Live Share es muy 
 
 Al descargar y usar Visual Studio Live Share, acepta los [términos de licencia](https://aka.ms/vsls-license) y la [declaración de privacidad](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). Si surge algún problema, consulte la [solución de problemas](../troubleshooting.md).
 
-[![Descargar](../media/download.png)](https://aka.ms/vsls-dl/vscode)
+[![Descarga](../media/download.png)](https://aka.ms/vsls-dl/vscode)
 
 ### <a name="linux-install-steps"></a>Pasos de instalación de Linux
 
@@ -158,7 +158,7 @@ Como esta lista puede ser larga, quizás le resulte más fácil usar un menú de
 
 Después de descargar e instalar Visual Studio Live Share, siga estos pasos para iniciar una sesión de colaboración e invitar a un compañero de trabajo a trabajar con usted.
 
-1. **Inicio de sesión**
+1. **Iniciar sesión**
 
     Después de instalar la extensión Live Share, recargar y esperar a que se terminen de instalar las dependencias, querrá iniciar sesión para que otros colaboradores sepan quién es. Consulte [Inicio de sesión](#sign-in) para más detalles.
 
@@ -168,16 +168,16 @@ Después de descargar e instalar Visual Studio Live Share, siga estos pasos para
 
 3. **[Opcional] Actualizar los archivos ocultos o excluidos**
 
-    De forma predeterminada, Live Share **oculta** a los invitados los archivos o carpetas a los que se hace referencia en los archivos .gitignore de las carpetas compartidas. **Ocultar** un archivo evita que aparezca en el árbol de archivos del invitado. **Excluir** un archivo aplica una regla más estricta que impedirá que Live Share lo abra para el invitado en situaciones como ir a una definición o cuando el archivo se depura paso a paso por instrucciones mientras depura o se "sigue". Si quiere ocultar o excluir otros archivos, puede agregar un archivo **.vsls.json** al proyecto con esta configuración. Consulte [Control de la visibilidad y el acceso de archivos](../reference/security.md#controlling-file-access-and-visibility) para más información.
+    De manera predeterminada, Live Share **oculta** a los invitados los archivos o carpetas a los que se hace referencia en los archivos .gitignore de las carpetas compartidas. **Ocultar** un archivo evita que aparezca en el árbol de archivos del invitado. **Excluir** un archivo aplica una regla más estricta que impedirá que Live Share lo abra para el invitado en situaciones como ir a una definición o cuando el archivo se depura paso a paso por instrucciones mientras depura o se "sigue". Si quiere ocultar o excluir otros archivos, puede agregar un archivo **.vsls.json** al proyecto con esta configuración. Consulte [Control de la visibilidad y el acceso de archivos](../reference/security.md#controlling-file-access-and-visibility) para más información.
 
-4. **Inicio de una sesión de colaboración**
+4. **Iniciar una sesión de colaboración**
 
     Ahora, simplemente **haga clic** en el elemento de la barra de estado "Live Share" o presione **Ctrl+Mayús+P / Cmd+Mayús+P** y seleccione "Live Share: Start a collaboration session (Share)" (Live Share: iniciar una sesión de colaboración [Compartir]).
 
     ![Botón Compartir](../media/vscode-share-button.png)
 
     > [!NOTE]
-    > La primera vez que comparta, es posible que el software de firewall de escritorio le pida que permita que el agente de Live Share abra un puerto. Aceptar esto es totalmente opcional, pero habilita un "modo directo" seguro para mejorar el rendimiento cuando la persona con la que trabaja se encuentra en la misma red que usted. Consulte [Cambiar el modo de conexión](../reference/connectivity.md#changing-the-connection-mode) para más detalles.
+    > La primera vez que comparta, es posible que el software de firewall de escritorio le pida que permita que el agente de Live Share abra un puerto. Aceptar esto es totalmente opcional, pero habilita un "modo directo" seguro para mejorar el rendimiento cuando la persona con la que trabaja se encuentra en la misma red que usted. Consulte [Cambiar el modo de conexión](../reference/connectivity.md#changing-the-connection-mode) para más detalles.
 
     Un vínculo a la invitación se copiará automáticamente en el Portapapeles. Cuando se abre en un explorador, este vínculo permite que otros usuarios se unan a una sesión de colaboración donde se les comparte contenido de estas carpetas.
 
@@ -237,7 +237,7 @@ Después de descargar e instalar Visual Studio Live Share, los invitados solo de
 
 La manera más sencilla de participar en una sesión de colaboración es abrir el vínculo de la invitación en un explorador web. Esto es lo que puede esperar si sigue este flujo.
 
-1. **Inicio de sesión**
+1. **Inicie sesión**
 
     Después de instalar la extensión Live Share, recargar y esperar a que se terminen de instalar las dependencias, querrá iniciar sesión para que otros colaboradores sepan quién es. Consulte [Inicio de sesión](#sign-in) para más detalles.
 
@@ -256,7 +256,7 @@ La manera más sencilla de participar en una sesión de colaboración es abrir e
     > [!NOTE]
     > Asegúrese de haber **iniciado la herramienta al menos una vez** después de instalar la extensión Visual Studio Live Share y permitido que la instalación se realice completamente antes de abrir o volver a abrir la página de invitación. ¿Sigue teniendo problemas? Consulte [Participar manualmente](#join-manually).
 
-3. **Colaborar**
+3. **Colabore**
 
     Ya está. En unos instantes se conectará y podrá empezar a colaborar.
 
@@ -268,7 +268,7 @@ La manera más sencilla de participar en una sesión de colaboración es abrir e
 
 También puede participar manualmente sin usar un explorador web, lo que puede ser útil cuando la herramienta que quiere usar ya está en ejecución, si quiere una herramienta distinta a la que usa con frecuencia o si, por alguna razón, tiene problemas para que los vínculos de invitación funcionen. El proceso es sencillo:
 
-1. **Inicio de sesión**
+1. **Inicie sesión**
 
     Después de instalar la extensión Live Share, recargar y esperar a que se terminen de instalar las dependencias, querrá iniciar sesión para que otros colaboradores sepan quién es. Consulte [Inicio de sesión](#sign-in) para más detalles.
 
@@ -282,7 +282,7 @@ También puede participar manualmente sin usar un explorador web, lo que puede s
 
     Pegue la dirección URL de la invitación que le enviamos y presione ENTRAR para confirmar.
 
-4. **Colaboración**
+4. **¡Colabore!**
 
     Ya está. Debería estar conectado momentáneamente a la sesión de colaboración.
 

@@ -15,7 +15,7 @@ ms.openlocfilehash: c5c86b158facfe1fe8fa7f5ae14a9511c55e0877
 ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58853552"
 ---
 <!--
@@ -56,7 +56,7 @@ La instalación de la extensión es sencilla. Tan solo tiene que seguir estos pa
     <td  style="border:none;">
         <strong>Visual Studio 2019 </strong><br />
         1. Instale <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a>.<br/>
-        2. Instale una <a href="../reference/platform-support.md">carga de trabajo compatible</a>. (por ejemplo, ASP.NET, .NET Core, C++ o Node.js).<br />
+        2. Instale una <a href="../reference/platform-support.md">carga de trabajo compatible</a> (por ejemplo, ASP.NET, .NET Core, C++ o Node.js).<br />
         3. Visual Studio Live Share se instala de forma predeterminada con esas cargas de trabajo. <br />
     </td>
 </tr>
@@ -65,7 +65,7 @@ La instalación de la extensión es sencilla. Tan solo tiene que seguir estos pa
     <td  style="border:none;">
         <strong>Visual Studio 2017, versión 15.6 o posterior</strong><br />
         1. Instale la versión más reciente de <a href="https://visualstudio.microsoft.com/vs/older-downloads/">Visual Studio 2017</a> (15.6 y versiones posteriores) en Windows (7, 8.1 o 10).<br/>
-        2. Instale una <a href="../reference/platform-support.md">carga de trabajo compatible</a>. (por ejemplo, ASP.NET, .NET Core, C++ o Node.js).<br />
+        2. Instale una <a href="../reference/platform-support.md">carga de trabajo compatible</a> (por ejemplo, ASP.NET, .NET Core, C++ o Node.js).<br />
         3. Descargue e instale la extensión de Visual Studio Live Share desde Marketplace. <br />
         <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="../media/download.png" alt="Download button" ></a><br />
     </td>
@@ -95,7 +95,7 @@ Después, se unirá a la sesión como invitado de solo lectura. Podrá ver y nav
 
 > [!NOTE]
 > Si más adelante quiere obtener acceso de lectura o escritura al código, puede iniciar sesión. Haga clic en el nombre para mostrar en la barra de estado y seleccione la opción "Iniciar sesión".
-![Inicio de sesión de invitado de solo lectura](../media/vscode-read-only-guest-signin.png) Esto iniciará el explorador, y podrá elegir una cuenta de Microsoft o GitHub con la que iniciar sesión.
+![Inicio de sesión de invitado de solo lectura ](../media/vscode-read-only-guest-signin.png) Esto iniciará el explorador, y podrá elegir una cuenta de Microsoft o GitHub con la que iniciar sesión.
 
 ## <a name="3-sign-in"></a>3. Inicio de sesión
 
@@ -159,8 +159,8 @@ Estas son algunas operaciones que puede probar:
 Consulte estos artículos adicionales para obtener más información.
 
 - [Inicio rápido: Uso compartido de un primer proyecto](share.md)
-- [Colaboración mediante Visual Studio Code](../use/vscode.md)
-- [Colaboración mediante Visual Studio](../use/vs.md)
+- [Procedimientos para colaborar mediante Visual Studio Code](../use/vscode.md)
+- [Procedimientos para colaborar mediante Visual Studio](../use/vs.md)
 
 Referencia
 

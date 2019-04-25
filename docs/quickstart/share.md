@@ -15,7 +15,7 @@ ms.openlocfilehash: b25158970f325bbc55618909315a8ed09d6f50a8
 ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58853617"
 ---
 <!--
@@ -56,7 +56,7 @@ La instalación de la extensión es sencilla. Tan solo tiene que seguir estos pa
     <td  style="border:none;">
         <strong>Visual Studio 2019 </strong><br />
         1. Instale <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a>.<br/>
-        2. Instale una <a href="../reference/platform-support.md">carga de trabajo compatible</a>. (por ejemplo, ASP.NET, .NET Core, C++ o Node.js).<br />
+        2. Instale una <a href="../reference/platform-support.md">carga de trabajo compatible</a> (por ejemplo, ASP.NET, .NET Core, C++ o Node.js).<br />
         3. Visual Studio Live Share se instala de forma predeterminada con esas cargas de trabajo. <br />
     </td>
 </tr>
@@ -65,7 +65,7 @@ La instalación de la extensión es sencilla. Tan solo tiene que seguir estos pa
     <td  style="border:none;">
         <strong>Visual Studio 2017, versión 15.6 o posterior</strong><br />
         1. Instale la versión más reciente de <a href="https://visualstudio.microsoft.com/vs/older-downloads/">Visual Studio 2017</a> (15.6 y versiones posteriores) en Windows (7, 8.1 o 10).<br/>
-        2. Instale una <a href="../reference/platform-support.md">carga de trabajo compatible</a>. (por ejemplo, ASP.NET, .NET Core, C++ o Node.js).<br />
+        2. Instale una <a href="../reference/platform-support.md">carga de trabajo compatible</a> (por ejemplo, ASP.NET, .NET Core, C++ o Node.js).<br />
         3. Descargue e instale la extensión de Visual Studio Live Share desde Marketplace. <br />
         <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="../media/download.png" alt="Download button" ></a><br />
     </td>
@@ -89,7 +89,7 @@ Después de instalar la extensión Live Share, reiniciar y esperar a que se ter
 </tr>
 </table>
 
-En **VS Code**, se iniciará el explorador mientras aparece una notificación en la que se le pide que inicie sesión. Complete el proceso de inicio de sesión en el explorador, y después ciérrelo cuando haya terminado.
+En **VS Code**, se iniciará el explorador mientras aparece una notificación en la que se le pide que inicie sesión. Complete el proceso de inicio de sesión en el explorador, y después ciérrelo cuando haya terminado.
 
 ![Notificación del sistema en la que solicita el inicio de sesión con un explorador web](../media/vscode-sign-in-toast.png)
 
@@ -192,8 +192,8 @@ Consulte la documentación de las extensiones [Visual Studio Code](../use/vsco
 Consulte estos artículos adicionales para obtener más información.
 
 - [Inicio rápido: Unirse a la primera sesión de colaboración](join.md)
-- [Colaboración mediante Visual Studio Code](../use/vscode.md)
-- [Colaboración mediante Visual Studio](../use/vs.md)
+- [Procedimientos para colaborar mediante Visual Studio Code](../use/vscode.md)
+- [Procedimientos para colaborar mediante Visual Studio](../use/vs.md)
 
 Referencia
 

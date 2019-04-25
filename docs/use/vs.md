@@ -15,7 +15,7 @@ ms.openlocfilehash: 55eb4b0a5e819b00754d75e4682dd1aa97bbf576
 ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58853630"
 ---
 <!--
@@ -37,7 +37,7 @@ Tenga en cuenta que todas las actividades de colaboración que se describen aqu�
 
 ## <a name="installation"></a>Instalación
 
-Antes de comenzar, deberá instalar **Visual Studio 2019** o la versión **15.6 o superior de Visual Studio 2017** en Windows 7, 8.1 o 10. *Sin embargo, se recomienda Visual Studio 15.7 y versiones superiores porque está habilitada la compatibilidad con la acción de deshacer/rehacer.*
+Antes de comenzar, deberá instalar **Visual Studio 2019** o la versión **15.6 o superior de Visual Studio 2017** en Windows 7, 8.1 o 10. *Sin embargo, se recomienda Visual Studio 15.7 y versiones superiores porque está habilitada la compatibilidad con la acción de deshacer/rehacer*.
 
 Empezar es muy sencillo:
 
@@ -89,14 +89,14 @@ Después de descargar e instalar Visual Studio Live Share, siga estos pasos para
 
     De manera predeterminada, Live Share **oculta** a los invitados los archivos o carpetas a los que se hace referencia en los archivos .gitignore. **Ocultar** un archivo impide que aparezca en el árbol de archivos, mientras que **excluirlo** impide que se transmita incluso durante operaciones como la depuración. Si quiere ocultar o excluir otros archivos, puede agregar un archivo **.vsls.json** al proyecto con esta configuración. Consulte [Control de la visibilidad y el acceso de archivos](../reference/security.md#controlling-file-access-and-visibility) para más información.
 
-4. **Inicio de una sesión de colaboración**
+4. **Iniciar una sesión de colaboración**
 
     Ahora, simplemente haga clic en el botón "Live Share" que aparece en la esquina superior derecha.
 
     ![Botón Compartir de VS](../media/vs-share-button.png)
 
     > [!NOTE]
-    > La primera vez que comparta, es posible que el software de firewall de escritorio le pida que permita que el agente de Live Share abra un puerto. Aceptar esto es totalmente opcional, pero habilita un "modo directo" seguro para mejorar el rendimiento cuando la persona con la que trabaja se encuentra en la misma red que usted. Consulte [Cambiar el modo de conexión](../reference/connectivity.md#changing-the-connection-mode) para más detalles.
+    > La primera vez que comparta, es posible que el software de firewall de escritorio le pida que permita que el agente de Live Share abra un puerto. Aceptar esto es totalmente opcional, pero habilita un "modo directo" seguro para mejorar el rendimiento cuando la persona con la que trabaja se encuentra en la misma red que usted. Consulte [Cambiar el modo de conexión](../reference/connectivity.md#changing-the-connection-mode) para más detalles.
 
     Un vínculo a la invitación se copiará automáticamente en el Portapapeles. Cuando se abre en un explorador, este vínculo permite que otros usuarios se unan a una sesión de colaboración donde se les comparte contenido de estas carpetas.
 
@@ -173,7 +173,7 @@ La manera más sencilla de participar en una sesión de colaboración es abrir e
     > [!NOTE]
     > ¿Sigue teniendo problemas? Consulte [Participar manualmente](#join-manually).
 
-3. **Colaborar**
+3. **Colabore**
 
     Ya está. En unos instantes se conectará y podrá empezar a colaborar.
 
@@ -191,17 +191,17 @@ También puede participar manualmente sin usar un explorador web, lo que puede s
 
     Consulte [Inicio de sesión](#sign-in) para más detalles.
 
-2. **Usar el comando para participar**
+2. **Use el comando para participar**
 
     Simplemente vaya a **Archivo > Unirse a sesión de Live Share**
 
     ![Menú para participar de VS](../media/vs-join.png)
 
-3. **Pegar el vínculo de la invitación**
+3. **Pegue el vínculo de invitación**
 
     Pegue la dirección URL de la invitación que le enviamos y confirme.
 
-4. **Colaboración**
+4. **¡Colabore!**
 
     Ya está. Debería estar conectado momentáneamente a la sesión de colaboración.
 
