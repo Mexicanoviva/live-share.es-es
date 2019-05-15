@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 55eb4b0a5e819b00754d75e4682dd1aa97bbf576
-ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
+ms.openlocfilehash: 657b5079ba5669b6d01d732257b40444a8fa82d2
+ms.sourcegitcommit: cab8df5c29f9d91e702ef514def53944ee7701ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58853630"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "64987194"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -43,8 +43,8 @@ Empezar es muy sencillo:
 
 Para Visual Studio 2019
 1. Instale cualquier edición de [Visual Studio 2019](https://visualstudio.microsoft.com/vs/).
-2. Instale una [carga de trabajo compatible](../reference/platform-support.md). (por ejemplo, ASP.NET, .NET Core, C++ o Node.js).
-3. Visual Studio Live Share se instala de manera predeterminada con esas cargas de trabajo.
+2. Instale una [carga de trabajo compatible](../reference/platform-support.md). (por ejemplo, ASP.NET, .NET Core, C++, Python o Node.js).
+3. Visual Studio Live Share se instala de forma predeterminada con esas cargas de trabajo.
 
 Para Visual Studio 2017
 1. Instale cualquier edición de la versión 15.6 de [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/) o una versión posterior.
