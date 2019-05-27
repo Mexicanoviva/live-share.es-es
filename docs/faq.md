@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 1b68dc90f4bac5e21c04c555ab2d8fc7f59aad55
-ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
+ms.openlocfilehash: 91ffc42c06e70839dbadbd2487cd02970ded3346
+ms.sourcegitcommit: bfa1020882095fcc7d31cd71cf1f2e601e3bea06
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58853604"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "66224714"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -87,11 +87,7 @@ Recurso compartido en vivo va un paso más allá y le permite compartir una sesi
 Nuestro objetivo es admitir la amplia variedad de lenguajes y plataformas, para asegurarse de que podemos permiten una colaboración enriquecedora, independientemente del tipo de aplicación que se desarrolla. Consulte la [idioma y la compatibilidad con la plataforma](reference/platform-support.md) para obtener información sobre lo que funciona hoy en día.
 
 ## <a name="how-many-developers-can-join-a-collaboration-session"></a>¿Cuántos desarrolladores pueden unirse a una sesión de colaboración?
-Actualmente admitimos 30 invitados simultáneos, el desarrollador que está compartiendo ("hospedaje"), además de su proyecto. De forma predeterminada, se habilitan a hasta 5 invitados en una sesión. 
-
-Para habilitar el límite de aumento de invitado: 
-- **Código de VS:** Agregue "liveshare.increasedGuestLimit":"true" a settings.json.
-- **VS:** Conjunto de herramientas > Opciones > Live Share > mayor límite de invitado en "True"
+Actualmente admitimos 30 invitados simultáneos, el desarrollador que está compartiendo ("hospedaje"), además de su proyecto. 
 
 ## <a name="what-is-the-roadmap"></a>¿Qué es el mapa de ruta?
 Puede ver el conjunto de problemas conocidos y los elementos de mapa de ruta [aquí](https://aka.ms/vsls-issues). Si desea ver solo las solicitudes de la característica en lugar de todos los problemas, consulte [aquí](https://aka.ms/vsls-feature-requests). Le animamos a enviar su voto a los elementos existentes, solicitar nuevas características y los informes de errores de registro para ayudarnos a forma la dirección del producto más adelante.
