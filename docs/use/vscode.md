@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: ed96ba572a58b8d3bfda7b634f1052a1b4e73051
-ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
+ms.openlocfilehash: bda0ca256af4a561724d96777e640eec1ca0f0fb
+ms.sourcegitcommit: bfa1020882095fcc7d31cd71cf1f2e601e3bea06
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58853643"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "66224726"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -91,7 +91,7 @@ Por lo general, Visual Studio Live Share **no necesita pasos de instalación adi
 
 Si bien es poco habitual, en ciertas distribuciones **es posible que reciba una notificación de que se necesita su contraseña de administración (sudo)** para completar el proceso de instalación. Aparecerá una ventana de terminal en la que se le indicará que se instalará el iniciador del explorador. Para cerrar la ventana de terminal, solo debe escribir la contraseña cuando se le solicite y presionar ENTRAR una vez que la instalación termine.
 
-**[Aquí](../reference/linux.md#linux-browser-integration)** puede leer más sobre por qué es necesario este paso y dónde coloca los archivos Live Share. Observe que, incluso si no puede hacer funcionar la integración del explorador, de todos modos puede **[participar manualmente en las sesiones de colaboración](../use/vscode.md#join-manually)**.
+**[Aquí](../reference/linux.md#linux-browser-integration)** puede leer más sobre por qué es necesario este paso y dónde coloca los archivos Live Share. Observe que, incluso si no puede hacer funcionar la integración del explorador, de todos modos puede **[participar manualmente en las sesiones de colaboración](../use/vscode.md#join-manually)** .
 
 ## <a name="sign-in"></a>Inicio de sesión
 
@@ -106,6 +106,12 @@ Aparecerá una notificación para pedirle que inicie sesión con el explorador w
 ![Notificación del sistema en la que solicita el inicio de sesión con un explorador web](../media/vscode-sign-in-toast.png)
 
 > **Usuarios de Linux:** Se le pedirá que escriba un código de usuario si usa una versión antigua de Live Share (versión 0.3.295 o inferior). Actualice a la versión más reciente de la extensión o haga clic en el vínculo "¿Tiene problemas?" después de iniciar sesión para ver el código. Para información más detallada, [consulte a continuación](#sign-in-using-a-user-code).
+
+#
+
+> **Sugerencia avanzada:** Las opciones `liveshare.account` y `liveshare.accountProvider` le permiten seleccionar qué cuenta debería usarse para el inicio de sesión automático en caso de que disponga de credenciales almacenadas en caché para varias cuentas disponibles. 
+
+> Por ejemplo, imagine que trabaja en dos proyectos en los que quiere iniciar sesión con identidades distintas. En la configuración del área de trabajo de VSCode, puede configurar la opción `liveshare.account` para distintas direcciones de correo electrónico en cada directorio de proyecto. De este modo, se asegurará de que la sesión de cada una de ellas se inicia automáticamente con la cuenta adecuada. La opción `liveshare.accountProvider` se puede establecer tanto en `"microsoft"` como `"github"` si usa la misma dirección de correo electrónico con varios proveedores.
 
 Si Visual Studio Code no acepta su inicio de sesión una vez que completa el proceso en el explorador, consulte [Inicio de sesión con un código de usuario](#sign-in-using-a-user-code). En caso contrario, revise la [solución de problemas](../troubleshooting.md#sign-in) para ver más sugerencias.
 
