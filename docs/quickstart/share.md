@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 339fb176eed78ece2117ba645a84fafe4f4247f4
-ms.sourcegitcommit: cab8df5c29f9d91e702ef514def53944ee7701ba
+ms.openlocfilehash: e65656c604a9dbc479a03a503fe01d7e2d938072
+ms.sourcegitcommit: c702aafb65b0fc43cb210e1bb7340cef48b57f35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "64987215"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67322801"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -34,7 +34,9 @@ Le damos la bienvenida a Visual Studio Live Share. Live Share le permite editar 
 > ¿Sabía que puede *participar en su propia sesión de colaboración*? Esto le permite probar Live Share por su cuenta o poner en marcha una instancia de Visual Studio o VS Code y conectarse a ella de forma remota. Incluso puede usar la misma identidad en ambas instancias. ¡Compruébelo!
 
 Siga estos pasos para empezar a compartir.
-
+<!--
+Change the instructions to Install extension for VS Code and in-tool for VS?
+-->
 ## <a name="1-install-the-extension"></a>1. Instalación de la extensión
 
 La instalación de la extensión es sencilla. Tan solo tiene que seguir estos pasos:
@@ -76,12 +78,15 @@ Al descargar y usar Visual Studio Live Share, acepta los [términos de licencia]
 
 ## <a name="2-sign-in"></a>2. Inicio de sesión
 
+<!--
+Re-write the grammar here- run on sentence does not make sense. Change screen shots. There is another way of signing in as well- what if a user goes directly to the start collaboration. 
+-->
 Después de instalar la extensión Live Share, reiniciar y esperar a que se terminen de instalar las dependencias (VS Code), le recomendamos que inicie sesión para que otros participantes sepan quién es. Haga clic en el elemento "Live Share" de la barra de estado (VS Code) o en el botón "Iniciar sesión" (VS) para empezar.
 
 <table style="border: none;">
 <tr style="border: none;">
     <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vscode-sign-in-button.png" width="100%" alt="Visual Studio Code sign in status bar item"/>
+        <img src="../media/vscode-sign-in-button-new.png" width="100%" alt="Visual Studio Code sign in status bar item"/>
     </td>
     <td width="50%" style="vertical-align: top; border: none;">
         <img src="../media/vs-sign-in-button.png" width="100%" alt="Visual Studio sign in button"/>
@@ -109,12 +114,14 @@ De forma predeterminada, Live Share **oculta** a los invitados los archivos o c
 
 ## <a name="5-start-a-collaboration-session"></a>5. Inicio de una sesión de colaboración
 
+<!--
+-->
 A continuación, simplemente haga clic en "Live Share" dentro de la herramienta y un vínculo de invitación se copiará de forma automática en el Portapapeles.
 
 <table style="border: none;">
 <tr style="border: none;">
     <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vscode-share-button.png" width="100%" alt="Visual Studio Code share status bar item" />
+        <img src="../media/vscode-share-button-new.png" width="100%" alt="Visual Studio Code share status bar item" />
     </td>
     <td width="50%" style="vertical-align: top; border: none;">
         <img src="../media/vs-share-button.png" width="100%" alt="Visual Studio share button"/>

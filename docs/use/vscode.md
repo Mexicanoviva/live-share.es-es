@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: bda0ca256af4a561724d96777e640eec1ca0f0fb
-ms.sourcegitcommit: bfa1020882095fcc7d31cd71cf1f2e601e3bea06
+ms.openlocfilehash: 079662c94f22497f5d96b4a3c6e35e4f13db2fa1
+ms.sourcegitcommit: c702aafb65b0fc43cb210e1bb7340cef48b57f35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "66224726"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67322830"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -109,8 +109,7 @@ Aparecerá una notificación para pedirle que inicie sesión con el explorador w
 
 #
 
-> **Sugerencia avanzada:** Las opciones `liveshare.account` y `liveshare.accountProvider` le permiten seleccionar qué cuenta debería usarse para el inicio de sesión automático en caso de que disponga de credenciales almacenadas en caché para varias cuentas disponibles. 
-
+> **Sugerencia avanzada:** Las opciones `liveshare.account` y `liveshare.accountProvider` le permiten seleccionar qué cuenta debería usarse para el inicio de sesión automático en caso de que disponga de credenciales almacenadas en caché para varias cuentas disponibles.
 > Por ejemplo, imagine que trabaja en dos proyectos en los que quiere iniciar sesión con identidades distintas. En la configuración del área de trabajo de VSCode, puede configurar la opción `liveshare.account` para distintas direcciones de correo electrónico en cada directorio de proyecto. De este modo, se asegurará de que la sesión de cada una de ellas se inicia automáticamente con la cuenta adecuada. La opción `liveshare.accountProvider` se puede establecer tanto en `"microsoft"` como `"github"` si usa la misma dirección de correo electrónico con varios proveedores.
 
 Si Visual Studio Code no acepta su inicio de sesión una vez que completa el proceso en el explorador, consulte [Inicio de sesión con un código de usuario](#sign-in-using-a-user-code). En caso contrario, revise la [solución de problemas](../troubleshooting.md#sign-in) para ver más sugerencias.
@@ -180,7 +179,7 @@ Después de descargar e instalar Visual Studio Live Share, siga estos pasos para
 
     Ahora, simplemente **haga clic** en el elemento de la barra de estado "Live Share" o presione **Ctrl+Mayús+P / Cmd+Mayús+P** y seleccione "Live Share: Start a collaboration session (Share)" (Live Share: iniciar una sesión de colaboración [Compartir]).
 
-    ![Botón Compartir](../media/vscode-share-button.png)
+    ![Botón Compartir](../media/vscode-share-button-new.png)
 
     > [!NOTE]
     > La primera vez que comparta, es posible que el software de firewall de escritorio le pida que permita que el agente de Live Share abra un puerto. Aceptar esto es totalmente opcional, pero habilita un "modo directo" seguro para mejorar el rendimiento cuando la persona con la que trabaja se encuentra en la misma red que usted. Consulte [Cambiar el modo de conexión](../reference/connectivity.md#changing-the-connection-mode) para más detalles.
@@ -526,7 +525,7 @@ Una vez que inicie una sesión de colaboración o que se una a ella y tenga acce
 
 Estos son los estados que verá habitualmente:
 
-| Estado | Barra de estado | Descripción |
+| Estado | Barra de estado | DESCRIPCIÓN |
 |-------|--------------------|-------------|
 | Inactivo | ![Estado de VS Code: inactivo](../media/vscode-status-share.png) | No hay ninguna sesión de colaboración activa y no se comparte nada. |
 | Anfitrión: Uso compartido en curso | ![Estado de VS Code: uso compartido en curso](../media/vscode-status-sharing.png)| Se inicia una sesión de colaboración y pronto se empezará a compartir contenido. |
