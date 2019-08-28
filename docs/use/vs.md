@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: eb631d2f3fecb07cb16b02d1cd02127221b0183d
-ms.sourcegitcommit: 94a6ec64e0054fe4829d554b7023a17a8c58a462
+ms.openlocfilehash: 65c48d1a95cc94bc7505c185be353e437e3c5ba1
+ms.sourcegitcommit: 6b46e300d76eda661ab34c67a3b909d5c162cd9a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67501446"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70062300"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -99,7 +99,7 @@ Después de descargar e instalar Visual Studio Live Share, siga estos pasos para
 
     Cuando inicie una sesión de colaboración por primera vez, verá una ventana de herramientas de Live Share. Asegúrese de acoplar esta ventana para garantizar que aparezca la próxima vez que inicie una sesión de Live Share.
 
-   ![Ventana de herramientas de VS Live Share | 72 x 561, 50 %](../media/vs-live-share-tool-window.png)
+   ![Ventana de herramientas de VS Live Share](../media/vs-live-share-tool-window.png)
 
     > [!NOTE]
     > La primera vez que comparta, es posible que el software de firewall de escritorio le pida que permita que el agente de Live Share abra un puerto. Aceptar esto es totalmente opcional, pero habilita un "modo directo" seguro para mejorar el rendimiento cuando la persona con la que trabaja se encuentra en la misma red que usted. Consulte [Cambiar el modo de conexión](../reference/connectivity.md#changing-the-connection-mode) para más detalles.
