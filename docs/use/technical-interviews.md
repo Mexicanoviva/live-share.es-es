@@ -11,12 +11,12 @@ ms.author: fishah
 manager: JonathanCarter
 ms.workload:
 - liveshare
-ms.openlocfilehash: ca0b4fb4b1b1e4309ca8ef002564a981228fe9af
-ms.sourcegitcommit: 03752ca639ffec4e5590691710472d1e064768f2
+ms.openlocfilehash: 4ed24b7c73767086e5b44909dd958c174b4f3398
+ms.sourcegitcommit: ee0d569c893c2a89374026fe7df70fa3027eac1a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71092637"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71117914"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -24,12 +24,9 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# <a name="how-to-doing-technical-interviews-using-live-share"></a>Colaboración Realización de entrevistas técnicas con Live Share
+# <a name="how-to-do-technical-interviews-using-live-share"></a>Colaboración Realice entrevistas técnicas con Live Share
 
 Antes de empezar a usar Live Share para las entrevistas técnicas, debe completar un paso entero: **Descargue Visual Studio y el Live share Extension Pack de su Marketplace** siguiendo [estos pasos.](../use/vscode.md#Installation)
-
-
-
 
 Live Share proporciona la capacidad de hospedar sesiones reutilizables. Todo esto significa que puede programar una sesión de Live Share de antemano para las entrevistas técnicas y no preocuparse por la expiración del vínculo.
 
