@@ -26,12 +26,15 @@
 ## [Depuración conjunta](use/vs.md#co-debugging)
 ## [Uso compartido de un servidor](use/vs.md#share-a-server)
 ## [Uso compartido de un terminal](use/vs.md#share-a-terminal)
+# Guías de ayuda y procedimientos: Entrevistas técnicas
+## [Entrevistas técnicas](use/technical-interviews.md)
 # Referencia
 ## [Seguridad](reference/security.md)
 ## [Conectividad](reference/connectivity.md)
 ## [Compatibilidad con lenguajes](reference/platform-support.md)
 ## [Compatibilidad con extensiones](reference/extensions.md)
 ## [Casos de uso comunes](reference/use-cases.md)
+
 ## [Detalles de la instalación de Linux](reference/linux.md)
 ## [Participantes](reference/insiders.md)
 ## [Notas de la versión](https://aka.ms/vsls-releases)
