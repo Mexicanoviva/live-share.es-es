@@ -11,12 +11,12 @@ ms.author: fishah
 manager: JonathanCarter
 ms.workload:
 - liveshare
-ms.openlocfilehash: a3b4c9f2b469e937d958e82df28a04044abf38d3
-ms.sourcegitcommit: 50069912a317f8685976013e80738bbaa403a3fe
-ms.translationtype: HT
+ms.openlocfilehash: c1b3e71578ed3ffb306060cec3354f33423928be
+ms.sourcegitcommit: 24eb903744b837dcedff67d8179f06862bd2aa61
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72178479"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72250653"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -26,7 +26,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="contacts-in-live-share"></a>Contactos en Live Share 
 
-Por lo tanto, ha estado usando Live Share y tenga en cuenta que el envío de vínculos a través de una aplicación externa (como chat o correo electrónico) puede llegar a ser muy rápido. Sabemos que, si queremos fomentar la colaboración, debe ser la cantidad mínima de fricción posible para que le guste. Este es el motivo por el que Live Share ahora tiene **contactos** que ahora tienen el **Estado**.
+Por lo tanto, ha estado usando Live Share y tenga en cuenta que el envío de vínculos a través de una aplicación externa (como chat o correo electrónico) puede llegar a ser muy rápido. Sabemos que, si queremos fomentar la colaboración, debe ser la cantidad mínima de fricción posible para que le guste. Este es el motivo por el que Live Share ahora tiene **contactos** con el **Estado** .
 
 >Los contactos se habilitarán automáticamente para todas las versiones de **Live share v 1.0.950** .
 
@@ -60,12 +60,17 @@ Su estado puede establecerse directamente desde el editor para que pueda indicar
 **4. Sin conexión:**  Estará sin conexión una vez que esté fuera de un período de tiempo prolongado, o si decide no [participar en el estado de uso compartido](##ManagingPresence)
 
 
-## Administración del estado<a name="ManagingPresence"> </a> del contacto
+## Administrar contactos y el estado<a name="ManagingPresence"> </a> de uso compartido
 
-Si desea optar por no usar esta característica, puede deshabilitar la configuración de estado eligiendo `offline`. Una vez deshabilitado, podrá ver el estado de la otra e invitarla, pero su estado no se publicará y otros no podrán invitarle directamente.
+Si desea no participar en esta característica, puede hacerlo de dos maneras.
+1. Puede deshabilitar la configuración de estado si elige `offline`. Una vez deshabilitado, podrá ver el estado de la otra e invitarla, pero su estado no se publicará y otros no podrán invitarle directamente.
 Puede dejar sin conexión haciendo clic en el círculo de estado que abrirá el siguiente menú desplegable:
 
 ![dropdownstatus @ no__t-1 <em>que muestra la lista desplegable de Estados de presencia</em>
+
+2. Puede abrir `user settings` y ir a *Extensions > Visual Studio Live Share > Live Share: Presencia @ no__t-0 y deshabilite el servicio de presencia. Una vez deshabilitado, podrá ver el estado de la otra e invitarla, pero su estado no se publicará y otros no podrán invitarle directamente.
+
+![presencesettings](../media/vscode-presence-setting.png)
 
 ## <a name="faqs"></a>Preguntas más frecuentes 
 
