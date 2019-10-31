@@ -1,6 +1,6 @@
 ---
-title: Compatibilidad de plataforma y lenguaje - Visual Studio Live Share | Microsoft Docs
-description: Información general de compatibilidad de plataforma y lenguaje para Visual Studio Live share.
+title: 'Compatibilidad con plataformas y lenguajes: Visual Studio Live Share | Microsoft Docs'
+description: Información general sobre la compatibilidad de plataformas y idiomas para el uso compartido de Visual Studio Live.
 ms.custom: ''
 ms.date: 03/22/2018
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: d220be7e4722d45ecd1511ec1c054a174ba195f0
-ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
+ms.openlocfilehash: 36cd7cc5923e593c6bbd3220b5f4ba92a7ca6130
+ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58640047"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73170065"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -26,23 +26,23 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="contributing-feedback-and-support"></a>Contribución, comentarios y soporte técnico
 
-¿Tiene una pregunta o comentarios? Hay muchas formas de colaborar. Nos gustaría conocer su opinión.
+¿Tiene alguna pregunta o comentario? Hay muchas maneras de contribuir. ¡ Queremos saber de usted!
 
 ## <a name="tldr"></a>TLDR
 
 En resumen:
 
-- **Problemas conocidos:** Consulte [errores](https://aka.ms/vsls-bugs) o [solicitudes de características](https://aka.ms/vsls-feature-requests) y enviar su voto a mediante un 👍 reacción.
-- **Errores de VS Code:** [Registre un problema nuevo](https://aka.ms/vsls-new-issue). Use el "Live Share: Comando Exportar registros"y [arrastrar y colocar el archivo zip](https://help.github.com/articles/file-attachments-on-issues-and-pull-requests/) en el error o [enviarles por correo electrónico](mailto:vsls-feedback@microsoft.com).
-- **Errores de VS:** [Ayuda > Enviar comentarios > notificar un problema...](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) Reproducción el problema antes de enviar y registros estará conectado a la automática.
-- **Solicitudes de características:** [Registrar una nueva solicitud](https://aka.ms/vsls-new-issue) o use un 👍 reacción a [enviar su voto a uno existente](https://aka.ms/vsls-feature-requests).
-- **Póngase en contacto con nosotros:** [ vsls-feedback@microsoft.com ](mailto:vsls-feedback@microsoft.com), [#vsliveshare](https://aka.ms/vsls-twitter), o de la Comunidad ejecutar [Slack](https://aka.ms/vsls-slack).
+- **Problemas conocidos:** Vea los [errores](https://aka.ms/vsls-bugs) o [las solicitudes de características](https://aka.ms/vsls-feature-requests) y vote con una reacción 👍.
+- **Vs Code errores:** [registrar un nuevo problema](https://aka.ms/vsls-new-issue). Use el comando "Live Share: exportar registros" y [arrastre y coloque el archivo zip](https://help.github.com/articles/file-attachments-on-issues-and-pull-requests/) en el error o [envíelos por correo electrónico](mailto:vsls-feedback@microsoft.com).
+- **Vs bugs:** [Ayuda > Enviar comentarios > notificar un problema...](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) Reproduzca el problema antes de que el envío y los registros se adjunten automáticamente.
+- **Solicitudes de características:** [Registre una nueva solicitud](https://aka.ms/vsls-new-issue) o use un 👍 reacción para [votar una existente](https://aka.ms/vsls-feature-requests).
+- **Póngase en contacto con nosotros:** [vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com), [#vsliveshare](https://aka.ms/vsls-twitter)o la [demora](https://aka.ms/vsls-slack)de ejecución de la comunidad.
 
-Más detalles a continuación.
+Más información a continuación.
 
 ## <a name="documentation"></a>Documentación
 
-Algunos de nuestros documentos de referencia pueden tener lo que necesita!
+Algunos de los documentos de referencia pueden tener lo que necesita.
 
 - [Requisitos de conectividad de Live Share](reference/connectivity.md)
 - [Compatibilidad con lenguajes y plataformas](reference/platform-support.md)
@@ -52,28 +52,28 @@ Algunos de nuestros documentos de referencia pueden tener lo que necesita!
 
 ## <a name="issues-and-requests"></a>Problemas y solicitudes
 
-Problemas de GitHub y los informes de problemas de Visual Studio son una excelente manera de conectar con nosotros.
+Los problemas de GitHub y los informes de problemas de Visual Studio son una excelente manera de conectarse con nosotros.
 
-- [Enviar su voto a una característica o solicitar una nueva](https://aka.ms/vsls-feature-requests)
-- [Vea si alguien ya alcanza su problema mediante la búsqueda registra los errores](https://aka.ms/vsls-bugs)
+- [Subir: votar una característica o solicitar una nueva](https://aka.ms/vsls-feature-requests)
+- [Ver si alguien ha alcanzado el problema buscando errores registrados](https://aka.ms/vsls-bugs)
 - [Notificar un problema para Visual Studio](https://aka.ms/vsls-vsproblem)
-- [Notificar un problema para VS Code o el servicio global](https://aka.ms/vsls-vscodeproblem)
-- [Eche un vistazo sugerencias sobre cómo contribuir.](https://aka.ms/vsls-problemtips)
+- [Notificar un problema para VS Code o el servicio general](https://aka.ms/vsls-vscodeproblem)
+- [Consulte sugerencias sobre cómo colaborar.](https://aka.ms/vsls-problemtips)
 
-## <a name="other"></a>Otros
+## <a name="other"></a>Otro
 
 - **Correo electrónico:** [vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com)
-- **Twitter:** Presione nosotros en Twitter con [#vsliveshare](https://aka.ms/vsls-twitter)!
-- **Slack:** Nos también invitaría en la Comunidad ejecutar [Live Share Slack](https://aka.ms/vsls-slack).
+- **Twitter:** Visítenos en Twitter con [#vsliveshare](https://aka.ms/vsls-twitter).
+- **Demora:** También nos dejamos de responder en la [Live share](https://aka.ms/vsls-slack)de ejecución de la comunidad.
 
 ## <a name="see-also"></a>Vea también
 
-Guías de inicio rápido
+Tutoriales rápidos
 
 - [Uso compartido de un primer proyecto](quickstart/share.md)
 - [Participación en una primera sesión](quickstart/join.md)
 
 Temas procedimentales
 
-- [Colaboración mediante Visual Studio Code](use/vscode.md)
-- [Colaboración mediante Visual Studio](use/vs.md)
+- [Colaboración mediante Visual Studio Code](how-to-guides/vscode.md)
+- [Colaboración mediante Visual Studio](how-to-guides/vs.md)
