@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: e65656c604a9dbc479a03a503fe01d7e2d938072
-ms.sourcegitcommit: c702aafb65b0fc43cb210e1bb7340cef48b57f35
+ms.openlocfilehash: 32fc12da3b26ccb1f6d5b984915dfd0cc6afd647
+ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67322801"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73170013"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -46,7 +46,7 @@ La instalación de la extensión es sencilla. Tan solo tiene que seguir estos pa
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-code.svg" width="128px" alt="Visual Studio Code logo"/></td>
     <td style="border:none;">
         <strong>Visual Studio Code (1.22.0 y versiones posteriores)</strong><br />
-        1. Instale <a href="https://code.visualstudio.com/">Visual Studio Code</a> para Windows (7, 8.1 o 10), macOS <b>(Sierra y versiones posteriores)</b> o Linux de 64 bits <b>(<a href="../use/vscode.md#installation">detalles</a>)</b>.<br />
+        1. Instale <a href="https://code.visualstudio.com/">Visual Studio Code</a> para Windows (7, 8.1 o 10), macOS <b>(Sierra y versiones posteriores)</b> o Linux de 64 bits <b>(<a href="../how-to-guides/vscode.md#installation">detalles</a>)</b>.<br />
         2. Descargue e instale la extensión de Visual Studio Live Share desde Marketplace. <br />
         3. Vuelva a cargar y espere a que las dependencias se descarguen e instalen (consulte la barra de estado).<br />
         4. <strong>Linux</strong>: Si se le pide que <a href="../reference/linux.md#install-linux-prerequisites">instale bibliotecas</a>, haga clic en Instalar, escriba la contraseña y reinicie VS Code cuando haya terminado.<br />
@@ -98,7 +98,7 @@ En **VS Code**, se iniciará el explorador mientras aparece una notificación en
 
 ![Notificación del sistema en la que solicita el inicio de sesión con un explorador web](../media/vscode-sign-in-toast.png)
 
-> **Usuarios de Linux:** Se le pedirá que escriba un código de usuario si usa una versión antigua de Live Share (versión 0.3.295 o inferior). Actualice a la versión más reciente de la extensión o haga clic en el vínculo "¿Tiene problemas?" después de iniciar sesión para ver el código. Vea [esto para obtener más detalles](../use/vscode.md#sign-in-using-a-user-code).
+> **Usuarios de Linux:** Se le pedirá que escriba un código de usuario si usa una versión antigua de Live Share (versión 0.3.295 o inferior). Actualice a la versión más reciente de la extensión o haga clic en el vínculo "¿Tiene problemas?" después de iniciar sesión para ver el código. Vea [esto para obtener más detalles](../how-to-guides/vscode.md#sign-in-using-a-user-code).
 
 En **Visual Studio**, Live Share usa la [cuenta de personalización](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) de forma automática. Como resultado, solo tiene que iniciar sesión como lo haría normalmente. Pero si prefiere usar un inicio de sesión diferente al de la cuenta de personalización de Visual Studio, vaya a **Herramientas &gt; Opciones &gt; Live Share &gt; Cuenta de usuario** y seleccione otras credenciales.
 
@@ -190,7 +190,7 @@ Ya está. Estas son algunas operaciones que se pueden probar después de que se 
 1. Compartir un servidor para que pueda extraer del repositorio algo como una aplicación web que se ejecute en su equipo.
 1. Compartir un terminal y ejecutar algún comando.
 
-Consulte la documentación de las extensiones [Visual Studio Code](../use/vscode.md) y [Visual Studio](../use/vs.md) para obtener información sobre cómo realizar estas acciones y muchas más.
+Consulte la documentación de las extensiones [Visual Studio Code](../how-to-guides/vscode.md) y [Visual Studio](../how-to-guides/vs.md) para obtener información sobre cómo realizar estas acciones y muchas más.
 
 ¿Tiene algún problema? Consulte la [solución de problemas](../troubleshooting.md) o [envíe sus comentarios](../support.md).
 
@@ -199,8 +199,8 @@ Consulte la documentación de las extensiones [Visual Studio Code](../use/vsco
 Consulte estos artículos adicionales para obtener más información.
 
 - [Inicio rápido: Unirse a la primera sesión de colaboración](join.md)
-- [Procedimientos para colaborar mediante Visual Studio Code](../use/vscode.md)
-- [Procedimientos para colaborar mediante Visual Studio](../use/vs.md)
+- [Procedimientos para colaborar mediante Visual Studio Code](../how-to-guides/vscode.md)
+- [Procedimientos para colaborar mediante Visual Studio](../how-to-guides/vs.md)
 
 Referencia
 
