@@ -11,12 +11,12 @@ ms.author: fubaduba
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 8091a7ba5cf1f57f192ecea18da4473c8fdd99f7
-ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
+ms.openlocfilehash: 79ff9d0218fe0ef83cf78fa7163aaad8c1f97edd
+ms.sourcegitcommit: 3a1b22eac528b0f6a241f9fec7ec20264db24cfe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73179954"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74019773"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -37,13 +37,13 @@ Los anfitriones de las sesiones de colaboración pueden usar todas sus herramien
 
 Al "compartir" como anfitrión, inicia una sesión de colaboración que comparte el contenido de un proyecto, una solución o una carpeta. Los invitados obtienen acceso a este contenido mediante el vínculo de invitación que les envía. Mientras que "compartir" es una abreviatura de "compartir un proyecto", también abre la puerta a compartir otras funcionalidades como la depuración.
 
-Más **información:** [![vs Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#share-a-project) [![frente](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#share-a-project) a
+Más **información:** [![vs Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-project) [![frente](../media/vs-icon-15x15.png)](../use/vs.md#share-a-project) a
 
 #### <a name="joining"></a>Combinación
 
 Al hacer clic en un vínculo de invitación enviado por un anfitrión, puede "unirse" a una sesión de colaboración como invitado y acceder a cualquier contenido o funcionalidad que el anfitrión haya optado por compartir. El vínculo web proporciona una forma rápida de entrar a una sesión de colaboración, si ya tiene instalada la extensión, y una forma rápida de configurar la información, si no la tiene.
 
-Más **información:** [![vs Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#join-a-collaboration-session) [![frente](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#join-a-collaboration-session) a
+Más **información:** [![vs Code](../media/vscode-icon-15x15.png)](../use/vscode.md#join-a-collaboration-session) [![frente](../media/vs-icon-15x15.png)](../use/vs.md#join-a-collaboration-session) a
 
 ### <a name="features"></a>Características
 
@@ -54,13 +54,13 @@ Cuando abre el mismo archivo que otro colaborador, es posible "editar en colabor
 > [!NOTE]
 > La coedición tiene algunas limitaciones. Consulte la [información sobre compatibilidad con la plataforma](../reference/platform-support.md) para ver el estado de las características por lenguaje.
 
-Más **información:** [![vs Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#co-editing) [![frente](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#co-editing) a
+Más **información:** [![vs Code](../media/vscode-icon-15x15.png)](../use/vscode.md#co-editing) [![frente](../media/vs-icon-15x15.png)](../use/vs.md#co-editing) a
 
 #### <a name="following-and-focusing"></a>Seguimiento y atención
 
 En ocasiones necesitará explicar un problema o diseño que abarque varios archivos o ubicaciones en el código. En estos casos, puede ser útil seguir temporalmente a un compañero de trabajo mientras se mueve por el proyecto al coeditar. Por este motivo, como invitado, cuando se une a una sesión de colaboración, automáticamente "sigue" la ubicación de edición del anfitrión. Los anfitriones e invitados pueden empezar o dejar de seguirse con un simple clic. Además, puede que quiera pedir a todos los participantes que le sigan. Live Share le permite solicitar que todo el mundo "centre" su atención en usted con una notificación que les facilita la tarea de seguirle.
 
-Más **información:** [![vs Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#following) [![frente](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#following) a
+Más **información:** [![vs Code](../media/vscode-icon-15x15.png)](../use/vscode.md#following) [![frente](../media/vs-icon-15x15.png)](../use/vs.md#following) a
 
 #### <a name="co-debugging"></a>Depuración conjunta
 
@@ -69,19 +69,19 @@ Al depurar problemas o errores de codificación difíciles, puede ser muy útil 
 > [!NOTE]
 > Consulte la [información sobre compatibilidad con la plataforma](../reference/platform-support.md) para ver el estado de las características de depuración por lenguaje o plataforma.
 
-Más **información:** [![vs Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#co-debugging) [![frente](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#co-debugging) a
+Más **información:** [![vs Code](../media/vscode-icon-15x15.png)](../use/vscode.md#co-debugging) [![frente](../media/vs-icon-15x15.png)](../use/vs.md#co-debugging) a
 
 #### <a name="share-server--share-port"></a>Uso compartido de servidores y puertos
 
 Al depurar conjuntamente, puede ser muy útil obtener acceso a diferentes partes de la aplicación ofrecidas por el anfitrión para la sesión de depuración. Puede que quiera acceder a la aplicación en un explorador, acceder a una base de datos local o alcanzar un punto de conexión REST desde sus herramientas. Live Share le permite "compartir un servidor", lo cual asigna un puerto local en la máquina del anfitrión en exactamente el mismo puerto de la máquina de cada invitado. Luego, como invitado, puede interactuar con la aplicación como si se estuviera ejecutando localmente en su máquina (por ejemplo, tanto el anfitrión como el invitado pueden acceder a una aplicación web que se ejecute en http://localhost:3000).
 
-Más **información:** [![vs Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#share-a-server) [![frente](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#share-a-server) a
+Más **información:** [![vs Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-server) [![frente](../media/vs-icon-15x15.png)](../use/vs.md#share-a-server) a
 
 #### <a name="share-terminals"></a>Uso compartido de terminales
 
 El desarrollo moderno hace un uso frecuente de una amplia gama de herramientas de línea de comandos. Afortunadamente, como anfitrión, Live Share le permite, de forma opcional, "compartir un terminal" con los invitados. El terminal compartido puede ser de solo lectura o totalmente colaborativo, para que tanto usted como sus invitados puedan ejecutar comandos y ver los resultados. Como anfitrión, siempre tiene el control y puede decidir si los otros colaboradores pueden ejecutar comandos o solo ver la salida del comando. De hecho, puede ejecutar cualquier cosa que quiera mantener privada en un terminal no compartido.
 
-Más **información:** [![vs Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#share-a-terminal) [![frente](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#share-a-terminal) a
+Más **información:** [![vs Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-terminal) [![frente](../media/vs-icon-15x15.png)](../use/vs.md#share-a-terminal) a
 
 #### <a name="access-controls"></a>Controles de acceso
 

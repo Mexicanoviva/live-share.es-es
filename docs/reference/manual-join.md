@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 1057c6276302fb0df682798dd06684b4835c051e
-ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
+ms.openlocfilehash: 0d46cb53a28bfac1c088371ff5eecdb6af0c8420
+ms.sourcegitcommit: 3a1b22eac528b0f6a241f9fec7ec20264db24cfe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73170120"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74019791"
 ---
 # <a name="join-a-session-manually"></a>Unirse a una sesión manualmente
 
@@ -28,7 +28,7 @@ Las instrucciones exactas varían entre [Visual Studio](#join-from-visual-studio
 
 ### <a name="1-sign-in"></a>1. iniciar sesión
 
->**Nota:** Si desea unirse a una sesión de colaboración como invitado de solo lectura, puede omitir el registro. Tendrá acceso para ver y navegar por el código que se comparte pero no puede realizar modificaciones.
+>**Nota:** Si desea unirse a una sesión de colaboración como guesasdsat de solo lectura, puede omitir el registro. Tendrá acceso para ver y navegar por el código que se comparte pero no puede realizar modificaciones.
 
 ![Notificación del sistema en la que solicita el inicio de sesión con un explorador web](../media/vscode-sign-in-toast.png)
 
@@ -85,8 +85,8 @@ Tutoriales rápidos
 
 Temas procedimentales
 
-- [Cómo colaborar con Visual Studio Code](../how-to-guides/vscode.md)
-- [Colaborar con Visual Studio](../how-to-guides/vs.md)
+- [Cómo colaborar con Visual Studio Code](../use/vscode.md)
+- [Colaborar con Visual Studio](../use/vs.md)
 - [Cómo: proporcionar comentarios](../support.md)
 
 Referencia
