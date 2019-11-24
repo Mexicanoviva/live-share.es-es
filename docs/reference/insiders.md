@@ -36,8 +36,8 @@ El equipo de Visual Studio Live Share es todo sobre la iteración rápida, la pr
 Live Share ahora pueden hospedar sesiones reutilizables. Las sesiones reutilizables proporcionan la capacidad de reutilizar una sesión de Live Share para varios escenarios. Esto significa que puede programar una sesión de Live Share de antemano para las entrevistas técnicas, la sesión semanal de programación de Mob, usar la misma sesión mientras se mentora a un amigo, y mucho más.
 
 Para crear una sesión reutilizable, haga lo siguiente:
-1. Vaya al `Command Palette` con `Ctrl+Shift+P`
-1. Escriba "Live Sha..." y haga clic en el recurso compartido ' ** @ no__t-1Live: Cree el comando de vínculo de sesión reutilizable @ no__t-0 @ no__t-1 '.
+1. Vaya a la `Command Palette` mediante `Ctrl+Shift+P`
+1. Escriba "Live Sha..." y haga clic en el comando ' **_Live Share: crear vínculo de sesión reutilizable_** '.
 
 ![vscode-reusablesessioncmd](../media/vscode-cmdpalette-createreusablelink.png)
 
@@ -54,9 +54,9 @@ Para crear una sesión reutilizable, haga lo siguiente:
 
 ## Convertirse en Insider <a name="BecomeanInsider"></a>
 
-De forma predeterminada, después de instalar la extensión de Visual Studio Live Share, se usa el conjunto de características `Stable`, que incluye todas las funcionalidades preparadas para la producción (por ejemplo, edición conjunta, depuración compartida, terminales). Sin embargo, si desea obtener un acceso anticipado a la característica en la que estamos trabajando, puede participar en el conjunto de características `Insiders` cambiando la siguiente configuración en el IDE:
+De forma predeterminada, después de instalar la extensión de Visual Studio Live Share, se usa el conjunto de características `Stable`, que incluye todas las capacidades listas para producción (por ejemplo, edición conjunta, depuración compartida, terminales). Sin embargo, si desea obtener un acceso anticipado a la característica en la que estamos trabajando, puede participar en el conjunto de características de `Insiders` cambiando la siguiente configuración en el IDE:
 
-* Programa para la mejora
+* Visual Studio
 
     ![conjunto de características-vs](../media/feature-set-vs.png)
 
@@ -64,7 +64,7 @@ De forma predeterminada, después de instalar la extensión de Visual Studio Liv
 
     ![Feature-Set-vscode](../media/feature-set-vscode.png)
 
-En las secciones siguientes se describe el conjunto de funcionalidades que se encuentran actualmente en el conjunto de características `Insiders` y, por lo tanto, están listas para su evaluación una vez que se cambia la configuración mencionada anteriormente:
+En las secciones siguientes se describe el conjunto de funcionalidades que se encuentran actualmente en el conjunto de características `Insiders` y, por tanto, están listas para su evaluación una vez que se cambia la configuración mencionada anteriormente:
 
 
 
