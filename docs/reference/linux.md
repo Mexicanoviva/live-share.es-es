@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 27a3d76f14cd3c8df312abe7ab36185109ac7e89
-ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
+ms.openlocfilehash: 69bc178ebb4052757f984d67482d216335f46dac
+ms.sourcegitcommit: 5180aab73c086cbded6aae01aa01f71fb991dee1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73170132"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76818081"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -155,11 +155,11 @@ En algunos casos, las distribuciones no admiten esta ubicación o requieren ajus
 
 Si prefiere ejecutar el comando usted mismo, puede hacer clic en "copiar en su lugar", que copiará en su lugar el comando de terminal en el portapapeles.
 
-Por último, si opta por omitir este paso por completo, todavía puede [unirse a sesiones de colaboración manualmente](../how-to-guides/vscode.md#join-manually), pero no podrá unirse abriendo un vínculo de invitación en el explorador. Tenga en cuenta que siempre puede acceder al comando de nuevo más adelante, presionando **Ctrl + Mayús + P/Cmd + Mayús + P** y seleccionando el comando "Live Share: instalación del iniciador".
+Por último, si opta por omitir este paso por completo, todavía puede [unirse a sesiones de colaboración manualmente](../use/vscode.md#join-manually), pero no podrá unirse abriendo un vínculo de invitación en el explorador. Tenga en cuenta que siempre puede acceder al comando de nuevo más adelante, presionando **Ctrl + Mayús + P/Cmd + Mayús + P** y seleccionando el comando "Live Share: instalación del iniciador".
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo colaborar con Visual Studio Code](../how-to-guides/vscode.md)
+- [Cómo colaborar con Visual Studio Code](../use/vscode.md)
 - [Requisitos de conectividad de Live Share](connectivity.md)
 - [Características de seguridad de Live Share](security.md)
 
