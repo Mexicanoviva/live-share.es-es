@@ -6,6 +6,7 @@
 # Guías de inicio rápido
 ## [Uso compartido de un primer proyecto](quickstart/share.md)
 ## [Participación en una primera sesión](quickstart/join.md)
+## [Participación desde el explorador](quickstart/browser-join.md)
 # Guías de ayuda y procedimientos: VS Code
 ## [Información general](use/vscode.md)
 ## [Instalación](use/vscode.md#installation)
