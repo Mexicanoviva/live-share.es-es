@@ -11,18 +11,19 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: b550790fff3a5ed70db9e1256e020c1865215866
-ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
+ms.openlocfilehash: 7b8b3d9b566231f4b4205b559232ef1752fd9441
+ms.sourcegitcommit: 382f069abbd81ed258d497a974b30379be36b4f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73170030"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508577"
 ---
 <!--
-Copyright © Microsoft Corporation
+Copyright &copy; Microsoft Corporation
 All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
+
 
 # <a name="quickstart-join-your-first-collaboration-session"></a>Inicio rápido: Unirse a la primera sesión de colaboración
 
@@ -44,7 +45,7 @@ La instalación de la extensión es sencilla. Tan solo tiene que seguir estos pa
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-code.svg" width="128px" alt="Visual Studio Code logo"/></td>
     <td style="border:none;">
         <strong>Visual Studio Code (1.22.0 y versiones posteriores)</strong><br />
-        1. Instale <a href="https://code.visualstudio.com/">Visual Studio Code</a> para Windows (7, 8.1 o 10), macOS <b>(Sierra y versiones posteriores)</b> o Linux de 64 bits <b>(<a href="../how-to-guides/vscode.md#installation">detalles</a>)</b>.<br />
+        1. Instale <a href="https://code.visualstudio.com/">Visual Studio Code</a> para Windows (7, 8.1 o 10), macOS <b>(Sierra y versiones posteriores)</b> o Linux de 64 bits <b>(<a href="../use/vscode.md#installation">detalles</a>)</b>.<br />
         2. Descargue e instale la extensión de Visual Studio Live Share desde Marketplace. <br />
         3. Vuelva a cargar y espere a que las dependencias se descarguen e instalen (consulte la barra de estado).<br />
         4. <strong>Linux</strong>: Si se le pide que <a href="../reference/linux.md#install-linux-prerequisites">instale bibliotecas</a>, haga clic en Instalar, escriba la contraseña y reinicie VS Code cuando haya terminado.<br />
@@ -116,7 +117,7 @@ En **VS Code**, se iniciará el explorador mientras aparece una notificación e
 
 ![Notificación del sistema en la que solicita el inicio de sesión con un explorador web](../media/vscode-sign-in-toast.png)
 
-> **Usuarios de Linux:** Se le pedirá que escriba un código de usuario si usa una versión antigua de Live Share (versión 0.3.295 o inferior). Actualice a la versión más reciente de la extensión o haga clic en el vínculo "¿Tiene problemas?" después de iniciar sesión para ver el código. Vea [esto para obtener más detalles](../how-to-guides/vscode.md#sign-in-using-a-user-code).
+> **Usuarios de Linux:** Se le pedirá que escriba un código de usuario si usa una versión antigua de Live Share (versión 0.3.295 o inferior). Actualice a la versión más reciente de la extensión o haga clic en el vínculo "¿Tiene problemas?" después de iniciar sesión para ver el código. Vea [esto para obtener más detalles](../use/vscode.md#sign-in-using-a-user-code).
 
 En **Visual Studio**, Live Share usa la [cuenta de personalización](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) de forma automática. Como resultado, solo tiene que iniciar sesión como lo haría normalmente. Pero si prefiere usar un inicio de sesión diferente al de la cuenta de personalización de Visual Studio, vaya a **Herramientas &gt; Opciones &gt; Live Share &gt; Cuenta de usuario** y seleccione otras credenciales.
 
@@ -159,8 +160,8 @@ Estas son algunas operaciones que puede probar:
 Consulte estos artículos adicionales para obtener más información.
 
 - [Inicio rápido: Uso compartido de un primer proyecto](share.md)
-- [Procedimientos para colaborar mediante Visual Studio Code](../how-to-guides/vscode.md)
-- [Procedimientos para colaborar mediante Visual Studio](../how-to-guides/vs.md)
+- [Procedimientos para colaborar mediante Visual Studio Code](../use/vscode.md)
+- [Colaboración colaborar mediante Visual Studio](../use/vs.md)
 
 Referencia
 
